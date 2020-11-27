@@ -1,0 +1,139 @@
+@import url("./Fonts.css");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Futurica";
+}
+
+body p {
+  margin: 0;
+}
+
+.HomePage .topContainer {
+  background: url("../images/overlayForNavbar.png");
+  background-color: #225A93;
+  width: 100%;
+  padding-top: 38px;
+  height: 1000px;
+}
+
+.HomePage .topContainer .navbar {
+  background-size: cover;
+  padding: 30px;
+  padding-left: 55px;
+  width: 90%;
+  height: 45px;
+}
+
+.HomePage .topContainer .navbar .logoAndText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  float: left;
+  background-color: none;
+}
+
+.HomePage .topContainer .navbar img {
+  width: 193px;
+  height: 36px;
+}
+
+.HomePage .topContainer .navbar .phoneNumber {
+  font-size: 20px;
+  word-spacing: 6px;
+}
+
+.HomePage .topContainer .navbar p {
+  margin-left: 100px;
+  color: white;
+  font-family: "LemonMilkRegular";
+}
+
+.HomePage .topContainer .navbar .menuIcon {
+  width: 100px;
+  height: 45px;
+  float: right;
+  margin-right: 6.4%;
+  margin-top: -5px;
+}
+
+.HomePage .topContainer .navbar .menuIcon .topIcon {
+  width: 100px;
+  height: 6px;
+  background-color: lightgray;
+}
+
+.HomePage .topContainer .navbar .menuIcon .downIcon {
+  width: 60px;
+  height: 6px;
+  margin-top: 20px;
+  background-color: lightgray;
+}
+
+.HomePage .topContainer .subNav {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 198px;
+  margin-left: 11%;
+}
+
+.HomePage .topContainer .subNav .title {
+  font-size: 120px;
+  font-family: "GilroySemibold";
+  color: white;
+  word-spacing: 30px;
+}
+
+.HomePage .topContainer .subNav .subTitle {
+  margin-top: 29px;
+  padding-left: 6.5px;
+  font-size: 32px;
+  line-height: 43px;
+  color: white;
+  width: 1200px;
+  font-family: "GilroySemibold";
+}
+
+.HomePage .topContainer hr {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #363636;
+  top: 620px;
+}
+
+.HomePage .topContainer .subTitle2 {
+  margin-top: 100px;
+  width: 100%;
+  height: 239px;
+  background-color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/overlayForNavbar.png");
+}
+
+.HomePage .topContainer .subTitle2 p {
+  margin: 0;
+  font-size: 28px;
+  color: white;
+  width: 1200px;
+  margin-left: 11%;
+}
+/*# sourceMappingURL=OneCssForWholeHtml.css.map */

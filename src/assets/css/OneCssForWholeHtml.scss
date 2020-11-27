@@ -1,0 +1,138 @@
+@import url("./Fonts.css");
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Futurica";
+    p 
+    {
+        margin: 0;
+    }
+}
+// Html Page
+.HomePage 
+{
+    .topContainer
+    {
+        background: url("../images/overlayForNavbar.png");
+        background-color: #225A93;
+        width: 100%;
+        padding-top: 38px;
+        height: 1000px;
+
+        .navbar 
+        {
+            background-size: cover;
+            padding: 30px;
+            padding-left: 55px;
+            width: 90%;
+            height: 45px;
+            .logoAndText
+            {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                float: left;
+                background-color: none;
+            }
+            img
+            {
+                width: 193px;
+                height: 36px;
+            }
+            .phoneNumber 
+            {
+                font-size: 20px;
+                word-spacing: 6px;
+            }
+            p
+            {
+                margin-left: 100px;
+                color: white;
+                font-family: "LemonMilkRegular";
+            }
+            .menuIcon 
+            {
+                width: 100px;
+                height: 45px;
+                float: right;
+                margin-right: 6.4%;
+                margin-top: -5px;
+                .topIcon 
+                {
+                    width: 100px;
+                    height: 6px;
+                    background-color: lightgray;
+                }
+                .downIcon 
+                {
+                    width: 60px;
+                    height: 6px;
+                    margin-top: 20px;
+                    background-color: lightgray;
+                }
+            }
+        }
+
+        .subNav
+        {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 198px;
+            margin-left: 11%;
+            .title
+            {
+                font-size: 120px;
+                font-family: "GilroySemibold";
+                color: white;
+                word-spacing: 30px;
+            }
+            .subTitle 
+            {
+                margin-top: 29px;
+                padding-left: 6.5px;
+                font-size: 32px;
+                line-height: 43px;
+                color: white;
+                width: 1200px;
+                font-family: "GilroySemibold";
+            }
+        }
+
+        hr 
+        {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            border: none;
+            background-color: rgb(54, 54, 54);
+            top: 620px;
+        }
+
+        .subTitle2
+        {
+            margin-top: 100px;
+            width: 100%;
+            height: 239px;
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            background: url("../images/overlayForNavbar.png");
+            p 
+            {
+                margin: 0;
+                font-size: 28px;
+                color: white;
+                width: 1200px;
+                margin-left:  11%;
+            }
+        }
+
+        
+
+
+    }
+    
+}

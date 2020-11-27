@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/Gilroy-Bold.otf");
+}
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/Gilroy-Medium.otf");
+
+}
+
+@font-face {
+    font-family: "GilroyRegular";
+    src: url("../fonts/Gilroy-Regular.otf");
+}
+
+@font-face {
+    font-family: "GilroySemibold";    
+    src: url("../fonts/Gilroy-Semibold.otf");
+}
+
+@font-face {
+    font-family: "Futurica";
+    src: url("../fonts/Futurica.ttf");
+}
+
+@font-face {
+    font-family: "LemonMilkLight";
+    src: url("../fonts/LEMONMILK-Light.otf");
+}
+
+@font-face {
+    font-family: "LemonMilkMedium";
+    src: url("../fonts/LEMONMILK-Medium.otf");
+}
+
+@font-face {
+    font-family: "LemonMilkRegular";
+    src: url("../fonts/LEMONMILK-Regular.otf");
+}
