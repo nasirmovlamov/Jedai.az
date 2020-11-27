@@ -13,6 +13,7 @@ body
 // Html Page
 .HomePage 
 {
+    height: 10000px;
     .topContainer
     {
         background: url("../images/overlayForNavbar.png");
@@ -35,6 +36,7 @@ body
                 justify-content: flex-start;
                 float: left;
                 background-color: none;
+                
             }
             img
             {
@@ -45,6 +47,10 @@ body
             {
                 font-size: 20px;
                 word-spacing: 6px;
+                color: lightgray;
+                background-image: url("../images/overlayForNavbar.png"); 
+                background-repeat: repeat; 
+                -webkit-background-clip: text; 
             }
             p
             {
@@ -63,14 +69,18 @@ body
                 {
                     width: 100px;
                     height: 6px;
-                    background-color: lightgray;
+                    background: url("../images/overlayForNavbar.png");
+                    background-color: white;
+
                 }
                 .downIcon 
                 {
                     width: 60px;
                     height: 6px;
                     margin-top: 20px;
-                    background-color: lightgray;
+                    background: url("../images/overlayForNavbar.png");
+                    background-color: white;
+
                 }
             }
         }
@@ -105,10 +115,10 @@ body
         {
             position: absolute;
             width: 100%;
-            height: 1px;
+            height: 2px;
             border: none;
-            background-color: rgb(54, 54, 54);
             top: 620px;
+            background-image: url("../images/overlayForNavbar.png") ;
         }
 
         .subTitle2
@@ -125,8 +135,13 @@ body
                 margin: 0;
                 font-size: 28px;
                 color: white;
-                width: 1200px;
+                width: 1100px;
                 margin-left:  11%;
+                font-family: "GilroyRegular";
+            }
+            img 
+            {
+                margin-left:375px ;
             }
         }
 
@@ -135,4 +150,53 @@ body
 
     }
     
+    .whatDo 
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 798px;
+        background-color: #E5E5E5;
+        .titleContainer
+        {
+            display: flex;
+            align-items: center;
+            padding-top: 133px;
+            width: 70%;
+
+            p 
+            {
+                font-size: 44px;
+                font-family: "LemonMilkRegular";
+                color: #0E0E0E ;
+                opacity: 0.7;
+            }
+            hr 
+            {
+                margin-left: 40px;
+                width: 550px;
+                height: 1px;
+                background-color: #464646;
+                border: none;
+            }
+
+        }
+
+        .cardConatiner
+        {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 3%;
+            margin-top: 90px;
+            .card 
+            {
+                width: 446px;
+                height: 388px;
+                background-color: red;
+            }
+        }
+
+    }
+        
 }
