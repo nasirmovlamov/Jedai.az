@@ -149,7 +149,7 @@ body p {
 }
 
 .HomePage .topContainer .subTitle2 img {
-  margin-left: 375px;
+  margin-left: 20%;
 }
 
 .HomePage .whatDo {
@@ -192,6 +192,7 @@ body p {
   height: 1px;
   background-color: #464646;
   border: none;
+  opacity: 0.5;
 }
 
 .HomePage .whatDo .cardConatiner {
@@ -200,12 +201,59 @@ body p {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 3%;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .HomePage .whatDo .cardConatiner .card {
-  width: 446px;
-  height: 388px;
-  background-color: red;
+  width: 426px;
+  height: 368px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  padding-left: 40px;
+  padding-top: 50px;
+}
+
+.HomePage .whatDo .cardConatiner .card:hover {
+  -webkit-box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.HomePage .whatDo .cardConatiner .card p {
+  margin: 0;
+}
+
+.HomePage .whatDo .cardConatiner .card .title {
+  font-family: "LemonMilkMedium";
+  font-size: 22px;
+  font-style: normal;
+  opacity: 0.7;
+}
+
+.HomePage .whatDo .cardConatiner .card hr {
+  width: 147px;
+  height: 1px;
+  background: #1D84C4;
+  border: none;
+  margin: 0;
+  margin: 5px 0 20px 0;
+  opacity: 0.3;
+}
+
+.HomePage .whatDo .cardConatiner .card .subTitle p {
+  margin: 0;
+  margin-top: 30px;
+}
+
+.HomePage .whatDo .cardConatiner .card .subTitle p:nth-child(1) {
+  margin-top: 0;
+}
+
+.HomePage .whatDo .cardConatiner .card .subTitle p span {
+  font-family: "GilroyMedium";
+  color: #000000;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=OneCssForWholeHtml.css.map */
