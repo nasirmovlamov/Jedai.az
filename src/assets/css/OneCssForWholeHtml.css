@@ -16,16 +16,23 @@ body p {
 .HomePage .topContainer {
   background: url("../images/overlayForNavbar.png");
   background-color: #225A93;
-  width: 100%;
   padding-top: 38px;
   height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .HomePage .topContainer .navbar {
   background-size: cover;
-  padding: 30px;
-  padding-left: 55px;
-  width: 90%;
+  width: 80%;
   height: 45px;
 }
 
@@ -49,12 +56,9 @@ body p {
 }
 
 .HomePage .topContainer .navbar .phoneNumber {
-  font-size: 20px;
+  font-size: 18px;
   word-spacing: 6px;
-  color: lightgray;
-  background-image: url("../images/overlayForNavbar.png");
-  background-repeat: repeat;
-  -webkit-background-clip: text;
+  color: white;
 }
 
 .HomePage .topContainer .navbar p {
@@ -67,22 +71,20 @@ body p {
   width: 100px;
   height: 45px;
   float: right;
-  margin-right: 6.4%;
+  margin-right: -10%;
   margin-top: -5px;
 }
 
 .HomePage .topContainer .navbar .menuIcon .topIcon {
-  width: 100px;
+  width: 70px;
   height: 6px;
-  background: url("../images/overlayForNavbar.png");
   background-color: white;
 }
 
 .HomePage .topContainer .navbar .menuIcon .downIcon {
-  width: 60px;
+  width: 45px;
   height: 6px;
   margin-top: 20px;
-  background: url("../images/overlayForNavbar.png");
   background-color: white;
 }
 
@@ -96,11 +98,10 @@ body p {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 198px;
-  margin-left: 11%;
 }
 
 .HomePage .topContainer .subNav .title {
-  font-size: 120px;
+  font-size: 90px;
   font-family: "GilroySemibold";
   color: white;
   word-spacing: 30px;
@@ -109,10 +110,10 @@ body p {
 .HomePage .topContainer .subNav .subTitle {
   margin-top: 29px;
   padding-left: 6.5px;
-  font-size: 32px;
+  font-size: 23px;
   line-height: 43px;
   color: white;
-  width: 1200px;
+  width: 1000px;
   font-family: "GilroySemibold";
 }
 
@@ -121,18 +122,21 @@ body p {
   width: 100%;
   height: 2px;
   border: none;
-  top: 620px;
+  top: 530px;
   background-image: url("../images/overlayForNavbar.png");
 }
 
 .HomePage .topContainer .subTitle2 {
   margin-top: 100px;
-  width: 100%;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
   height: 239px;
   background-color: gray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1100px 11%;
+      grid-template-columns: 1100px 11%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -141,19 +145,19 @@ body p {
 
 .HomePage .topContainer .subTitle2 p {
   margin: 0;
-  font-size: 28px;
+  font-size: 23px;
   color: white;
-  width: 1100px;
-  margin-left: 11%;
-  font-family: "GilroyRegular";
+  width: 90%;
+  font-family: "GilroySemiBold";
 }
 
 .HomePage .topContainer .subTitle2 img {
-  margin-left: 20%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 100px;
 }
 
 .HomePage .whatDo {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,6 +168,7 @@ body p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   height: 798px;
   background-color: #E5E5E5;
 }
@@ -176,7 +181,7 @@ body p {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 133px;
-  width: 70%;
+  width: 80%;
 }
 
 .HomePage .whatDo .titleContainer p {
@@ -200,25 +205,19 @@ body p {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 3%;
+  grid-gap: 7%;
   margin-top: 50px;
+  width: 80%;
 }
 
 .HomePage .whatDo .cardConatiner .card {
-  width: 426px;
+  width: 100%;
   height: 368px;
-  -webkit-transition: 1s;
-  transition: 1s;
-  border: 1px solid rgba(0, 0, 0, 0.03);
   padding-left: 40px;
   padding-top: 50px;
-}
-
-.HomePage .whatDo .cardConatiner .card:hover {
-  -webkit-box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.5);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 .HomePage .whatDo .cardConatiner .card p {
@@ -227,7 +226,7 @@ body p {
 
 .HomePage .whatDo .cardConatiner .card .title {
   font-family: "LemonMilkMedium";
-  font-size: 22px;
+  font-size: 17px;
   font-style: normal;
   opacity: 0.7;
 }
@@ -245,6 +244,7 @@ body p {
 .HomePage .whatDo .cardConatiner .card .subTitle p {
   margin: 0;
   margin-top: 30px;
+  font-size: 15px;
 }
 
 .HomePage .whatDo .cardConatiner .card .subTitle p:nth-child(1) {
@@ -255,5 +255,35 @@ body p {
   font-family: "GilroyMedium";
   color: #000000;
   opacity: 0.7;
+}
+
+.HomePage .whatDo .cardConatiner .card .cardButton {
+  background-color: #fff;
+  float: right;
+  margin-right: 7%;
+  margin-top: 15px;
+  width: 100px;
+  height: 30px;
+  background-color: #1D84C4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.HomePage .whatDo .cardConatiner .card .cardButton:hover {
+  border: 1px solid #1D84c4;
+  background-color: white;
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.HomePage .whatDo .cardConatiner .card .cardButton:focus {
+  outline: none;
+  background-color: #1D84C4;
+  color: white;
+  border: none;
 }
 /*# sourceMappingURL=OneCssForWholeHtml.css.map */

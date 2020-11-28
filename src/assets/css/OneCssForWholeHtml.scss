@@ -18,16 +18,15 @@ body
     {
         background: url("../images/overlayForNavbar.png");
         background-color: #225A93;
-        width: 100%;
         padding-top: 38px;
         height: 1000px;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .navbar 
         {
             background-size: cover;
-            padding: 30px;
-            padding-left: 55px;
-            width: 90%;
+            width: 80%;
             height: 45px;
             .logoAndText
             {
@@ -36,7 +35,6 @@ body
                 justify-content: flex-start;
                 float: left;
                 background-color: none;
-                
             }
             img
             {
@@ -45,12 +43,9 @@ body
             }
             .phoneNumber 
             {
-                font-size: 20px;
+                font-size: 18px;
                 word-spacing: 6px;
-                color: lightgray;
-                background-image: url("../images/overlayForNavbar.png"); 
-                background-repeat: repeat; 
-                -webkit-background-clip: text; 
+                color: white;
             }
             p
             {
@@ -63,24 +58,20 @@ body
                 width: 100px;
                 height: 45px;
                 float: right;
-                margin-right: 6.4%;
+                margin-right: -10%;
                 margin-top: -5px;
                 .topIcon 
                 {
-                    width: 100px;
+                    width: 70px;
                     height: 6px;
-                    background: url("../images/overlayForNavbar.png");
                     background-color: white;
-
                 }
                 .downIcon 
                 {
-                    width: 60px;
+                    width: 45px;
                     height: 6px;
                     margin-top: 20px;
-                    background: url("../images/overlayForNavbar.png");
                     background-color: white;
-
                 }
             }
         }
@@ -91,10 +82,9 @@ body
             display: flex;
             flex-direction: column;
             margin-top: 198px;
-            margin-left: 11%;
             .title
             {
-                font-size: 120px;
+                font-size: 90px;
                 font-family: "GilroySemibold";
                 color: white;
                 word-spacing: 30px;
@@ -103,10 +93,10 @@ body
             {
                 margin-top: 29px;
                 padding-left: 6.5px;
-                font-size: 32px;
+                font-size: 23px;
                 line-height: 43px;
                 color: white;
-                width: 1200px;
+                width: 1000px;
                 font-family: "GilroySemibold";
             }
         }
@@ -117,31 +107,34 @@ body
             width: 100%;
             height: 2px;
             border: none;
-            top: 620px;
+            top: 530px;
             background-image: url("../images/overlayForNavbar.png") ;
         }
 
         .subTitle2
         {
             margin-top: 100px;
-            width: 100%;
+            width: 80%;
+            padding-left: 10%;
+            padding-right: 10%;
             height: 239px;
             background-color: gray;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1100px 11%;
             align-items: center;
             background: url("../images/overlayForNavbar.png");
             p 
             {
                 margin: 0;
-                font-size: 28px;
+                font-size: 23px;
                 color: white;
-                width: 1100px;
-                margin-left:  11%;
-                font-family: "GilroyRegular";
+                width: 90%  ;
+                font-family: "GilroySemiBold";
             }
             img 
             {
-                margin-left: 20%;
+                justify-self: end;
+                margin-right: 100px;
             }
         }
 
@@ -152,10 +145,10 @@ body
     
     .whatDo 
     {
-        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center ;
+        width: 100%;
         height: 798px;
         background-color: #E5E5E5;
         .titleContainer
@@ -163,8 +156,7 @@ body
             display: flex;
             align-items: center;
             padding-top: 133px;
-            width: 70%;
-
+            width: 80%;
             p 
             {
                 font-size: 44px;
@@ -188,21 +180,17 @@ body
         {
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            grid-gap: 3%;
+            grid-gap: 7%;
             margin-top: 50px;
+            width: 80%;
             .card 
             {
-                width: 426px;
+                width: 100%;
                 height: 368px;
-                transition: 1s;
-                border: 1px solid rgba($color: #000000, $alpha: 0.03   );
                 padding-left: 40px;
                 padding-top: 50px;
-                &:hover 
-                {
-                    box-shadow: 0px 4px 50px 0px rgba(0,0,0,0.5);
-                    transition: 1s;
-                }
+                box-shadow: 9px 9px 10px rgba(0,0,0,0.1);
+                background-color: white;
                 p 
                 {
                     margin: 0;
@@ -210,7 +198,7 @@ body
                 .title 
                 {
                     font-family: "LemonMilkMedium";
-                    font-size: 22px;
+                    font-size: 17px;
                     font-style: normal;
                     opacity: 0.7;
                 }
@@ -230,6 +218,7 @@ body
                     {
                         margin: 0;
                         margin-top: 30px;
+                        font-size: 15px;
                         &:nth-child(1)
                         {
                             margin-top: 0;
@@ -242,10 +231,42 @@ body
                         }
                     }
                 }
-            }
-        }
 
-    }
+                .cardButton
+                {
+                    background-color: #fff;
+                    float: right;
+                    margin-right: 7%;
+                    margin-top: 15px;
+                    width: 100px;
+                    height: 30px;
+                    background-color: #1D84C4;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    transition: 1s ;
+
+                    
+                    &:hover 
+                    {
+                        border:1px solid #1D84c4;
+                        background-color: white;
+                        color: #1D84C4;
+                        transition: 1s;
+                    }
+                    &:focus {
+                        outline: none;
+                        background-color: #1D84C4;
+                        color: white;
+                        border: none;
+                    }
+                }//Card Button
+
+
+            }  //CArd
+        } // Card Conatiner
+
+    } // What To do
         
 // Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page
 
