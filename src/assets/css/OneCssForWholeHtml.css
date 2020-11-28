@@ -9,12 +9,17 @@ body p {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .HomePage {
   height: 10000px;
 }
 
 .HomePage .topContainer {
   background: url("../images/overlayForNavbar.png");
+  background-size: 100% auto;
   background-color: #225A93;
   padding-top: 38px;
   height: 1000px;
