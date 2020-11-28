@@ -142,6 +142,7 @@ body p {
   color: white;
   width: 1000px;
   font-family: "GilroySemibold";
+  line-height: 25px;
 }
 
 .HomePage .topContainer hr {
@@ -176,6 +177,7 @@ body p {
   color: white;
   width: 90%;
   font-family: "GilroySemiBold";
+  line-height: 25px;
 }
 
 .HomePage .topContainer .subTitle2 button {
