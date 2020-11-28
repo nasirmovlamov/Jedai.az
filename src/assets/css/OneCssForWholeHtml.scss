@@ -59,12 +59,33 @@ body
                 height: 45px;
                 float: right;
                 margin-top: -5px;
-                
+                border: none;
+                background-color: rgba(0,0,0,0);
+                &:focus 
+                {
+                    outline: none;
+                }
+                &:focus .topIcon 
+                {
+                    transform: rotate(45deg) translateY(5.5px) translateX(5px);
+                    width: 45px;
+                    background-color: black;
+                    transition: 1s;
+
+                }
+                &:focus .downIcon {
+                    transform: rotate(-45deg) translateY(-14.5px) translateX(12px);
+                    width: 45px;
+                    background-color: black;
+                    transition: 1s;
+
+                }
                 .topIcon 
                 {
                     width: 70px;
                     height: 6px;
                     background-color: white;
+                    transition: 1s;
 
                 }
                 .downIcon 
@@ -73,6 +94,7 @@ body
                     height: 6px;
                     margin-top: 20px;
                     background-color: white;
+                    transition: 1s;
 
                 }
             }
