@@ -18,7 +18,7 @@ html {
 }
 
 .HomePage .topContainer {
-  background: url("../images/overlayForNavbar.png");
+  background: url("../images/overlayForNavbar.png") repeat;
   background-size: 100% auto;
   background-color: #225A93;
   padding-top: 38px;
@@ -133,7 +133,7 @@ html {
 }
 
 .HomePage .topContainer .subNav .title {
-  font-size: 90px;
+  font-size: 5.5rem;
   font-family: "GilroySemibold";
   color: white;
   word-spacing: 30px;
@@ -142,10 +142,10 @@ html {
 .HomePage .topContainer .subNav .subTitle {
   margin-top: 29px;
   padding-left: 6.5px;
-  font-size: 23px;
+  font-size: 1.5rem;
   line-height: 43px;
   color: white;
-  width: 1000px;
+  width: 70%;
   font-family: "GilroySemibold";
   line-height: 25px;
 }
@@ -156,7 +156,7 @@ html {
   height: 2px;
   border: none;
   top: 530px;
-  background-image: url("../images/overlayForNavbar.png");
+  background-image: url("../images/overlayForNavbar.png") repeat;
 }
 
 .HomePage .topContainer .subTitle2 {
@@ -172,13 +172,13 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("../images/overlayForNavbar.png");
+  background: url("../images/overlayForNavbar.png") repeat;
 }
 
 .HomePage .topContainer .subTitle2 p {
   width: 79%;
   margin: 0;
-  font-size: 23px;
+  font-size: 1.5rem;
   color: white;
   font-family: "GilroySemiBold";
   line-height: 25px;
@@ -225,7 +225,7 @@ html {
 }
 
 .HomePage .whatDo .titleContainer p {
-  font-size: 44px;
+  font-size: 3rem;
   font-family: "LemonMilkRegular";
   color: #0E0E0E;
   opacity: 0.7;
@@ -267,7 +267,7 @@ html {
 
 .HomePage .whatDo .cardConatiner .card .title {
   font-family: "LemonMilkMedium";
-  font-size: 17px;
+  font-size: 1.2rem;
   font-style: normal;
   opacity: 0.7;
 }
@@ -357,7 +357,7 @@ html {
 }
 
 .HomePage .projectsDone .titleContainer2 p {
-  font-size: 44px;
+  font-size: 3rem;
   font-family: "LemonMilkRegular";
   color: #0E0E0E;
   opacity: 0.7;
@@ -487,6 +487,15 @@ html {
   border: none;
 }
 
+.HomePage .projectsDone .hamisinaBax button:focus {
+  outline: none;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
 .HomePage .projectsDone .hamisinaBax p {
   float: right;
   font-family: "LemonMilkRegular";
@@ -506,8 +515,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: auto;
-  margin-bottom: 100px;
+  height: 632px;
+  background-color: #EEEE;
 }
 
 .HomePage .technologies .titleContainer3 {
@@ -522,7 +531,7 @@ html {
 }
 
 .HomePage .technologies .titleContainer3 p {
-  font-size: 44px;
+  font-size: 3rem;
   font-family: "LemonMilkRegular";
   color: #0E0E0E;
   opacity: 0.7;
@@ -537,16 +546,278 @@ html {
   width: 100px;
 }
 
-.HomePage .technologies .titleItem {
+.HomePage .technologies .itemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  margin-top: 60px;
+}
+
+.HomePage .technologies .itemContainer .item {
+  width: 100%;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.HomePage .technologies .itemContainer .item .titleItem {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  text-align: center;
+  height: 240px;
+  font-family: "LemonMilkRegular";
+  color: #000000;
+  font-size: 20px;
 }
 
-.HomePage .technologies .titleItem hr {
+.HomePage .technologies .itemContainer .item .titleItem hr {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  border: none;
+  height: 240px;
+  width: 1px;
+  background: #464646;
+  margin-right: 15px;
+}
+
+.HomePage .technologies .itemContainer .item .imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 240px;
+}
+
+.HomePage .technologies .itemContainer .item .imgContainer .imgAndText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 30px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.HomePage .technologies .itemContainer .item .imgContainer .imgAndText:nth-child(1) {
+  margin-top: 0;
+}
+
+.HomePage .technologies .itemContainer .item .imgContainer .imgAndText span {
+  width: 150px;
+  text-align: left;
+  font-size: 17px;
+  font-family: "GilroyMedium";
+  margin-left: 15px;
+  position: absolute;
+  margin-left: 45px;
+}
+
+.HomePage .humansContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-color: white;
+}
+
+.HomePage .humansContainer .text {
+  width: 40%;
+  font-size: 28px;
+  margin-top: 100px;
+}
+
+.HomePage .humansContainer .text p {
+  margin-top: 25px;
+}
+
+.HomePage .humansContainer .text p:nth-child(1) {
+  margin: 0;
+}
+
+.HomePage .humansContainer .imgs {
+  width: 40%;
+}
+
+.HomePage .humansContainer .imgs img {
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 100px;
+}
+
+.HomePage .humansContainer .imgs img:nth-child(2) {
+  margin-left: 400px;
+}
+
+.HomePage .humansContainer .imgs img:nth-child(3) {
+  margin: -50px 250px;
+}
+
+.HomePage .humansContainer .imgs img:nth-child(3) {
+  margin: -50px 250px;
+}
+
+.HomePage .humansContainer .imgs img:nth-child(4) {
+  margin-top: 100px;
+}
+
+.HomePage .humansContainer .imgs img:nth-child(5) {
+  margin: 100px 400px;
+}
+
+.HomePage .bizimleEmekdahsliq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(84.1deg, #3D7AB8 11.55%, #225A93 91.67%);
+  margin-top: 100px;
+}
+
+.HomePage .bizimleEmekdahsliq .titleContainer4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.HomePage .bizimleEmekdahsliq .titleContainer4 p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: white;
+  width: 1200px;
+}
+
+.HomePage .bizimleEmekdahsliq .titleContainer4 hr {
+  margin-left: 40px;
+  height: 1px;
+  background-color: white;
+  border: none;
+  opacity: 0.5;
+  width: 10%;
+}
+
+.HomePage .bizimleEmekdahsliq .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+
+.HomePage .bizimleEmekdahsliq .aboutContainer .about1 p, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 p, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 p {
+  font-size: 1.75rem;
+  color: white;
+  margin-top: 50px;
+}
+
+.HomePage .bizimleEmekdahsliq .aboutContainer .about1 img, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 img, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 img {
+  margin-right: 15px;
+}
+
+.HomePage .bizimleEmekdahsliq .aboutContainer .about2, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 {
+  margin-left: 50px;
+}
+
+.HomePage .bizimleEmekdahsliq .aboutContainer .about2 {
+  margin-left: -15px;
+}
+
+.HomePage .partniorsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 632px;
+}
+
+.HomePage .partniorsContainer .titleContainer5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.HomePage .partniorsContainer .titleContainer5 p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: black;
+  width: 90%;
+  opacity: 0.7;
+}
+
+.HomePage .partniorsContainer .titleContainer5 hr {
+  margin-left: 40px;
+  height: 1px;
+  background-color: black;
+  border: none;
+  opacity: 0.5;
+  width: 190%;
+}
+
+@media screen and (max-width: 1750px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  html {
+    font-size: 60%;
+  }
 }
 /*# sourceMappingURL=OneCssForWholeHtml.css.map */

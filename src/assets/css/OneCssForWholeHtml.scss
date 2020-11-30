@@ -19,7 +19,7 @@ html {
     height: 10000px;
     .topContainer //Top Conatiner (Navbar included)
     {
-        background: url("../images/overlayForNavbar.png");
+        background: url("../images/overlayForNavbar.png") repeat;
         background-size: 100% auto;
         background-color: #225A93;
         padding-top: 38px;
@@ -112,7 +112,7 @@ html {
             margin-top: 198px;
             .title
             {
-                font-size: 90px;
+                font-size: 5.5rem;
                 font-family: "GilroySemibold";
                 color: white;
                 word-spacing: 30px;
@@ -121,10 +121,10 @@ html {
             {
                 margin-top: 29px;
                 padding-left: 6.5px;
-                font-size: 23px;
+                font-size: 1.5rem;
                 line-height: 43px;
                 color: white;
-                width: 1000px;
+                width: 70%;
                 font-family: "GilroySemibold";
                 line-height: 25px;
             }
@@ -137,7 +137,7 @@ html {
             height: 2px;
             border: none;
             top: 530px;
-            background-image: url("../images/overlayForNavbar.png") ;
+            background-image: url("../images/overlayForNavbar.png") repeat;
         }
 
         .subTitle2
@@ -148,12 +148,12 @@ html {
             display: flex;
             justify-content: center;     
             align-items: center;       
-            background: url("../images/overlayForNavbar.png");
+            background: url("../images/overlayForNavbar.png") repeat;
             p 
             {
                 width: 79% ;
                 margin: 0;
-                font-size: 23px;
+                font-size: 1.5rem;
                 color: white;
                 font-family: "GilroySemiBold";
                 line-height: 25px;
@@ -195,7 +195,7 @@ html {
             width: 84.5%;
             p 
             {
-                font-size: 44px;
+                font-size: 3rem;
                 font-family: "LemonMilkRegular";
                 color: #0E0E0E ;
                 opacity: 0.7;
@@ -237,7 +237,7 @@ html {
                 .title 
                 {
                     font-family: "LemonMilkMedium";
-                    font-size: 17px;
+                    font-size: 1.2rem;
                     font-style: normal;
                     opacity: 0.7;
                 }
@@ -323,7 +323,7 @@ html {
             width: 85%;
             p 
             {
-                font-size: 44px;
+                font-size: 3rem;
                 font-family: "LemonMilkRegular";
                 color: #0E0E0E ;
                 opacity: 0.7;
@@ -459,6 +459,13 @@ html {
                 float: right;
                 background-color: #fff;
                 border: none;
+                &:focus 
+                {
+                    outline: none;
+                    transform: translateX(150px);
+                    transition: 1s;
+                    opacity: 0;
+                }
             }
             p 
             {
@@ -478,42 +485,287 @@ html {
         flex-direction: column;
         align-items: center ;
         width: 100%;
-        height: auto;
-        margin-bottom: 100px;
+        height: 632px;
+        background-color: #EEEE;
         .titleContainer3 //Title Container Technologies
         {
-                display: flex;
-                align-items: center;
-                padding-top: 133px;
-                width: 85%;
-                p 
-                {
-                    font-size: 44px;
-                    font-family: "LemonMilkRegular";
-                    color: #0E0E0E ;
-                    opacity: 0.7;
-                }
-                hr 
-                {
-                    margin-left: 40px;
-                    height: 1px;
-                    background-color: #464646;
-                    border: none;
-                    opacity: 0.5;
-                    width: 100px;
-                }
-            } //Title Container Technologies
-
-            .titleItem
+            display: flex;
+            align-items: center;
+            padding-top: 133px;
+            width: 85%;
+            p 
             {
-                writing-mode: vertical-rl;
-                transform: rotate(180deg);
-                hr 
-                {   
+                font-size: 3rem;
+                font-family: "LemonMilkRegular";
+                color: #0E0E0E ;
+                opacity: 0.7;
+            }
+            hr 
+            {
+                margin-left: 40px;
+                height: 1px;
+                background-color: #464646;
+                border: none;
+                opacity: 0.5;
+                width: 100px;
+            }
+        } //Title Container Technologies
+
+        .itemContainer 
+        {
+            display: flex;
+            width: 85%;
+            margin-top: 60px;
+            .item 
+            {
+                width: 100%;
+                height: 280px;
+                display: flex;
+                .titleItem
+                {
+                    writing-mode: vertical-rl;
                     transform: rotate(180deg);
+                    text-align: center;
+                    height: 240px;
+                    font-family: "LemonMilkRegular";
+                    color: #000000;
+                    font-size: 20px;
+                    hr 
+                    {   
+                        transform: rotate(180deg);
+                        border: none;
+                        height: 240px;
+                        width: 1px;
+                        background: #464646;
+                        margin-right: 15px;
+                    }
+                    
+                }
+                .imgContainer
+                {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 240px;
+                    
+                    .imgAndText
+                    {
+                        display: flex;
+                        align-items: center;
+                        width: 220px;
+                        height: 30px;
+                        margin-top: 25px;
+                        margin-left: 15px;
+                        &:nth-child(1)
+                        {
+                            margin-top: 0;
+                        }
+                        img 
+                        {
+                            
+                        }
+                        span 
+                        {
+                            width: 150px;
+                            text-align: left;
+                            font-size: 17px;
+                            font-family: "GilroyMedium";
+                            margin-left: 15px;
+                            position: absolute;
+                            margin-left: 45px;
+                        }
+                        
+                    }
+                    
+                    
+                }
+                
+            }
+            
+        }
+    } //Technologies
+
+    .humansContainer
+    {
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+        background-color: white;
+        .text
+        {
+            width: 40%;
+            font-size: 28px;
+            margin-top: 100px;
+            p 
+            {
+                margin-top: 25px;
+                &:nth-child(1)
+                {
+                    margin: 0;
                 }
             }
         }
+        .imgs 
+        {
+            width: 40%;
+            img 
+            {
+                position: absolute;
+                margin-top: -200px;
+                margin-left: 100px;
+                &:nth-child(2)
+                {
+                    margin-left: 400px;
+                }   
+                &:nth-child(3)
+                {
+                    margin:-50px 250px ;
+                } 
+                &:nth-child(3)
+                {
+                    margin:-50px 250px ;
+                } 
+                &:nth-child(4)
+                {
+                    margin-top:100px;
+                } 
+                &:nth-child(5)
+                {
+                    margin:100px 400px;
+                } 
+            }
+        }
+    } // Humans Conatiner 
+
+    .bizimleEmekdahsliq 
+    {
+        display: flex;
+        align-items: center ;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(84.1deg, #3D7AB8 11.55%, #225A93 91.67%);
+        margin-top: 100px;
+        .titleContainer4 //Title Container Bizimle emekdashliq
+        {
+            display: flex;
+            align-items: center;
+            margin-top: 100px;
+            width: 80%;
+            p 
+            {
+                font-size: 3rem;
+                font-family: "LemonMilkRegular";
+                color: white ;
+                width: 1200px;
+            }
+            hr 
+            {
+                margin-left: 40px;
+                height: 1px;
+                background-color: white;
+                border: none;
+                opacity: 0.5;
+                width: 10%;
+            }
+        } //Title Container Bizimle emekdashliq
+
+        .aboutContainer
+        {
+            display: flex;
+            width: 80%;
+            .about1 , .about2 , .about3 
+            {
+                p 
+                {
+                    font-size: 1.75rem;
+                    color: white;
+                    margin-top: 50px;
+                }
+                img 
+                {
+                    margin-right: 15px;
+                }
+            }
+            .about2 , .about3 
+            {
+                margin-left: 50px;
+            }
+            .about2
+            {
+                margin-left: -15px;
+            }
+        }
+    }
+
+    .partniorsContainer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        width: 100%;
+        height: 632px;
+        .titleContainer5
+        {
+            display: flex;
+            align-items: center;
+            margin-top: 100px;
+            width: 80%;
+            p 
+            {
+                font-size: 3rem;
+                font-family: "LemonMilkRegular";
+                color: black ;
+                width: 90%;
+                opacity: 0.7;
+            }
+            hr 
+            {
+                margin-left: 40px;
+                height: 1px;
+                background-color: black;
+                border: none;
+                opacity: 0.5;
+                width: 190%;
+            }
+        } //Title Container Partniors
+
+    }//Partniors Container
 
 
+
+    
+
+    
 }// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page
+
+@media screen and (max-width:1750px)
+    {
+        html 
+        {
+            font-size: 90%;
+        }
+    }
+    @media screen and (max-width:1550px)
+    {
+        html 
+        {
+            font-size: 80%;
+        }
+    }
+    @media screen and (max-width:1390px)
+    {
+        html 
+        {
+            font-size: 70%;
+        }
+    }
+    @media screen and (max-width:1250px)
+    {
+        html 
+        {
+            font-size: 60%;
+        }
+    }
