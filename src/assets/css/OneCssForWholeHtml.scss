@@ -30,7 +30,7 @@ html {
         .navbar  //Navbar
         {
             background-size: cover;
-            width: 1100px;
+            width: 85%;
             height: 45px;
             .logoAndText
             {
@@ -106,7 +106,7 @@ html {
 
         .subNav //Subnav
         {
-            width: 1100px;
+            width: 85%;
             display: flex;
             flex-direction: column;
             margin-top: 198px;
@@ -151,14 +151,17 @@ html {
             background: url("../images/overlayForNavbar.png");
             p 
             {
-                width: 1050px !important;
+                width: 79% ;
                 margin: 0;
                 font-size: 23px;
                 color: white;
-                width: 90%  ;
                 font-family: "GilroySemiBold";
                 line-height: 25px;
 
+            }
+            a 
+            {
+                width: 5%;
             }
             button 
             {
@@ -189,18 +192,19 @@ html {
             display: flex;
             align-items: center;
             padding-top: 133px;
-            width: 1100px;
+            width: 84.5%;
             p 
             {
                 font-size: 44px;
                 font-family: "LemonMilkRegular";
                 color: #0E0E0E ;
                 opacity: 0.7;
+                width: 45%;
             }
             hr 
             {
                 margin-left: 40px;
-                width: 550px;
+                width: 55%;
                 height: 1px;
                 background-color: #464646;
                 border: none;
@@ -213,13 +217,14 @@ html {
         {
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            grid-gap: 7%;
+            grid-gap: 0%;
             margin-top: 50px;
-            width: 1100px;
+            width: 84%;
+
 
             .card 
             {
-                width: 100%;
+                width: 80%;
                 height: 368px;
                 padding-left: 40px;
                 padding-top: 50px;
@@ -315,7 +320,7 @@ html {
             display: flex;
             align-items: center;
             padding-top: 133px;
-            width: 1100px;
+            width: 85%;
             p 
             {
                 font-size: 44px;
@@ -326,7 +331,7 @@ html {
             hr 
             {
                 margin-left: 40px;
-                width: 550px;
+                width: 50%;
                 height: 1px;
                 background-color: #464646;
                 border: none;
@@ -337,7 +342,7 @@ html {
 
         .buttonContainer //Buttons
         {
-            width: 1100px;
+            width: 85%;
             text-align: center;
             margin-top: 30px;
 
@@ -355,7 +360,7 @@ html {
                 font-family: "GilroyRegular";
                 border:1px solid  white;
                 transition: 1s;
-                &:nth-child(1)
+                &:nth-child(1) //Button 1
                 {
                     margin: 0;
                     background: #225A93;
@@ -365,12 +370,15 @@ html {
                         color: #225A93;
                         background:#EEEE;
                     }
-                }
-
-                &:focus 
-                {
+                    &:focus 
+                    {
                     outline: none;
-                }
+                    transition: 1s;
+                    background-color: crimson;
+                    color: white;
+                    border: 1px solid white;
+                    }
+                }   //Button 1
 
                 &:hover
                 {
@@ -379,10 +387,133 @@ html {
                     color:#1D84C4 ;
                     transition: 1s;
                 }
+                &:focus 
+                {
+                    outline: none;
+                    transition: 1s;
+                    background-color: crimson;
+                    color: white;
+                    border: 1px solid white;
+                }
             }
         } //Buttons Conatiner
 
+        .projects //Projects
+        {   
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 50px;
+            width:85%;
+            .card 
+            {
+                width: 100%;
+                height: 390px;
+                &:nth-child(1)
+                {
+                    background: url('../images/FruitAgro.png')  bottom no-repeat;
+                    background-size: cover;
+                }
+                &:nth-child(2)
+                {
+                    background: url('../images/Saxa.png')  bottom no-repeat;
+                    background-size: cover;
 
+                }
+                &:nth-child(3)
+                {
+                    background: url('../images/Building.png')  bottom no-repeat;
+                    background-size: cover;
+
+                }
+                &:nth-child(4)
+                {
+                    background: url('../images/Aqua.png') bottom  no-repeat;
+                    background-size: cover;
+
+                }
+                &:nth-child(5)
+                {
+                    background: url('../images/Safye.png')  bottom no-repeat;
+                    background-size: cover;
+
+                }
+                &:nth-child(6)
+                {
+                    background: url('../images/Gravity.png')  bottom no-repeat;
+                    background-size: cover;
+
+                }
+            }
+
+            
+        } //Projects
         
+        .hamisinaBax 
+        {
+            width: 85%;
+            height: 40px;
+            margin-top: 50px;
+
+            button 
+            {
+                float: right;
+                background-color: #fff;
+                border: none;
+            }
+            p 
+            {
+                float: right;
+                font-family: "LemonMilkRegular";
+                font-size: 30px;
+                margin-right: 40px;
+            }
+        }
     } //Gorduyumuz Ishler Conatiner
+
+
+    //Technologies Container 
+    .technologies
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        .titleContainer3 //Title Container Technologies
+        {
+                display: flex;
+                align-items: center;
+                padding-top: 133px;
+                width: 85%;
+                p 
+                {
+                    font-size: 44px;
+                    font-family: "LemonMilkRegular";
+                    color: #0E0E0E ;
+                    opacity: 0.7;
+                }
+                hr 
+                {
+                    margin-left: 40px;
+                    height: 1px;
+                    background-color: #464646;
+                    border: none;
+                    opacity: 0.5;
+                    width: 100px;
+                }
+            } //Title Container Technologies
+
+            .titleItem
+            {
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                hr 
+                {   
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+
 }// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page
