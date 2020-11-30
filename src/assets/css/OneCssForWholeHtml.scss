@@ -17,7 +17,7 @@ html {
 .HomePage 
 {
     height: 10000px;
-    .topContainer
+    .topContainer //Top Conatiner (Navbar included)
     {
         background: url("../images/overlayForNavbar.png");
         background-size: 100% auto;
@@ -27,7 +27,7 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .navbar 
+        .navbar  //Navbar
         {
             background-size: cover;
             width: 1100px;
@@ -102,9 +102,9 @@ html {
 
                 }
             }
-        }
+        }   //Navbar
 
-        .subNav
+        .subNav //Subnav
         {
             width: 1100px;
             display: flex;
@@ -128,7 +128,7 @@ html {
                 font-family: "GilroySemibold";
                 line-height: 25px;
             }
-        }
+        } //Subnav
 
         hr 
         {
@@ -174,9 +174,9 @@ html {
         
 
 
-    }
+    } //Top Conatiner (Navbar included)
     
-    .whatDo 
+    .whatDo  //What Do i do
     {
         display: flex;
         flex-direction: column;
@@ -279,7 +279,7 @@ html {
                     border: none;
                     border-radius: 4px;
                     transition: 1s ;
-
+                    font-family: "GilroyRegular";
                     
                     &:hover 
                     {
@@ -302,7 +302,87 @@ html {
 
     } // What To do
         
-// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page
+    .projectsDone  //Gorduyumuz Ishler Conatiner
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        .titleContainer2 //Title Container Projects
+        {
+            display: flex;
+            align-items: center;
+            padding-top: 133px;
+            width: 1100px;
+            p 
+            {
+                font-size: 44px;
+                font-family: "LemonMilkRegular";
+                color: #0E0E0E ;
+                opacity: 0.7;
+            }
+            hr 
+            {
+                margin-left: 40px;
+                width: 550px;
+                height: 1px;
+                background-color: #464646;
+                border: none;
+                opacity: 0.5;
+            }
+        } //Title Container Projects
 
 
-}
+        .buttonContainer //Buttons
+        {
+            width: 1100px;
+            text-align: center;
+            margin-top: 30px;
+
+            button 
+            {
+                float: left;
+                margin-left: 20px;
+                height: 38px;
+                width: auto;
+                padding: 5px 20px; 
+                border-radius: 25px;
+                border: none;
+                background: #1D84C4;
+                color: white;
+                font-family: "GilroyRegular";
+                border:1px solid  white;
+                transition: 1s;
+                &:nth-child(1)
+                {
+                    margin: 0;
+                    background: #225A93;
+                    &:hover
+                    {
+                        border: 1px solid  #225A93;
+                        color: #225A93;
+                        background:#EEEE;
+                    }
+                }
+
+                &:focus 
+                {
+                    outline: none;
+                }
+
+                &:hover
+                {
+                    border:1px solid  #1D84C4;
+                    background-color: #fff;
+                    color:#1D84C4 ;
+                    transition: 1s;
+                }
+            }
+        } //Buttons Conatiner
+
+
+        
+    } //Gorduyumuz Ishler Conatiner
+}// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page

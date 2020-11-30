@@ -307,6 +307,7 @@ html {
   border-radius: 4px;
   -webkit-transition: 1s;
   transition: 1s;
+  font-family: "GilroyRegular";
 }
 
 .HomePage .whatDo .cardConatiner .card .cardButton:hover {
@@ -322,5 +323,93 @@ html {
   background-color: #1D84C4;
   color: white;
   border: none;
+}
+
+.HomePage .projectsDone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.HomePage .projectsDone .titleContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 133px;
+  width: 1100px;
+}
+
+.HomePage .projectsDone .titleContainer2 p {
+  font-size: 44px;
+  font-family: "LemonMilkRegular";
+  color: #0E0E0E;
+  opacity: 0.7;
+}
+
+.HomePage .projectsDone .titleContainer2 hr {
+  margin-left: 40px;
+  width: 550px;
+  height: 1px;
+  background-color: #464646;
+  border: none;
+  opacity: 0.5;
+}
+
+.HomePage .projectsDone .buttonContainer {
+  width: 1100px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.HomePage .projectsDone .buttonContainer button {
+  float: left;
+  margin-left: 20px;
+  height: 38px;
+  width: auto;
+  padding: 5px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #1D84C4;
+  color: white;
+  font-family: "GilroyRegular";
+  border: 1px solid  white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.HomePage .projectsDone .buttonContainer button:nth-child(1) {
+  margin: 0;
+  background: #225A93;
+}
+
+.HomePage .projectsDone .buttonContainer button:nth-child(1):hover {
+  border: 1px solid  #225A93;
+  color: #225A93;
+  background: #EEEE;
+}
+
+.HomePage .projectsDone .buttonContainer button:focus {
+  outline: none;
+}
+
+.HomePage .projectsDone .buttonContainer button:hover {
+  border: 1px solid  #1D84C4;
+  background-color: #fff;
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 /*# sourceMappingURL=OneCssForWholeHtml.css.map */
