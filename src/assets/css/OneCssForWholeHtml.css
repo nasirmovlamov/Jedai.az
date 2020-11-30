@@ -714,10 +714,10 @@ html {
 }
 
 .HomePage .bizimleEmekdahsliq .titleContainer4 p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "LemonMilkRegular";
   color: white;
-  width: 1200px;
+  width: 80%;
 }
 
 .HomePage .bizimleEmekdahsliq .titleContainer4 hr {
@@ -726,7 +726,6 @@ html {
   background-color: white;
   border: none;
   opacity: 0.5;
-  width: 10%;
 }
 
 .HomePage .bizimleEmekdahsliq .aboutContainer {
@@ -737,7 +736,7 @@ html {
 }
 
 .HomePage .bizimleEmekdahsliq .aboutContainer .about1 p, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 p, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 p {
-  font-size: 1.75rem;
+  font-size: 1.55rem;
   color: white;
   margin-top: 50px;
 }
@@ -818,6 +817,20 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.HomePage .partniorsContainer .gridContainer2 div img {
+  width: 13rem;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.HomePage .partniorsContainer .gridContainer2 div img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media screen and (max-width: 1750px) {

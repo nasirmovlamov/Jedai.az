@@ -656,10 +656,10 @@ html {
             width: 80%;
             p 
             {
-                font-size: 3rem;
+                font-size: 2rem;
                 font-family: "LemonMilkRegular";
                 color: white ;
-                width: 1200px;
+                width: 80%;
             }
             hr 
             {
@@ -668,7 +668,6 @@ html {
                 background-color: white;
                 border: none;
                 opacity: 0.5;
-                width: 10%;
             }
         } //Title Container Bizimle emekdashliq
 
@@ -680,7 +679,7 @@ html {
             {
                 p 
                 {
-                    font-size: 1.75rem;
+                    font-size: 1.55rem;
                     color: white;
                     margin-top: 50px;
                 }
@@ -745,7 +744,18 @@ html {
                 background-color: #fff;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: center; 
+                img 
+                {
+                    width:13rem;
+                    height: auto;
+                    filter: grayscale(100%);
+                    &:hover 
+                    {
+                        filter: grayscale(0%);
+                        transition: 1s;
+                    }
+                }
             }
         }
         
