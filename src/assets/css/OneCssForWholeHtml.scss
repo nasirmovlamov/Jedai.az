@@ -705,6 +705,7 @@ html {
         flex-direction: column;
         align-items: center ;
         width: 100%;
+        background-color: #fff;
         .titleContainer5
         {
             display: flex;
@@ -762,37 +763,346 @@ html {
     }//Partniors Container
 
 
+    .slider 
+    {
+        display: flex;
+        align-items: center ;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        margin-top: 150px;
+        background-color: #EEEE;
+        .titleContainer6
+        {
+            display: flex;
+            align-items: center;
+            margin-top: 100px;
+            width: 80%;
+            p 
+            {
+                font-size: 3rem;
+                font-family: "LemonMilkRegular";
+                color: black ;
+                width: 90%;
+                opacity: 0.7;
+            }
+            hr 
+            {
+                height: 1px;
+                background-color: black;
+                border: none;
+                opacity: 0.5;
+                width: 95%;
+            }
+            
+        } //TitleContainer Slider 
+        .glideEditSlider
+        {
+            width: 80% !important;
+            margin-top: 50px;
+            display: flex !important;
+            justify-content: center !important;
 
+        }
+        
+
+        .button1 
+        {
+            margin-left: -10%;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        .button2 
+        {
+            margin-right: -10%;
+            border: none !important;
+            box-shadow: none !important;
+        }
+    } //Slider
     
+    
+    .formAndIframe
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        iframe 
+        {
+            width: 45%;
+            height: 500px;
+        }
+        .form
+        {
+            width: 55%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .titleContainer7
+            {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                p 
+                {
+                    font-size: 2rem;
+                    font-family: "LemonMilkRegular";
+                    color: black ;
+                    width: 60%;
+                    opacity: 0.7;
+                    margin: 0;
+                    margin-top: 45px;
+                    margin-left: 45px;   
+                }
+                hr 
+                {
+                    height: 1px;
+                    background-color: black;
+                    border: none;
+                    opacity: 0.5;
+                    width: 40%;
+                    margin-top: 45px;
+                    margin-right: 50px;
+                }
+                
+            } //TitleContainer form 
+            .titleContainer7_2
+            {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                p 
+                {
+                    font-size: 2rem;
+                    font-family: "LemonMilkRegular";
+                    color: black ;
+                    width: 90%;
+                    opacity: 0.7;
+                    margin: 0;
+                    margin-top: 10px;
+                    margin-left: 45px;   
+                }
+            } //secondTitle
 
+            .formContainer //FormContainer
+            {
+                width: 90%;
+                form 
+                {
+                    margin-top: 40px;
+                    .inputs
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        font-size: 1.5rem;
+                        float: left;
+                        input 
+                        { //Input
+                            width: 280px;
+                            height: 50px;
+                            margin-top: 20px;
+                            padding-left: 30px;
+                            border-radius: 30px;
+                            border: 2px solid rgba(0, 0, 0, 0.5);
+                            transition: 1s;
+                            font-family: "LemonMilkRegular";
+                            color: rgba(0, 0, 0, 0.7);
+                            font-size: 1rem;
+                            &::placeholder 
+                            {
+                                font-family: "LemonMilkRegular";
+                                
+                            }
+                            &:focus 
+                            {
+                                outline:none;
+                                border: 2px solid #1D84C4;
+                                &::placeholder
+                                {
+                                    color: #1D84C4 ;
+                                    transition: 1s;
+                                }
+                            }
+                            &:hover 
+                            {
+                                border: 2px solid #1D84C4;
+                                transition: 1s;
+                            }
+                        } //Inputs
+
+
+                    }//Inputs
+
+                    textarea 
+                    {
+                        height: 190px;
+                        float: left;
+                        margin-top: 0px;
+                        resize: none;
+                        margin-left: 3%;
+                        width: 320px;
+                        border: 2px solid rgba(0, 0, 0, 0.5);
+                        border-radius: 15px;
+                        padding: 30px 30px;
+                        font-size: 1.2rem;
+                        font-family: "GilroyBold";
+                        color: rgba(0, 0, 0, 0.7);
+                        font-family: "GilroyRegular";
+                        &:focus 
+                        {
+                            outline:none;
+                            border: 2px solid  #1D84C4;
+                            transition: 1s;
+                            
+                            
+                            &::placeholder
+                            {
+                                color: #1D84C4;
+                            }
+                        }
+                        &:hover 
+                        {
+                            border: 2px solid  #1D84C4;
+                            transition: 1s;
+                        }
+                        &::placeholder
+                        {
+                            font-family: "GilroyRegular";
+                        }
+                        
+                    } //TextArea
+
+                    
+                } //Form
+            } //FormContainer
+            
+            button 
+            {
+                float: left;
+                clear: left;
+                background: #1D84C4;
+                border: 2px solid rgba(196, 196, 196, 0.5);
+                box-sizing: border-box;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 45px;
+                width: 200px;
+                border-radius: 40px;
+                color: white;
+                font-family: "LemonMilkRegular";
+                font-size: 16px;
+                border: 2px solid  #1D84C4;
+                transition: 1s;
+                margin-top: 10px;
+                margin-left: 450px;
+                &:hover 
+                {
+                    border: 2px solid  #1D84C4;
+                    background-color: transparent;
+                    color: #1D84C4;
+                    transition: 0.5s;
+                }
+
+                &:focus 
+                {
+                    outline: none;
+                    background-color: #1D84C4;
+                    color: white;
+                }
+            }
+        }
+        
+    } //All Form Container 
+
+    footer 
+    {
+        width: 100%;
+        height: 400px;
+        background-color: red;
+    }
     
 }// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page
 
-@media screen and (max-width:1750px)
+@media screen and (max-width:1860px)
     {
         html 
         {
-            font-size: 90%;
+            font-size: 80%;
         }
+        
     }
     @media screen and (max-width:1550px)
     {
         html 
         {
-            font-size: 80%;
+            font-size: 70%;
+        }
+        
+        .inputs 
+        {
+            input 
+            {
+                width:230px !important;
+            }
+        }
+        .gonderButton
+        {
+            margin-left: 390px !important;
+        }
+        .textArea
+        {
+            width: 280px;
         }
     }
     @media screen and (max-width:1390px)
     {
         html 
         {
-            font-size: 70%;
+            font-size: 60%;
+        }
+        .inputs 
+        {
+            input 
+            {
+                width:200px !important;
+            }
+        }
+        .gonderButton
+        {
+            margin-left: 360px !important;
+        }
+        .textArea
+        {
+            width: 250px;
         }
     }
-    @media screen and (max-width:1250px)
+    @media screen and (max-width:1304px)
     {
         html 
         {
+            font-size: 50%;
+        }
+        html 
+        {
             font-size: 60%;
+        }
+        .inputs 
+        {
+            input 
+            {
+                width:180px !important;
+            }
+        }
+        .gonderButton
+        {
+            margin-left: 340px !important;
+        }
+        .textArea
+        {
+            width: 230px;
         }
     }

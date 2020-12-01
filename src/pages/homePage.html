@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="../assets/css/OneCssForWholeHtml.css">
+    <link rel="stylesheet" href="../assets/css/glide.core.min.css">
+    <link rel="stylesheet" href="../assets/css/glide.theme.min.css">
     <script>history.scrollRestoration = "manual"</script>
 </head>
 <body>
@@ -231,7 +233,7 @@
             </div>
         </div> <!-- Bizimle Emekdashliq-->
 
-        <div class="partniorsContainer">
+        <div class="partniorsContainer"><!--Partniors-->
             <div class="titleContainer5"><p>partnyorlarımız</p> <hr></div>
 
             <div class="gridContainer2">
@@ -255,7 +257,96 @@
                 <div><img src="../assets/images/xalca.png" alt=""></div>
                 <div><img src="../assets/images/sebra-logo-3.png" alt=""></div>
             </div>
-        </div>
+        </div> <!--Partniors-->
+
+        <div class="slider"><!--Slider-->
+            <div class="titleContainer6"><p>BİZİ TÖVSİYYƏ EDİRLƏR</p> <hr></div>
+            <div class="glide glideEditSlider">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides ">
+                    <li class="glide__slide glideSlideEditer "><img src="../assets/images/gravityMektub.png" alt="" width="auto" height="auto"></li>
+                    <li class="glide__slide glideSlideEditer"><img src="../assets/images/bmgMektub.png" alt="" height="auto"></li>
+                    <li class="glide__slide glideSlideEditer"><img src="../assets/images/gravityMektub.png" alt="" height="auto"></li>
+                    <li class="glide__slide glideSlideEditer"><img src="../assets/images/bmgMektub.png" alt="" height="auto"></li>
+                    </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left button1" data-glide-dir="<"><img src="../assets/images/vectorLeft.png" alt=""></button>
+                    <button class="glide__arrow glide__arrow--right button2" data-glide-dir=">"><img src="../assets/images/vectorRight.png" alt=""></button>
+                </div>
+            </div>
+        </div><!--Slider-->
+
+        <div class="formAndIframe"><!--Form-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.825218940375!2d49.88928311576867!3d40.390566165153565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306351ed002c7b%3A0xc993fbbfe87199e5!2sJedAi.az!5e0!3m2!1sen!2s!4v1606805870598!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="form">
+                <div class="titleContainer7"><p>ƏMƏKDAŞLIĞA BAŞLAMAQ ÜÇÜN</p> <hr></div>
+                <div class="titleContainer7_2"><p>BİZƏ MESAJ GÖNDƏRİN</p></div>
+                <div class="formContainer">
+                    <form action="POST">
+                        <div class="inputs">
+                            <input type="text" placeholder="ADINIZ*">
+                            <input type="tel"  placeholder="TELEFON NÖMRƏNİZ*">
+                            <input type="mail" placeholder="EMAİL ÜNVANINIZ*">
+                        </div>
+                        <textarea class="textArea" name="" id="" cols="30" rows="10" placeholder="Mesajınızı, sorğunuzu və ya suallarınızı daxil edib, göndər düyməsinə basın"></textarea>
+                        <button class="gonderButton">Göndər</button>
+                    
+                    </form>
+                </div>
+            </div>
+        </div><!--Form-->
+        
+        <footer>
+            <div>
+                <div>
+                    <a href=""></a> 
+                    <a href=""></a> 
+                    <a href=""></a> 
+                    <a href=""></a> 
+                    <a href=""></a>
+                </div>
+
+                <div>
+                    <span><a href=""></a></span>
+                    <span><a href=""></a></span>
+                    <span><a href=""></a></span>
+                </div>
+
+                <div>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+            <hr>
+
+            <div>
+                <p></p>
+                <img src="" alt="">
+            </div>
+        </footer>
+
+
+
+
     </div> <!--Home PAGE-->
+
+
+    <script src="../js/glide.min.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView:4,
+            breakpoints: {
+    1400: {
+      perView: 3,
+    }
+  }
+        }).mount()
+    </script>
 </body>
 </html>
