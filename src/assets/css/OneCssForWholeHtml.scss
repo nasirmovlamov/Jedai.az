@@ -16,7 +16,6 @@ html {
 // Home Page// Home Page// Home Page
 .HomePage 
 {
-    height: 10000px;
     .topContainer //Top Conatiner (Navbar included)
     {
         background: url("../images/overlayForNavbar.png") repeat;
@@ -404,6 +403,7 @@ html {
             grid-template-columns: repeat(2,1fr);
             margin-top: 50px;
             width:85%;
+            grid-gap: 1px;
             .card 
             {
                 width: 100%;
@@ -412,36 +412,135 @@ html {
                 {
                     background: url('../images/FruitAgro.png')  bottom no-repeat;
                     background-size: cover;
+                    div 
+                    {
+                        width: 100%;
+                        height: 0px;
+                        background-color: green;
+                        transition: 0.5s;
+                        transition: height 0.5s ease-in-out  ;
+                        float: left;
+                        transform:scaleY(180deg);
+                    }
+                    &:hover 
+                    {
+                        div 
+                        {
+                            height: 390px;
+                            width: 100%;
+                            transition: 0.5s ;
+                        }
+                    }
                 }
                 &:nth-child(2)
                 {
                     background: url('../images/Saxa.png')  bottom no-repeat;
                     background-size: cover;
-
+                    div 
+                    {
+                        width: 100%;
+                        height: 0px;
+                        background-color: purple;
+                        transition: 0.5s;
+                        transition: height 0.5s ease-in-out  ;
+                        position: relative;
+                    }
+                    &:hover 
+                    {
+                        div 
+                        {
+                            height: 390px;
+                            transition: 0.5s ;
+                        }
+                    }
                 }
                 &:nth-child(3)
                 {
-                    background: url('../images/Building.png')  bottom no-repeat;
+                    background: url('../images/bmgBg.png')  bottom no-repeat;
                     background-size: cover;
-
+                    div 
+                    {
+                        width: 100%;
+                        height: 0px;
+                        background-color: rgb(66, 66, 199);
+                        transition: 0.5s;
+                        transition: height 0.5s ease-in-out  ;
+                        position: relative;
+                    }
+                    &:hover 
+                    {
+                        div 
+                        {
+                            height: 390px;
+                            transition: 0.5s ;
+                        }
+                    }
                 }
                 &:nth-child(4)
                 {
                     background: url('../images/Aqua.png') bottom  no-repeat;
                     background-size: cover;
-
+                    div 
+                    {
+                        width: 100%;
+                        height: 0px;
+                        background-color: lightskyblue;
+                        transition: 0.5s;
+                        transition: height 0.5s ease-in-out  ;
+                        position: relative;
+                    }
+                    &:hover 
+                    {
+                        div 
+                        {
+                            height: 390px;
+                            transition: 0.5s ;
+                        }
+                    }
                 }
                 &:nth-child(5)
                 {
-                    background: url('../images/Safye.png')  bottom no-repeat;
+                    background: url('../images/xalcaBg.png')  bottom no-repeat;
                     background-size: cover;
-
+                    div 
+                    {
+                        width: 100%;
+                        height: 0px;
+                        background-color: #ff0335;
+                        transition: 0.5s;
+                        transition: height 0.5s ease-in-out  ;
+                        position: relative;
+                    }
+                    &:hover 
+                    {
+                        div 
+                        {
+                            height: 390px;
+                            transition: 0.5s ;
+                        }
+                    }
                 }
                 &:nth-child(6)
                 {
-                    background: url('../images/Gravity.png')  bottom no-repeat;
+                    background: url('../images/ramservisBg.png')  bottom no-repeat;
                     background-size: cover;
-
+                    div 
+                    {
+                        width: 100%;
+                        height: 0px;
+                        background-color: black;
+                        transition: 0.5s;
+                        transition: height 0.5s ease-in-out  ;
+                        position: relative;
+                    }
+                    &:hover 
+                    {
+                        div 
+                        {
+                            height: 390px;
+                            transition: 0.5s ;
+                        }
+                    }
                 }
             }
 
@@ -612,6 +711,8 @@ html {
             width: 40%;
             img 
             {
+                border-radius: 50%;
+                height: auto;
                 position: absolute;
                 margin-top: -200px;
                 margin-left: 100px;
@@ -652,6 +753,7 @@ html {
         {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             margin-top: 100px;
             width: 80%;
             p 
@@ -659,7 +761,7 @@ html {
                 font-size: 2rem;
                 font-family: "LemonMilkRegular";
                 color: white ;
-                width: 80%;
+                width: 50%;
             }
             hr 
             {
@@ -667,6 +769,7 @@ html {
                 height: 1px;
                 background-color: white;
                 border: none;
+                width: 40%;
                 opacity: 0.5;
             }
         } //Title Container Bizimle emekdashliq
@@ -688,13 +791,13 @@ html {
                     margin-right: 15px;
                 }
             }
-            .about2 , .about3 
+            .about3 
             {
-                margin-left: 50px;
+                margin-left: 100px;
             }
             .about2
             {
-                margin-left: -15px;
+                margin-left: 45px;
             }
         }
     }
@@ -829,7 +932,7 @@ html {
         iframe 
         {
             width: 45%;
-            height: 500px;
+            height: 550px;
         }
         .form
         {
@@ -1022,9 +1125,102 @@ html {
     {
         width: 100%;
         height: 400px;
-        background-color: red;
-    }
+        background-color: #225A93;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        p{
+            margin: 0;
+            color: white;
+        }
+        .topFooter{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 80%;
+            margin-top: 90px;
+            .links 
+            {
+                font-size: "LemonMilkRegular";
+                font-size: 1.6rem;
+                a 
+                {
+                    margin-left: 6%;
+                }
+            }//Links
+
+            .imgsContainer
+            {
+                justify-self: end;
+                margin-right: 5%;
+                img {
+                    height: auto;
+                    margin-left: 10px;
+                }
+            }
+
+            .numbersContainer
+            {
+                font-size: "GilroyRegular";
+                font-size: 1.5rem;
+                margin-top: 20px;
+                a 
+                {
+                    margin-left: 5.5%;
+                }
+            }
+        } //Top Footer
+
+        hr 
+        {
+            width: 100%;
+            height: 0.5px;
+            background-color: white;
+            border: none;
+            margin-top: 100px;
+        }
+
+        .deepFooter
+        {
+            display: flex;
+            align-items: space-around;
+            justify-content: space-between;
+            width: 75%;
+            margin-top: 40px;
+            p 
+            {
+                font-family: "GilroyRegular";
+                font-size: 22px;
+                font-style: normal;
+                color:#E5E5E5;
+            }
+            img 
+            {
+                float: right;
+            }
+        }
+        
+    }//Foooter
     
+
+
+
+
+
+
+
+
+    //Animations 
+    
+
+
+    //Animations
+
+
+
 }// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page
 
 @media screen and (max-width:1860px)
@@ -1086,10 +1282,7 @@ html {
         {
             font-size: 50%;
         }
-        html 
-        {
-            font-size: 60%;
-        }
+        
         .inputs 
         {
             input 
@@ -1104,5 +1297,24 @@ html {
         .textArea
         {
             width: 230px;
+        }
+    }
+    @media screen and (max-width:1256px)
+    {
+        
+        .inputs 
+        {
+            input 
+            {
+                width:150px !important;
+            }
+        }
+        .gonderButton
+        {
+            margin-left: 310px !important;
+        }
+        .textArea
+        {
+            width: 200px;
         }
     }
