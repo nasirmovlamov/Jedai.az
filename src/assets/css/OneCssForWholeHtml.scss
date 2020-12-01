@@ -408,19 +408,21 @@ html {
             {
                 width: 100%;
                 height: 390px;
+                display: flex;
                 &:nth-child(1)
                 {
                     background: url('../images/FruitAgro.png')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
+                        align-self: flex-end;
                         width: 100%;
                         height: 0px;
                         background-color: green;
                         transition: 0.5s;
                         transition: height 0.5s ease-in-out  ;
                         float: left;
-                        transform:scaleY(180deg);
+                        transform-origin:bottom ;
                     }
                     &:hover 
                     {
@@ -438,6 +440,7 @@ html {
                     background-size: cover;
                     div 
                     {
+                        align-self: flex-end;
                         width: 100%;
                         height: 0px;
                         background-color: purple;
@@ -460,6 +463,7 @@ html {
                     background-size: cover;
                     div 
                     {
+                        align-self: flex-end;
                         width: 100%;
                         height: 0px;
                         background-color: rgb(66, 66, 199);
@@ -482,6 +486,7 @@ html {
                     background-size: cover;
                     div 
                     {
+                        align-self: flex-end;
                         width: 100%;
                         height: 0px;
                         background-color: lightskyblue;
@@ -504,6 +509,7 @@ html {
                     background-size: cover;
                     div 
                     {
+                        align-self: flex-end;
                         width: 100%;
                         height: 0px;
                         background-color: #ff0335;
@@ -526,6 +532,7 @@ html {
                     background-size: cover;
                     div 
                     {
+                        align-self: flex-end;
                         width: 100%;
                         height: 0px;
                         background-color: black;

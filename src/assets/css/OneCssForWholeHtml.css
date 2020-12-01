@@ -440,6 +440,9 @@ html {
 .HomePage .projectsDone .projects .card {
   width: 100%;
   height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .HomePage .projectsDone .projects .card:nth-child(1) {
@@ -448,6 +451,8 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(1) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
   height: 0px;
   background-color: green;
@@ -456,8 +461,8 @@ html {
   -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
   float: left;
-  -webkit-transform: scaleY(180deg);
-          transform: scaleY(180deg);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .HomePage .projectsDone .projects .card:nth-child(1):hover div {
@@ -473,6 +478,8 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(2) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
   height: 0px;
   background-color: purple;
@@ -495,6 +502,8 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(3) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
   height: 0px;
   background-color: #4242c7;
@@ -517,6 +526,8 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(4) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
   height: 0px;
   background-color: lightskyblue;
@@ -539,6 +550,8 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(5) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
   height: 0px;
   background-color: #ff0335;
@@ -561,6 +574,8 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(6) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   width: 100%;
   height: 0px;
   background-color: black;
