@@ -51,6 +51,7 @@ html {
   position: fixed;
   z-index: 101;
   top: 0;
+  background-color: none;
 }
 
 .HomePage .topContainer .navbar {
@@ -76,6 +77,8 @@ html {
 .HomePage .topContainer .navbar img {
   width: 193px;
   height: 36px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .HomePage .topContainer .navbar .phoneNumber {
@@ -215,11 +218,120 @@ html {
   z-index: 100;
 }
 
+.HomePage .menuOverlay .fText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.HomePage .menuOverlay .fText .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.HomePage .menuOverlay .fText p {
+  font-size: 25px;
+  color: #464141;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.HomePage .menuOverlay .fText span {
+  font-size: 25px;
+  color: #464141;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.HomePage .menuOverlay .fText span:nth-child(1) {
+  margin-right: 35px;
+  padding-right: 35px;
+  border-right: 1px solid #464141;
+}
+
+.HomePage .menuOverlay .overlayMainText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.HomePage .menuOverlay .overlayMainText .text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.HomePage .menuOverlay .overlayMainText .text1 p {
+  font-size: 50px;
+  font-family: "LemonMilkRegular";
+  margin-top: 100px;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+  pointer-events: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.HomePage .menuOverlay .overlayMainText .text1 p:hover {
+  color: #ff0335;
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+}
+
+.HomePage .menuOverlay .overlayMainText .text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+}
+
+.HomePage .menuOverlay .overlayMainText .text2 p {
+  font-size: 50px;
+  font-family: "LemonMilkRegular";
+  margin-top: 100px;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.HomePage .menuOverlay .overlayMainText .text2 p:hover {
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+  color: #ff0335;
+}
+
 .HomePage .topIconFocus {
   -webkit-transform: rotate(45deg) translateY(5.5px) translateX(5px);
           transform: rotate(45deg) translateY(5.5px) translateX(5px);
   width: 40px !important;
-  background-color: black !important;
+  background-color: crimson !important;
   -webkit-transition: 0.01s;
   transition: 0.01s;
 }
@@ -228,7 +340,7 @@ html {
   -webkit-transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
           transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
   width: 40px !important;
-  background-color: black !important;
+  background-color: crimson !important;
   -webkit-transition: 0.01s;
   transition: 0.01s;
 }
@@ -892,6 +1004,140 @@ html {
           transition-delay: 0.65s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(8) {
+  background: url("../images/papaBg.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #de3838;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8):hover div {
+  height: 390px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7) {
+  background: url("../images/jicaAlumni.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #fd490e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7):hover div {
+  height: 390px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
 .HomePage .projectsDone .hamisinaBax {
   width: 85%;
   height: 40px;
@@ -918,6 +1164,7 @@ html {
   font-family: "LemonMilkRegular";
   font-size: 30px;
   margin-right: 40px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .HomePage .technologies {
@@ -1062,6 +1309,7 @@ html {
   width: 40%;
   font-size: 28px;
   margin-top: 100px;
+  opacity: 0.5;
 }
 
 .HomePage .humansContainer .text p {
@@ -1087,11 +1335,11 @@ html {
 }
 
 .HomePage .humansContainer .imgs img:hover {
-  -webkit-box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.7);
   -webkit-transition: 1s;
   transition: 1s;
-  z-index: 90;
+  z-index: 50;
 }
 
 .HomePage .humansContainer .imgs img:nth-child(2) {
@@ -1456,18 +1704,22 @@ html {
 
 .HomePage .formAndIframe .form .formContainer form .inputs input::-webkit-input-placeholder {
   font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .HomePage .formAndIframe .form .formContainer form .inputs input:-ms-input-placeholder {
   font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .HomePage .formAndIframe .form .formContainer form .inputs input::-ms-input-placeholder {
   font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .HomePage .formAndIframe .form .formContainer form .inputs input::placeholder {
   font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .HomePage .formAndIframe .form .formContainer form .inputs input:focus {
@@ -1521,6 +1773,22 @@ html {
   font-family: "GilroyRegular";
 }
 
+.HomePage .formAndIframe .form .formContainer form textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.HomePage .formAndIframe .form .formContainer form textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.HomePage .formAndIframe .form .formContainer form textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.HomePage .formAndIframe .form .formContainer form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
 .HomePage .formAndIframe .form .formContainer form textarea:focus {
   outline: none;
   border: 2px solid  #1D84C4;
@@ -1530,18 +1798,26 @@ html {
 
 .HomePage .formAndIframe .form .formContainer form textarea:focus::-webkit-input-placeholder {
   color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .HomePage .formAndIframe .form .formContainer form textarea:focus:-ms-input-placeholder {
   color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .HomePage .formAndIframe .form .formContainer form textarea:focus::-ms-input-placeholder {
   color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .HomePage .formAndIframe .form .formContainer form textarea:focus::placeholder {
   color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .HomePage .formAndIframe .form .formContainer form textarea:hover {
