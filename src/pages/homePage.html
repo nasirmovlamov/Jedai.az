@@ -13,13 +13,17 @@
     <div class="HomePage" id="HomePage">
         
         <div class="topContainer" id="topContainer">
-            <nav class="navbar">
+            <div class="navbarContainer">
+                <nav class="navbar">
+
                     <div class="logoAndText">
                         <img src="../assets/images/JedaiLogo.png" alt="">
                         <p class="phoneNumber">+994 70 983 66 99</p>
                     </div>
-                <button class="menuIcon"><div class="topIcon"></div> <div class="downIcon"></div></button></a>
-            </nav>
+
+                    <button class="menuIcon" id="menuIcon" onclick="animationMenu()"><div class="topIcon" id="topIcon"></div> <div class="downIcon" id="downIcon"></div></button></a>
+                </nav>
+            </div>
             <div class="subNav">
                 <p class="title">Rəqəmsal marketinq</p>
                 <p class="subTitle">Müasir rəqəmsal marketinq üsullarından və texnologiyalarından istifadə edərək, müştəri bazanızı və satışlarınızı artırırıq</p>
@@ -28,7 +32,9 @@
             <hr>
             <div class="overlayForTopConatiner"></div>
         </div>
+        <div class="menuOverlay" id="menuOverlay">
 
+        </div>
         <!-- What Do I do--> <div class="whatDo" id="whatDo"> 
             <div class="titleContainer"><p>Bİz nə edİrİk ?</p> <hr></div>
             <div class="cardConatiner"> <!-- Card Conatiner--> 
@@ -93,35 +99,53 @@
 
             <!--Projects --><div class="projects">
                 <div class="card">
-                    <div></div><!--Overlay-->
+                    <div>
+                        <p>Fruit Agro</p>
+                        <p>Məqsədimiz İnsanları Sağlam Qida ilə Təmin Etməkdir</p>
+                    </div><!--Overlay-->
                 </div> <!--CARD-->
                 
                 <div class="card">
 
-                    <div></div><!--Overlay-->
+                    <div>
+                        <p>Saxa Kids</p>
+                        <p>Multibrend, uşağınıza qayğı ilə hazırlanmış, yüksək keyfiyyətli uşaq geyimləri mağazaları şəbəkəsidir.</p>
+                    </div><!--Overlay-->
 
                 </div> <!--CARD-->
 
                 <div class="card">
-                    <div></div><!--Overlay-->
+                    <div>
+                        <p>Building Materials Group</p>
+                        <p>Əməkdaşlıq etdiyimiz və Distribyutor olduğumuz tədarükçü şirkətlərinin arasında dünyanın Quru İnşaat sahəsində üç ən iri və tanınmış istehsalçısı mövcuddur.</p>
+                    </div><!--Overlay-->
 
                 </div><!--CARD-->
                 
                 <div class="card">
 
-                    <div></div><!--Overlay-->
+                    <div>
+                        <p>Aqua Project</p>
+                        <p>Design and construction of pools of any complexity, related services and equipment</p>
+                    </div><!--Overlay-->
 
                 </div><!--CARD-->
 
                 <div class="card">
 
-                    <div></div><!--Overlay-->
+                    <div>
+                        <p>NEED A CARPET CLEANING?</p>
+                        <p>Quality is the  most important principle of our business</p>
+                    </div><!--Overlay-->
 
                 </div><!--CARD-->
                 
                 <div class="card">
 
-                    <div></div> <!--Overlay-->
+                    <div>
+                        <p>Rent a Car in Baku Online</p>
+                        <p>The company “Ram Servis” – Rent a Car Baku is pleased to offer its services to the citizens and guests of our country.</p>
+                    </div> <!--Overlay-->
 
                 </div><!--CARD-->
 
@@ -192,9 +216,9 @@
             </div>
 
             <div class="imgs">
+                <img src="../assets/images/Masks.png" alt="" >
+                <img src="../assets/images/Masks.png" alt="">
                 <img src="../assets/images/rauf-mammadov-jedai-thegem-person-240.jpg" alt="" width="199">
-                <img src="../assets/images/Masks.png" alt="">
-                <img src="../assets/images/Masks.png" alt="">
                 <img src="../assets/images/Masks.png" alt="">
                 <img src="../assets/images/Masks.png" alt="">
             </div>
@@ -327,6 +351,7 @@
 
 
     <script src="../js/glide.min.js"></script>
+    <script src="../js/menuBar.js"></script>
     <script>
         new Glide('.glide', {
             type: 'carousel',

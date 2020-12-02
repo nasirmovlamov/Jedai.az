@@ -21,16 +21,29 @@ html {
         background: url("../images/overlayForNavbar.png") repeat;
         background-size: 100% auto;
         background-color: #225A93;
-        padding-top: 38px;
         height: 1000px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        .navbarContainer
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+            position: sticky;
+            position: fixed;
+            z-index: 101;
+            top: 0;
+        }
         .navbar  //Navbar
         {
             background-size: cover;
             width: 85%;
             height: 45px;
+            
             .logoAndText
             {
                 display: flex;
@@ -61,46 +74,44 @@ html {
                 width: 100px;
                 height: 45px;
                 float: right;
-                margin-top: -5px;
+                margin-top: -10px;
                 border: none;
                 background-color: rgba(0,0,0,0);
+                position: relative;
+                z-index: 3;
+                &:hover 
+                {
+                    .downIcon 
+                    {
+                        width: 50px;
+                    }
+                }
                 &:focus 
                 {
                     outline: none;
                 }
-                &:focus .topIcon 
-                {
-                    transform: rotate(45deg) translateY(5.5px) translateX(5px);
-                    width: 45px;
-                    background-color: black;
-                    transition: 1s;
-
-                }
-                &:focus .downIcon {
-                    transform: rotate(-45deg) translateY(-14.5px) translateX(12px);
-                    width: 45px;
-                    background-color: black;
-                    transition: 1s;
-
-                }
+                
                 .topIcon 
                 {
-                    width: 70px;
+                    width: 50px;
                     height: 6px;
                     background-color: white;
-                    transition: 1s;
+                    transition: 0.4s ease-in-out;
 
                 }
                 .downIcon 
                 {
-                    width: 45px;
+                    width: 35px;
                     height: 6px;
-                    margin-top: 20px;
+                    margin-top: 15px;
                     background-color: white;
-                    transition: 1s;
+                    transition: 0.4s ease-in-out;
 
                 }
             }
+
+            
+
         }   //Navbar
 
         .subNav //Subnav
@@ -177,7 +188,30 @@ html {
 
 
     } //Top Conatiner (Navbar included)
-    
+    .menuOverlay
+    {
+        width: 99.99%;
+        height: 0vh;
+        position: absolute;
+        top: 0.01px;
+        transition: 2s ease-in-out;
+        background-color: white;
+        position: fixed;
+        z-index:100;
+    }
+    .topIconFocus 
+    {
+        transform: rotate(45deg) translateY(5.5px) translateX(5px);
+        width: 40px !important;
+        background-color: black !important;
+        transition: 0.01s;
+    }
+    .downIconFocus {
+        transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
+        width: 40px !important;
+        background-color: black !important;
+        transition: 0.01s;
+    }
     .whatDo  //What Do i do
     {
         display: flex;
@@ -409,6 +443,10 @@ html {
                 width: 100%;
                 height: 390px;
                 display: flex;
+                p 
+                {
+                    margin-left: 40px;
+                }
                 &:nth-child(1)
                 {
                     background: url('../images/FruitAgro.png')  bottom no-repeat;
@@ -418,11 +456,37 @@ html {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: green;
+                        background-color: #8fa320;
                         transition: 0.5s;
-                        transition: height 0.5s ease-in-out  ;
-                        float: left;
-                        transform-origin:bottom ;
+                        transition:  0.5s ease-in-out ;
+                        opacity: 0;
+
+                        p 
+                        {
+                            
+                            &:nth-child(1)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 130px;
+                                height: 0;
+                                font-size: 3rem;
+                                font-family: "LemonMilkMedium";
+                                color: white;
+                                transition: 0.25s;
+                            }
+                            &:nth-child(2)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 80px;
+                                height: 0;
+                                font-size: 1.3rem;
+                                font-family: "GilroyMedium";
+                                color:white;
+                                transition: 0.25s;
+                            }
+                        }
                     }
                     &:hover 
                     {
@@ -431,6 +495,25 @@ html {
                             height: 390px;
                             width: 100%;
                             transition: 0.5s ;
+                            opacity: 1;
+                            p 
+                            {
+                                &:nth-child(1)
+                                {
+                                    opacity: 1;
+                                    margin-top: 120px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.5s;
+                                }
+                                &:nth-child(2)
+                                {
+                                    opacity: 1;
+                                    margin-top: 70px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.65s;
+                                }
+                                
+                            }
                         }
                     }
                 }
@@ -443,10 +526,36 @@ html {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: purple;
+                        background-color: #b40667;
                         transition: 0.5s;
-                        transition: height 0.5s ease-in-out  ;
-                        position: relative;
+                        transition:  0.5s ease-in-out  ;
+                        opacity: 0;
+                        p 
+                        {
+                            
+                            &:nth-child(1)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 130px;
+                                height: 0;
+                                font-size: 3rem;
+                                font-family: "LemonMilkMedium";
+                                color: white;
+                                transition: 0.25s;
+                            }
+                            &:nth-child(2)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 80px;
+                                height: 0;
+                                font-size: 1.3rem;
+                                font-family: "GilroyMedium";
+                                color:white;
+                                transition: 0.25s;
+                            }
+                        }
                     }
                     &:hover 
                     {
@@ -454,6 +563,25 @@ html {
                         {
                             height: 390px;
                             transition: 0.5s ;
+                            opacity: 1;
+                            p 
+                            {
+                                &:nth-child(1)
+                                {
+                                    opacity: 1;
+                                    margin-top: 120px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.5s;
+                                }
+                                &:nth-child(2)
+                                {
+                                    opacity: 1;
+                                    margin-top: 70px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.65s;
+                                }
+                                
+                            }
                         }
                     }
                 }
@@ -466,10 +594,36 @@ html {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: rgb(66, 66, 199);
+                        background-color: #005c9b;
                         transition: 0.5s;
-                        transition: height 0.5s ease-in-out  ;
-                        position: relative;
+                        transition:  0.5s ease-in-out  ;
+                        opacity: 0;
+                        p 
+                        {
+                            
+                            &:nth-child(1)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 130px;
+                                height: 0;
+                                font-size: 3rem;
+                                font-family: "LemonMilkMedium";
+                                color: white;
+                                transition: 0.25s;
+                            }
+                            &:nth-child(2)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 80px;
+                                height: 0;
+                                font-size: 1.3rem;
+                                font-family: "GilroyMedium";
+                                color:white;
+                                transition: 0.25s;
+                            }
+                        }
                     }
                     &:hover 
                     {
@@ -477,6 +631,25 @@ html {
                         {
                             height: 390px;
                             transition: 0.5s ;
+                            opacity: 1;
+                            p 
+                            {
+                                &:nth-child(1)
+                                {
+                                    opacity: 1;
+                                    margin-top: 120px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.5s;
+                                }
+                                &:nth-child(2)
+                                {
+                                    opacity: 1;
+                                    margin-top: 70px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.65s;
+                                }
+                                
+                            }
                         }
                     }
                 }
@@ -489,10 +662,37 @@ html {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: lightskyblue;
+                        background-color: #04bfe8;
                         transition: 0.5s;
-                        transition: height 0.5s ease-in-out  ;
-                        position: relative;
+                        transition:  0.5s ease-in-out  ;
+                        opacity: 0;
+                        p 
+                        {
+                            
+                            &:nth-child(1)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 130px;
+                                height: 0;
+                                font-size: 3rem;
+                                font-family: "LemonMilkMedium";
+                                color: white;
+                                transition: 0.25s;
+                            }
+                            &:nth-child(2)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 80px;
+                                height: 0;
+                                font-size: 1.3rem;
+                                font-family: "GilroyMedium";
+                                color:white;
+                                transition: 0.25s;
+                            }
+                        }
+                        
                     }
                     &:hover 
                     {
@@ -500,6 +700,25 @@ html {
                         {
                             height: 390px;
                             transition: 0.5s ;
+                            opacity: 1;
+                            p 
+                            {
+                                &:nth-child(1)
+                                {
+                                    opacity: 1;
+                                    margin-top: 120px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.5s;
+                                }
+                                &:nth-child(2)
+                                {
+                                    opacity: 1;
+                                    margin-top: 70px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.65s;
+                                }
+                                
+                            }
                         }
                     }
                 }
@@ -514,15 +733,60 @@ html {
                         height: 0px;
                         background-color: #ff0335;
                         transition: 0.5s;
-                        transition: height 0.5s ease-in-out  ;
-                        position: relative;
+                        transition:  0.5s ease-in-out  ;
+                        opacity: 0;
+                        p 
+                        {
+                            
+                            &:nth-child(1)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 130px;
+                                height: 0;
+                                font-size: 3rem;
+                                font-family: "LemonMilkMedium";
+                                color: white;
+                                transition: 0.25s;
+                            }
+                            &:nth-child(2)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 80px;
+                                height: 0;
+                                font-size: 1.3rem;
+                                font-family: "GilroyMedium";
+                                color:white;
+                                transition: 0.25s;
+                            }
+                        }
                     }
                     &:hover 
                     {
                         div 
                         {
                             height: 390px;
+                            opacity: 1;
                             transition: 0.5s ;
+                            p 
+                            {
+                                &:nth-child(1)
+                                {
+                                    opacity: 1;
+                                    margin-top: 120px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.5s;
+                                }
+                                &:nth-child(2)
+                                {
+                                    opacity: 1;
+                                    margin-top: 70px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.65s;
+                                }
+                                
+                            }
                         }
                     }
                 }
@@ -537,8 +801,34 @@ html {
                         height: 0px;
                         background-color: black;
                         transition: 0.5s;
-                        transition: height 0.5s ease-in-out  ;
-                        position: relative;
+                        transition:  0.5s ease-in-out  ;
+                        opacity: 0;
+                        p 
+                        {
+                            
+                            &:nth-child(1)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 130px;
+                                height: 0;
+                                font-size: 3rem;
+                                font-family: "LemonMilkMedium";
+                                color: white;
+                                transition: 0.25s;
+                            }
+                            &:nth-child(2)
+                            {
+                                opacity: 0;
+                                pointer-events: none;
+                                margin-top: 80px;
+                                height: 0;
+                                font-size: 1.3rem;
+                                font-family: "GilroyMedium";
+                                color:white;
+                                transition: 0.25s;
+                            }
+                        }
                     }
                     &:hover 
                     {
@@ -546,6 +836,25 @@ html {
                         {
                             height: 390px;
                             transition: 0.5s ;
+                            opacity: 1;
+                            p 
+                            {
+                                &:nth-child(1)
+                                {
+                                    opacity: 1;
+                                    margin-top: 120px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.5s;
+                                }
+                                &:nth-child(2)
+                                {
+                                    opacity: 1;
+                                    margin-top: 70px;
+                                    transition: 0.15s ease-out;
+                                    transition-delay: 0.65s;
+                                }
+                                
+                            }
                         }
                     }
                 }
@@ -723,6 +1032,20 @@ html {
                 position: absolute;
                 margin-top: -200px;
                 margin-left: 100px;
+                transition: 1s;
+                &:hover 
+                {
+                    box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.7);
+                    transition: 1s;
+                    z-index: 90;
+                }
+                &:nth-child(1):hover
+                {
+                    img 
+                    {
+                        
+                    }
+                } 
                 &:nth-child(2)
                 {
                     margin-left: 400px;
