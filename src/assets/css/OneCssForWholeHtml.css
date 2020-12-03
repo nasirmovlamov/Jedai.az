@@ -211,8 +211,8 @@ html {
   height: 0vh;
   position: absolute;
   top: 0.01px;
-  -webkit-transition: 2s ease-in-out;
-  transition: 2s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
   background-color: white;
   position: fixed;
   z-index: 100;
@@ -270,6 +270,7 @@ html {
           justify-content: center;
   height: 80vh;
   width: 100%;
+  pointer-events: none;
 }
 
 .HomePage .menuOverlay .overlayMainText .text1 {
@@ -643,6 +644,22 @@ html {
   transition: 0.25s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(1) div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(1) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(1):hover div {
   height: 390px;
   width: 100%;
@@ -669,8 +686,48 @@ html {
           transition-delay: 0.65s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(2) {
-  background: url("../images/Saxa.png") bottom no-repeat;
+  background: url("../images/mnm.png") bottom no-repeat;
   background-size: cover;
 }
 
@@ -679,7 +736,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: #b40667;
+  background-color: #0d1014;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -711,6 +768,22 @@ html {
   transition: 0.25s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(2) div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(2) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(2):hover div {
   height: 390px;
   -webkit-transition: 0.5s;
@@ -734,6 +807,46 @@ html {
   transition: 0.15s ease-out;
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
 }
 
 .HomePage .projectsDone .projects .card:nth-child(3) {
@@ -778,6 +891,22 @@ html {
   transition: 0.25s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(3) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(3) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(3):hover div {
   height: 390px;
   -webkit-transition: 0.5s;
@@ -801,6 +930,46 @@ html {
   transition: 0.15s ease-out;
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
 }
 
 .HomePage .projectsDone .projects .card:nth-child(4) {
@@ -845,6 +1014,22 @@ html {
   transition: 0.25s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(4) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(4) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(4):hover div {
   height: 390px;
   -webkit-transition: 0.5s;
@@ -868,6 +1053,46 @@ html {
   transition: 0.15s ease-out;
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
 }
 
 .HomePage .projectsDone .projects .card:nth-child(5) {
@@ -912,6 +1137,22 @@ html {
   transition: 0.25s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(5) div p:nth-child(3) {
+  margin-top: 35px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(5) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(5):hover div {
   height: 390px;
   opacity: 1;
@@ -935,6 +1176,46 @@ html {
   transition: 0.15s ease-out;
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
 }
 
 .HomePage .projectsDone .projects .card:nth-child(6) {
@@ -979,6 +1260,22 @@ html {
   transition: 0.25s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(6) div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(6) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(6):hover div {
   height: 390px;
   -webkit-transition: 0.5s;
@@ -1002,6 +1299,46 @@ html {
   transition: 0.15s ease-out;
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
 }
 
 .HomePage .projectsDone .projects .card:nth-child(8) {
@@ -1046,6 +1383,22 @@ html {
   transition: 0.25s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(8) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(8):hover div {
   height: 390px;
   -webkit-transition: 0.5s;
@@ -1069,6 +1422,46 @@ html {
   transition: 0.15s ease-out;
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
 }
 
 .HomePage .projectsDone .projects .card:nth-child(7) {
@@ -1113,6 +1506,22 @@ html {
   transition: 0.25s;
 }
 
+.HomePage .projectsDone .projects .card:nth-child(7) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
 .HomePage .projectsDone .projects .card:nth-child(7):hover div {
   height: 390px;
   -webkit-transition: 0.5s;
@@ -1136,6 +1545,46 @@ html {
   transition: 0.15s ease-out;
   -webkit-transition-delay: 0.65s;
           transition-delay: 0.65s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.HomePage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
 }
 
 .HomePage .projectsDone .hamisinaBax {
@@ -1320,21 +1769,24 @@ html {
   margin: 0;
 }
 
-.HomePage .humansContainer .imgs {
+.HomePage .humansContainer .imgss {
   width: 40%;
 }
 
-.HomePage .humansContainer .imgs img {
-  border-radius: 50%;
+.HomePage .humansContainer .imgss div {
   height: auto;
   position: absolute;
   margin-top: -200px;
   margin-left: 100px;
+}
+
+.HomePage .humansContainer .imgss div img {
+  border-radius: 50%;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.HomePage .humansContainer .imgs img:hover {
+.HomePage .humansContainer .imgss div img:hover {
   -webkit-box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.7);
           box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.7);
   -webkit-transition: 1s;
@@ -1342,24 +1794,29 @@ html {
   z-index: 50;
 }
 
-.HomePage .humansContainer .imgs img:nth-child(2) {
+.HomePage .humansContainer .imgss div:nth-child(2) {
   margin-left: 400px;
+  z-index: 10;
 }
 
-.HomePage .humansContainer .imgs img:nth-child(3) {
+.HomePage .humansContainer .imgss div:nth-child(3) {
   margin: -50px 250px;
+  z-index: 10;
 }
 
-.HomePage .humansContainer .imgs img:nth-child(3) {
+.HomePage .humansContainer .imgss div:nth-child(3) {
   margin: -50px 250px;
+  z-index: 10;
 }
 
-.HomePage .humansContainer .imgs img:nth-child(4) {
+.HomePage .humansContainer .imgss div:nth-child(4) {
   margin-top: 100px;
+  z-index: 10;
 }
 
-.HomePage .humansContainer .imgs img:nth-child(5) {
+.HomePage .humansContainer .imgss div:nth-child(5) {
   margin: 100px 400px;
+  z-index: 10;
 }
 
 .HomePage .bizimleEmekdahsliq {
@@ -1506,13 +1963,15 @@ html {
   height: auto;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .HomePage .partniorsContainer .gridContainer2 div img:hover {
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .HomePage .slider {
@@ -2047,5 +2506,2817 @@ html {
   .textArea {
     width: 200px;
   }
+}
+
+.secondPage .topContainer {
+  background: url("../images/overlayForNavbar.png") repeat;
+  background-size: 100% auto;
+  background-color: #225A93;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondPage .topContainer .navbarContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  background-color: none;
+}
+
+.secondPage .topContainer .navbar {
+  background-size: cover;
+  width: 85%;
+  height: 45px;
+}
+
+.secondPage .topContainer .navbar .logoAndText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  float: left;
+  background-color: none;
+}
+
+.secondPage .topContainer .navbar img {
+  width: 193px;
+  height: 36px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.secondPage .topContainer .navbar .phoneNumber {
+  font-size: 18px;
+  word-spacing: 6px;
+  color: white;
+}
+
+.secondPage .topContainer .navbar p {
+  margin-left: 100px;
+  color: white;
+  font-family: "LemonMilkRegular";
+}
+
+.secondPage .topContainer .navbar .menuIcon {
+  width: 100px;
+  height: 45px;
+  float: right;
+  margin-top: -10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  z-index: 3;
+}
+
+.secondPage .topContainer .navbar .menuIcon:hover .downIcon {
+  width: 50px;
+}
+
+.secondPage .topContainer .navbar .menuIcon:focus {
+  outline: none;
+}
+
+.secondPage .topContainer .navbar .menuIcon .topIcon {
+  width: 50px;
+  height: 6px;
+  background-color: white;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.secondPage .topContainer .navbar .menuIcon .downIcon {
+  width: 35px;
+  height: 6px;
+  margin-top: 15px;
+  background-color: white;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.secondPage .topContainer .subNav {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 198px;
+}
+
+.secondPage .topContainer .subNav .title {
+  font-size: 5.5rem;
+  font-family: "GilroySemibold";
+  color: white;
+  word-spacing: 30px;
+}
+
+.secondPage .topContainer .subNav .subTitle {
+  margin-top: 29px;
+  padding-left: 6.5px;
+  font-size: 1.5rem;
+  line-height: 43px;
+  color: white;
+  width: 70%;
+  font-family: "GilroySemibold";
+  line-height: 25px;
+}
+
+.secondPage .topContainer hr {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border: none;
+  top: 530px;
+  background-image: url("../images/overlayForNavbar.png") repeat;
+}
+
+.secondPage .topContainer .subTitle2 {
+  margin-top: 100px;
+  width: 100%;
+  height: 239px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/overlayForNavbar.png") repeat;
+}
+
+.secondPage .topContainer .subTitle2 p {
+  width: 79%;
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "GilroySemiBold";
+  line-height: 25px;
+}
+
+.secondPage .topContainer .subTitle2 a {
+  width: 5%;
+}
+
+.secondPage .topContainer .subTitle2 button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.secondPage .topContainer .subTitle2 button:focus {
+  outline: none;
+}
+
+.secondPage .menuOverlay {
+  width: 99.99%;
+  height: 0vh;
+  position: absolute;
+  top: 0.01px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+}
+
+.secondPage .menuOverlay .fText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.secondPage .menuOverlay .fText .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.secondPage .menuOverlay .fText p {
+  font-size: 25px;
+  color: #464141;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.secondPage .menuOverlay .fText span {
+  font-size: 25px;
+  color: #464141;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.secondPage .menuOverlay .fText span:nth-child(1) {
+  margin-right: 35px;
+  padding-right: 35px;
+  border-right: 1px solid #464141;
+}
+
+.secondPage .menuOverlay .overlayMainText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+  width: 100%;
+  pointer-events: none;
+}
+
+.secondPage .menuOverlay .overlayMainText .text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondPage .menuOverlay .overlayMainText .text1 p {
+  font-size: 50px;
+  font-family: "LemonMilkRegular";
+  margin-top: 100px;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+  pointer-events: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.secondPage .menuOverlay .overlayMainText .text1 p:hover {
+  color: #ff0335;
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+}
+
+.secondPage .menuOverlay .overlayMainText .text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+}
+
+.secondPage .menuOverlay .overlayMainText .text2 p {
+  font-size: 50px;
+  font-family: "LemonMilkRegular";
+  margin-top: 100px;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.secondPage .menuOverlay .overlayMainText .text2 p:hover {
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+  color: #ff0335;
+}
+
+.secondPage .topIconFocus {
+  -webkit-transform: rotate(45deg) translateY(5.5px) translateX(5px);
+          transform: rotate(45deg) translateY(5.5px) translateX(5px);
+  width: 40px !important;
+  background-color: crimson !important;
+  -webkit-transition: 0.01s;
+  transition: 0.01s;
+}
+
+.secondPage .downIconFocus {
+  -webkit-transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
+          transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
+  width: 40px !important;
+  background-color: crimson !important;
+  -webkit-transition: 0.01s;
+  transition: 0.01s;
+}
+
+.secondPage .whatDo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 798px;
+  background-color: #fff;
+}
+
+.secondPage .whatDo .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 133px;
+  width: 84.5%;
+}
+
+.secondPage .whatDo .titleContainer p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: #0E0E0E;
+  opacity: 0.7;
+  width: 55%;
+}
+
+.secondPage .whatDo .titleContainer hr {
+  margin-left: 40px;
+  width: 35%;
+  height: 1px;
+  background-color: #464646;
+  border: none;
+  opacity: 0.5;
+}
+
+.secondPage .whatDo .cardConatiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5%;
+  margin-top: 50px;
+  width: 84%;
+}
+
+.secondPage .whatDo .cardConatiner .card {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+
+.secondPage .whatDo .cardConatiner .card p {
+  margin: 0;
+  font-family: "GilroyMedium";
+  margin-top: 25px;
+  text-align: center;
+}
+
+.secondPage .whatDo .cardConatiner .card .title {
+  font-family: "LemonMilkMedium";
+  font-size: 1.2rem;
+  font-style: normal;
+  opacity: 0.7;
+}
+
+.secondPage .whatDo .cardConatiner .card hr {
+  width: 147px;
+  height: 1px;
+  background: #1D84C4;
+  border: none;
+  margin: 0;
+  margin: 5px 0 20px 0;
+  opacity: 0.3;
+}
+
+.secondPage .whatDo .cardConatiner .card .subTitle p {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.secondPage .whatDo .cardConatiner .card .subTitle p:nth-child(1) {
+  margin-top: 0;
+}
+
+.secondPage .whatDo .cardConatiner .card .subTitle p span {
+  font-family: "GilroyMedium";
+  color: #000000;
+  opacity: 0.7;
+}
+
+.secondPage .whatDo .cardConatiner .card .cardButton {
+  background-color: #fff;
+  float: right;
+  margin-right: 7%;
+  margin-top: 15px;
+  width: 100px;
+  height: 30px;
+  background-color: #1D84C4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-family: "GilroyRegular";
+}
+
+.secondPage .whatDo .cardConatiner .card .cardButton:hover {
+  border: 1px solid #1D84c4;
+  background-color: white;
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .whatDo .cardConatiner .card .cardButton:focus {
+  outline: none;
+  background-color: #1D84C4;
+  color: white;
+  border: none;
+}
+
+.secondPage .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 700px;
+  background-color: #EEEE;
+}
+
+.secondPage .technologies .titleContainer3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 133px;
+  width: 85%;
+}
+
+.secondPage .technologies .titleContainer3 p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: #0E0E0E;
+  opacity: 0.7;
+}
+
+.secondPage .technologies .titleContainer3 hr {
+  margin-left: 40px;
+  height: 1px;
+  background-color: #464646;
+  border: none;
+  opacity: 0.5;
+  width: 100px;
+}
+
+.secondPage .technologies .cardConatiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+  width: 84%;
+}
+
+.secondPage .technologies .cardConatiner .card {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+}
+
+.secondPage .technologies .cardConatiner .card p {
+  margin: 0;
+  font-family: "GilroyMedium";
+  font-size: 24px;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.secondPage .projectsDone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.secondPage .projectsDone .titleContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 133px;
+  width: 85%;
+}
+
+.secondPage .projectsDone .titleContainer2 p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: #0E0E0E;
+  opacity: 0.7;
+}
+
+.secondPage .projectsDone .titleContainer2 hr {
+  margin-left: 40px;
+  width: 50%;
+  height: 1px;
+  background-color: #464646;
+  border: none;
+  opacity: 0.5;
+}
+
+.secondPage .projectsDone .buttonContainer {
+  width: 85%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.secondPage .projectsDone .buttonContainer button {
+  float: left;
+  margin-left: 20px;
+  height: 38px;
+  width: auto;
+  padding: 5px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #1D84C4;
+  color: white;
+  font-family: "GilroyRegular";
+  border: 1px solid  white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .projectsDone .buttonContainer button:nth-child(1) {
+  margin: 0;
+  background: #225A93;
+}
+
+.secondPage .projectsDone .buttonContainer button:nth-child(1):hover {
+  border: 1px solid  #225A93;
+  color: #225A93;
+  background: #EEEE;
+}
+
+.secondPage .projectsDone .buttonContainer button:nth-child(1):focus {
+  outline: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: crimson;
+  color: white;
+  border: 1px solid white;
+}
+
+.secondPage .projectsDone .buttonContainer button:hover {
+  border: 1px solid  #1D84C4;
+  background-color: #fff;
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .projectsDone .buttonContainer button:focus {
+  outline: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: crimson;
+  color: white;
+  border: 1px solid white;
+}
+
+.secondPage .projectsDone .projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  width: 85%;
+  grid-gap: 1px;
+}
+
+.secondPage .projectsDone .projects .card {
+  width: 100%;
+  height: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secondPage .projectsDone .projects .card p {
+  margin-left: 40px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1) {
+  background: url("../images/computers.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #8fa320;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1) div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1):hover div {
+  height: 390px;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(1):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2) {
+  background: url("../images/computers.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #b40667;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2):hover div {
+  height: 390px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(2):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3) {
+  background: url("../images/computers2.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #005c9b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3):hover div {
+  height: 390px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(3):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4) {
+  background: url("../images/computers2.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #04bfe8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4):hover div {
+  height: 390px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(4):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5) {
+  background: url("../images/computers3.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #ff0335;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5) div p:nth-child(3) {
+  margin-top: 35px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5):hover div {
+  height: 390px;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(5):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6) {
+  background: url("../images/computers3.png") bottom no-repeat;
+  background-size: center;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6) div p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6):hover div {
+  height: 390px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(6):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8) {
+  background: url("../images/papaBg.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #de3838;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8):hover div {
+  height: 390px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(8):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7) {
+  background: url("../images/jicaAlumni.png") bottom no-repeat;
+  background-size: cover;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7) div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  height: 0px;
+  background-color: #fd490e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7) div p:nth-child(1) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 130px;
+  height: 0;
+  font-size: 3rem;
+  font-family: "LemonMilkMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7) div p:nth-child(2) {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 80px;
+  height: 0;
+  font-size: 1.3rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7) div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7) div p:nth-child(3) span {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin-top: 40px;
+  font-size: 1rem;
+  font-family: "GilroyMedium";
+  color: white;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7):hover div {
+  height: 390px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(1) {
+  opacity: 1;
+  margin-top: 120px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(2) {
+  opacity: 1;
+  margin-top: 70px;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) {
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) span:nth-child(1) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) span:nth-child(2) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.85s;
+          transition-delay: 0.85s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) span:nth-child(3) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 0.95s;
+          transition-delay: 0.95s;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(7):hover div p:nth-child(3) span:nth-child(4) {
+  opacity: 1;
+  padding-top: 30px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+.secondPage .projectsDone .hamisinaBax {
+  width: 85%;
+  height: 40px;
+  margin-top: 50px;
+}
+
+.secondPage .projectsDone .hamisinaBax button {
+  float: right;
+  background-color: #fff;
+  border: none;
+}
+
+.secondPage .projectsDone .hamisinaBax button:focus {
+  outline: none;
+  -webkit-transform: translateX(150px);
+          transform: translateX(150px);
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
+}
+
+.secondPage .projectsDone .hamisinaBax p {
+  float: right;
+  font-family: "LemonMilkRegular";
+  font-size: 30px;
+  margin-right: 40px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.secondPage .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background-color: #E5E5E5;
+}
+
+.secondPage .prices .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 133px;
+  width: 84%;
+}
+
+.secondPage .prices .titleContainer p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: #0E0E0E;
+  opacity: 0.7;
+  width: 45%;
+}
+
+.secondPage .prices .titleContainer hr {
+  margin-left: 40px;
+  width: 55%;
+  height: 1px;
+  background-color: #464646;
+  border: none;
+  opacity: 0.5;
+}
+
+.secondPage .prices .subTitleContainer {
+  width: 84%;
+  margin-top: 100px;
+}
+
+.secondPage .prices .subTitleContainer p {
+  font-size: 1.8rem;
+  font-family: "GilroyMedium";
+  color: rgba(0, 0, 0, 0.8);
+  width: 85%;
+}
+
+.secondPage .prices .jedailogoandHr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 78.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 8%;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.secondPage .prices .jedailogoandHr hr {
+  height: 2px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0;
+  width: 40%;
+}
+
+.secondPage .prices .jedailogoandHr img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.secondPage .prices .cardConatiner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0%;
+  margin-top: 50px;
+  width: 84%;
+}
+
+.secondPage .prices .cardConatiner .card1 {
+  height: 500px !important;
+  padding-bottom: 30px !important;
+}
+
+.secondPage .prices .cardConatiner .card2 {
+  height: 590px !important;
+  padding-bottom: 30px !important;
+}
+
+.secondPage .prices .cardConatiner .card3 {
+  height: 710px !important;
+  padding-bottom: 30px !important;
+}
+
+.secondPage .prices .cardConatiner .card {
+  width: 80%;
+  height: auto;
+  padding-bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: white;
+}
+
+.secondPage .prices .cardConatiner .card:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.secondPage .prices .cardConatiner .card p {
+  margin: 0;
+}
+
+.secondPage .prices .cardConatiner .card .title {
+  font-family: "GilroyMedium";
+  font-size: 1.2rem;
+  font-style: normal;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, right top, from(#1D84C4), to(#225A93));
+  background: linear-gradient(90deg, #1D84C4, #225A93);
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.secondPage .prices .cardConatiner .card hr {
+  width: 90%;
+  height: 2px;
+  background: black;
+  border: none;
+  margin: 0;
+  margin: 15px 0 20px 0;
+  opacity: 0.2;
+}
+
+.secondPage .prices .cardConatiner .card .subTitle {
+  margin-left: 40px;
+}
+
+.secondPage .prices .cardConatiner .card .subTitle p {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-family: "GilroyMedium";
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.secondPage .prices .cardConatiner .card .subTitle p:nth-child(1) {
+  margin-top: 35px;
+}
+
+.secondPage .prices .cardConatiner .card .subTitle .topTitle {
+  margin-top: 50px;
+}
+
+.secondPage .prices .cardConatiner .card .cardButton {
+  background-color: #fff;
+  float: right;
+  margin-right: 7%;
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: #1D84C4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-family: "GilroyRegular";
+}
+
+.secondPage .prices .cardConatiner .card .cardButton:hover {
+  border: 1px solid #1D84c4;
+  background-color: white;
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .prices .cardConatiner .card .cardButton:focus {
+  outline: none;
+  background-color: #1D84C4;
+  color: white;
+  border: none;
+}
+
+.secondPage .bizimleEmekdahsliq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background: #225A93;
+}
+
+.secondPage .bizimleEmekdahsliq .titleContainer4_2 {
+  margin-top: 100px;
+}
+
+.secondPage .bizimleEmekdahsliq .titleContainer4_2 p {
+  font-size: 24px;
+  font-family: "LemonMilkRegular";
+  color: white;
+  width: 900px;
+}
+
+.secondPage .bizimleEmekdahsliq .titleContainer4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.secondPage .bizimleEmekdahsliq .titleContainer4 p {
+  font-size: 2.3rem;
+  font-family: "LemonMilkRegular";
+  color: white;
+  width: 450px;
+}
+
+.secondPage .bizimleEmekdahsliq .titleContainer4 hr {
+  margin-left: 40px;
+  height: 1px;
+  background-color: white;
+  border: none;
+  width: 40%;
+  opacity: 0.5;
+}
+
+.secondPage .bizimleEmekdahsliq .subAboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+
+.secondPage .bizimleEmekdahsliq .subAboutContainer p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondPage .bizimleEmekdahsliq .subAboutContainer img {
+  width: 20px;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .jedailogoandHr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .jedailogoandHr hr {
+  height: 1px;
+  border: none;
+  background-color: white;
+  margin: 0;
+  width: 40%;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .jedailogoandHr img {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .about1 p, .secondPage .bizimleEmekdahsliq .aboutContainer .about2 p, .secondPage .bizimleEmekdahsliq .aboutContainer .about3 p, .secondPage .bizimleEmekdahsliq .aboutContainer .about1_1 p {
+  font-size: 20px;
+  color: white;
+  margin-top: 50px;
+  font-family: "GilroyRegular";
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .about1 img, .secondPage .bizimleEmekdahsliq .aboutContainer .about2 img, .secondPage .bizimleEmekdahsliq .aboutContainer .about3 img, .secondPage .bizimleEmekdahsliq .aboutContainer .about1_1 img {
+  margin-right: 15px;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .about3 {
+  margin-left: 100px;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .about2 {
+  margin-left: 45px;
+}
+
+.secondPage .partniorsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+
+.secondPage .partniorsContainer .titleContainer5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.secondPage .partniorsContainer .titleContainer5 p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: black;
+  width: 90%;
+  opacity: 0.7;
+}
+
+.secondPage .partniorsContainer .titleContainer5 hr {
+  margin-left: 40px;
+  height: 1px;
+  background-color: black;
+  border: none;
+  opacity: 0.5;
+  width: 190%;
+}
+
+.secondPage .partniorsContainer .gridContainer2 {
+  width: 80%;
+  height: auto;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.secondPage .partniorsContainer .gridContainer2 div {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondPage .partniorsContainer .gridContainer2 div img {
+  width: 13rem;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .partniorsContainer .gridContainer2 div img:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.secondPage .preparingSite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 2700px;
+  background: white;
+}
+
+.secondPage .preparingSite .verticalLine {
+  height: 195px;
+  width: 2px;
+  background-color: #464646;
+  opacity: 0.5;
+  margin-left: -3px;
+}
+
+.secondPage .preparingSite .containerOfContainers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 970px;
+}
+
+.secondPage .preparingSite .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 550px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+.secondPage .preparingSite img {
+  height: auto;
+}
+
+.secondPage .preparingSite div p {
+  text-align: center;
+}
+
+.secondPage .preparingSite .number {
+  font-size: 35px;
+}
+
+.secondPage .preparingSite .text {
+  width: 380px;
+  text-align: center;
+  font-family: "GilroyMedium";
+  font-size: 23px;
+  margin-top: 10px;
+}
+
+.secondPage .preparingSite .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.secondPage .preparingSite .titleContainer p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: black;
+  width: 90%;
+  opacity: 0.7;
+}
+
+.secondPage .preparingSite .titleContainer hr {
+  margin-left: 40px;
+  height: 1px;
+  background-color: black;
+  border: none;
+  opacity: 0.5;
+  width: 90%;
+}
+
+.secondPage .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 700px;
+  background-color: #EEEE;
+}
+
+.secondPage .slider .titleContainer6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.secondPage .slider .titleContainer6 p {
+  font-size: 3rem;
+  font-family: "LemonMilkRegular";
+  color: black;
+  width: 90%;
+  opacity: 0.7;
+}
+
+.secondPage .slider .titleContainer6 hr {
+  height: 1px;
+  background-color: black;
+  border: none;
+  opacity: 0.5;
+  width: 95%;
+}
+
+.secondPage .slider .glideEditSlider {
+  width: 80% !important;
+  margin-top: 50px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.secondPage .slider .button1 {
+  margin-left: -10%;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.secondPage .slider .button2 {
+  margin-right: -10%;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.secondPage .komanda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 100px;
+  background-color: #fff;
+}
+
+.secondPage .komanda .titleContainer4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.secondPage .komanda .titleContainer4 p {
+  font-size: 2.3rem;
+  font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.5);
+  width: 550px;
+}
+
+.secondPage .komanda .titleContainer4 hr {
+  margin-left: 40px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 40%;
+  opacity: 0.5;
+}
+
+.secondPage .komanda .imgs {
+  margin-top: 50px;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondPage .komanda .imgs p {
+  text-align: center;
+}
+
+.secondPage .komanda .imgs .title {
+  font-family: "LemonMilkRegular";
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.secondPage .komanda .imgs .subTitle {
+  font-family: "GilroyRegular";
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.secondPage .komanda .imgs .imgContainer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+}
+
+.secondPage .komanda .imgs .imgContainer1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondPage .komanda .imgs .imgContainer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  margin-top: 50px;
+}
+
+.secondPage .komanda .imgs .imgContainer2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondPage .formAndIframe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  background-color: #fff;
+}
+
+.secondPage .formAndIframe iframe {
+  width: 45%;
+  height: 550px;
+}
+
+.secondPage .formAndIframe .form {
+  width: 55%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secondPage .formAndIframe .form .titleContainer7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.secondPage .formAndIframe .form .titleContainer7 p {
+  font-size: 2rem;
+  font-family: "LemonMilkRegular";
+  color: black;
+  width: 60%;
+  opacity: 0.7;
+  margin: 0;
+  margin-top: 45px;
+  margin-left: 45px;
+}
+
+.secondPage .formAndIframe .form .titleContainer7 hr {
+  height: 1px;
+  background-color: black;
+  border: none;
+  opacity: 0.5;
+  width: 40%;
+  margin-top: 45px;
+  margin-right: 50px;
+}
+
+.secondPage .formAndIframe .form .titleContainer7_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.secondPage .formAndIframe .form .titleContainer7_2 p {
+  font-size: 2rem;
+  font-family: "LemonMilkRegular";
+  color: black;
+  width: 90%;
+  opacity: 0.7;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.secondPage .formAndIframe .form .formContainer {
+  width: 90%;
+}
+
+.secondPage .formAndIframe .form .formContainer form {
+  margin-top: 40px;
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 1.5rem;
+  float: left;
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input {
+  width: 280px;
+  height: 50px;
+  margin-top: 20px;
+  padding-left: 30px;
+  border-radius: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input::-webkit-input-placeholder {
+  font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input:-ms-input-placeholder {
+  font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input::-ms-input-placeholder {
+  font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input::placeholder {
+  font-family: "LemonMilkRegular";
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input:focus {
+  outline: none;
+  border: 2px solid #1D84C4;
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input:focus::-webkit-input-placeholder {
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input:focus:-ms-input-placeholder {
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input:focus::-ms-input-placeholder {
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input:focus::placeholder {
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form .inputs input:hover {
+  border: 2px solid #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea {
+  height: 190px;
+  float: left;
+  margin-top: 0px;
+  resize: none;
+  margin-left: 3%;
+  width: 320px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 30px 30px;
+  font-size: 1.2rem;
+  font-family: "GilroyBold";
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "GilroyRegular";
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea:focus {
+  outline: none;
+  border: 2px solid  #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea:focus::-webkit-input-placeholder {
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea:focus:-ms-input-placeholder {
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea:focus::-ms-input-placeholder {
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea:focus::placeholder {
+  color: #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea:hover {
+  border: 2px solid  #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea::-webkit-input-placeholder {
+  font-family: "GilroyRegular";
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea:-ms-input-placeholder {
+  font-family: "GilroyRegular";
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea::-ms-input-placeholder {
+  font-family: "GilroyRegular";
+}
+
+.secondPage .formAndIframe .form .formContainer form textarea::placeholder {
+  font-family: "GilroyRegular";
+}
+
+.secondPage .formAndIframe .form button {
+  float: left;
+  clear: left;
+  background: #1D84C4;
+  border: 2px solid rgba(196, 196, 196, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  width: 200px;
+  border-radius: 40px;
+  color: white;
+  font-family: "LemonMilkRegular";
+  font-size: 16px;
+  border: 2px solid  #1D84C4;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-top: 10px;
+  margin-left: 450px;
+}
+
+.secondPage .formAndIframe .form button:hover {
+  border: 2px solid  #1D84C4;
+  background-color: transparent;
+  color: #1D84C4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.secondPage .formAndIframe .form button:focus {
+  outline: none;
+  background-color: #1D84C4;
+  color: white;
+}
+
+.secondPage footer {
+  width: 100%;
+  height: 400px;
+  background-color: #225A93;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondPage footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.secondPage footer p {
+  margin: 0;
+  color: white;
+}
+
+.secondPage footer .topFooter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin-top: 90px;
+}
+
+.secondPage footer .topFooter .links {
+  font-size: "LemonMilkRegular";
+  font-size: 1.6rem;
+}
+
+.secondPage footer .topFooter .links a {
+  margin-left: 6%;
+}
+
+.secondPage footer .topFooter .imgsContainer {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 5%;
+}
+
+.secondPage footer .topFooter .imgsContainer img {
+  height: auto;
+  margin-left: 10px;
+}
+
+.secondPage footer .topFooter .numbersContainer {
+  font-size: "GilroyRegular";
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.secondPage footer .topFooter .numbersContainer a {
+  margin-left: 5.5%;
+}
+
+.secondPage footer hr {
+  width: 100%;
+  height: 0.5px;
+  background-color: white;
+  border: none;
+  margin-top: 100px;
+}
+
+.secondPage footer .deepFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  margin-top: 40px;
+}
+
+.secondPage footer .deepFooter p {
+  font-family: "GilroyRegular";
+  font-size: 22px;
+  font-style: normal;
+  color: #E5E5E5;
+}
+
+.secondPage footer .deepFooter img {
+  float: right;
 }
 /*# sourceMappingURL=OneCssForWholeHtml.css.map */

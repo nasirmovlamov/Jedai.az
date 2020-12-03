@@ -18,18 +18,18 @@ function animationMenu()
             document.getElementById('phoneNuber').setAttribute("style" , "color:#225a93")
         }
         document.getElementById('navbarContainer').setAttribute("style" , "box-shadow:none;");
-        document.getElementById('text1_1').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 0.7s;pointer-events:all;");
-        document.getElementById('text1_1_1').setAttribute("style" , "opacity:1;transition: color 0.5s ,opacity 0.5s 0.7s;pointer-events:all;");
+        document.getElementById('text1_1').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 0.35s;pointer-events:all;");
+        document.getElementById('text1_1_1').setAttribute("style" , "opacity:1;transition: color 0.5s ,opacity 0.5s 0.35s;pointer-events:all;");
         
-        document.getElementById('text1_2').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 1s;pointer-events:all;");
-        document.getElementById('text1_2_2').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 1s;pointer-events:all;");
+        document.getElementById('text1_2').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 0.5s;pointer-events:all;");
+        document.getElementById('text1_2_2').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 0.5s;pointer-events:all;");
         
-        document.getElementById('text1_3').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 1.2s;pointer-events:all;");
-        document.getElementById('text1_3_3').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 1.2s;pointer-events:all;");
+        document.getElementById('text1_3').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 0.6s;pointer-events:all;");
+        document.getElementById('text1_3_3').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 0.6s;pointer-events:all;");
 
-        document.getElementById('ftextOverlayP').setAttribute("style" , "opacity:1;transition: opacity 0.5s 1.4s;pointer-events:all;");
-        document.getElementById('ftextOverlaySpan1').setAttribute("style" , "opacity:1;transition: opacity 0.1s 1.4s;pointer-events:none;");
-       document.getElementById('ftextOverlaySpan2').setAttribute("style" , "opacity:1;transition: opacity 0.1s 1.4s;pointer-events:none;");
+        document.getElementById('ftextOverlayP').setAttribute("style" , "opacity:1;transition: opacity 0.5s 0.7s;pointer-events:all;");
+        document.getElementById('ftextOverlaySpan1').setAttribute("style" , "opacity:1;transition: opacity 0.1s 0.7s;pointer-events:none;");
+       document.getElementById('ftextOverlaySpan2').setAttribute("style" , "opacity:1;transition: opacity 0.1s 0.7s;pointer-events:none;");
 
         count = 1
 
@@ -38,14 +38,14 @@ function animationMenu()
    {
        document.getElementById('topIcon').classList.remove('topIconFocus')
        document.getElementById('downIcon').classList.remove('downIconFocus')
-       document.getElementById('text1_1').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.8s;pointer-events:none;");
-       document.getElementById('text1_1_1').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.8s;pointer-events:none;");
+       document.getElementById('text1_1').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.3s;pointer-events:none;");
+       document.getElementById('text1_1_1').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.3s;pointer-events:none;");
        
-       document.getElementById('text1_2').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.65s;pointer-events:none;");
-       document.getElementById('text1_2_2').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.65s;pointer-events:none;");
+       document.getElementById('text1_2').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.2s;pointer-events:none;");
+       document.getElementById('text1_2_2').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.2s;pointer-events:none;");
         
-       document.getElementById('text1_3').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.3s;pointer-events:none;");
-       document.getElementById('text1_3_3').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.3s;pointer-events:none;");
+       document.getElementById('text1_3').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.15s;pointer-events:none;");
+       document.getElementById('text1_3_3').setAttribute("style" , "opacity:0;transition: opacity 0.5s 0.15s;pointer-events:none;");
        
        document.getElementById('ftextOverlayP').setAttribute("style" , "opacity:0;transition: opacity 0.1s 0.1s;pointer-events:none;");
        document.getElementById('ftextOverlaySpan1').setAttribute("style" , "opacity:0;transition: opacity 0.1s 0.1s;pointer-events:none;");
