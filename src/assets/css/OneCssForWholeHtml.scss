@@ -13,6 +13,16 @@ body
 html {
     scroll-behavior: smooth;
 }
+
+
+
+
+
+
+
+
+
+
 // Home Page// Home Page// Home Page
 .HomePage 
 {
@@ -20,6 +30,7 @@ html {
     {
         background: url("../images/overlayForNavbar.png") repeat;
         background-size: 100% auto;
+        background-size:center ;
         background-color: #225A93;
         height: 1000px;
         display: flex;
@@ -296,13 +307,13 @@ html {
     {
         transform: rotate(45deg) translateY(5.5px) translateX(5px);
         width: 40px !important;
-        background-color: crimson !important;
+        background-color: BLACK !important;
         transition: 0.01s;
     }
     .downIconFocus {
         transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
         width: 40px !important;
-        background-color: crimson !important;
+        background-color: BLACK !important;
         transition: 0.01s;
     }
     .whatDo  //What Do i do
@@ -2615,13 +2626,13 @@ html {
     {
         transform: rotate(45deg) translateY(5.5px) translateX(5px);
         width: 40px !important;
-        background-color: crimson !important;
+        background-color: BLACK !important;
         transition: 0.01s;
     }
     .downIconFocus {
         transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
         width: 40px !important;
-        background-color: crimson !important;
+        background-color: BLACK !important;
         transition: 0.01s;
     }
     .whatDo  //What Do i do
@@ -4821,6 +4832,28 @@ html {
 
 
 
+
+
+
+
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+//ResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivnessResponsivness
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+}
 
 
 
