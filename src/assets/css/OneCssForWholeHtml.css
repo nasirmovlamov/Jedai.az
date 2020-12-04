@@ -3,6 +3,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Futurica";
+  min-width: 100%;
+  overflow-x: hidden;
 }
 
 body p {
@@ -11,13 +13,17 @@ body p {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.HomePage {
+  min-width: 100%;
 }
 
 .HomePage .topContainer {
-  background: url("../images/overlayForNavbar.png") repeat;
-  background-size: 100% auto;
-  background-size: center;
+  background: url("../images/overlayForNavbar.png");
   background-color: #225A93;
+  width: 100%;
   height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2854,7 +2860,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 798px;
+  height: auto;
+  margin-bottom: 100px;
   background-color: #fff;
 }
 
@@ -2919,6 +2926,7 @@ html {
   font-family: "GilroyMedium";
   margin-top: 25px;
   text-align: center;
+  font-size: 14px;
 }
 
 .secondPage .whatDo .cardConatiner .card .title {
@@ -2997,7 +3005,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 700px;
+  height: auto;
+  padding-bottom: 50px;
   background-color: #EEEE;
 }
 
@@ -3008,7 +3017,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 133px;
+  padding-top: 53px;
   width: 85%;
 }
 
@@ -3035,6 +3044,8 @@ html {
       grid-template-columns: repeat(4, 1fr);
   margin-top: 50px;
   width: 84%;
+  height: auto;
+  margin-bottom: 100px;
 }
 
 .secondPage .technologies .cardConatiner .card {
@@ -4220,6 +4231,9 @@ html {
   display: flex;
   padding-top: 133px;
   width: 84%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .secondPage .prices .titleContainer p {
@@ -4227,7 +4241,6 @@ html {
   font-family: "LemonMilkRegular";
   color: #0E0E0E;
   opacity: 0.7;
-  width: 45%;
 }
 
 .secondPage .prices .titleContainer hr {
@@ -4429,13 +4442,13 @@ html {
 
 .secondPage .bizimleEmekdahsliq .titleContainer4_2 {
   margin-top: 100px;
+  width: 80%;
 }
 
 .secondPage .bizimleEmekdahsliq .titleContainer4_2 p {
   font-size: 24px;
   font-family: "LemonMilkRegular";
   color: white;
-  width: 900px;
 }
 
 .secondPage .bizimleEmekdahsliq .titleContainer4 {
@@ -4496,7 +4509,10 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .secondPage .bizimleEmekdahsliq .aboutContainer .jedailogoandHr {
@@ -4643,7 +4659,8 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 2700px;
+  height: auto;
+  padding-bottom: 50px;
   background: white;
 }
 
@@ -4925,6 +4942,8 @@ html {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  height: auto;
+  margin-bottom: 50px;
   background-color: #fff;
 }
 
@@ -4935,7 +4954,8 @@ html {
 
 .secondPage .formAndIframe .form {
   width: 55%;
-  height: 500px;
+  height: auto;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4962,7 +4982,6 @@ html {
   font-size: 2rem;
   font-family: "LemonMilkRegular";
   color: black;
-  width: 60%;
   opacity: 0.7;
   margin: 0;
   margin-top: 45px;
@@ -4974,9 +4993,8 @@ html {
   background-color: black;
   border: none;
   opacity: 0.5;
-  width: 40%;
+  width: 30%;
   margin-top: 45px;
-  margin-right: 50px;
 }
 
 .secondPage .formAndIframe .form .titleContainer7_2 {
@@ -5319,5 +5337,417 @@ html {
 
 .secondPage footer .deepFooter img {
   float: right;
+}
+
+@media only screen and (max-width: 700px) {
+  .slider .glide__track {
+    width: 100%;
+  }
+  .remove {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .secondPage .formAndIframe iframe {
+    width: 100%;
+  }
+  .secondPage .formAndIframe .form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .secondPage .formAndIframe .formContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .secondPage .formAndIframe .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondPage .formAndIframe .form .textArea {
+    margin-top: 20px !important;
+    margin-left: 0px !important;
+    width: 78.5% !important;
+  }
+  .secondPage .formAndIframe .form input {
+    width: 100% !important;
+  }
+  .secondPage .formAndIframe .form .inputs {
+    width: 85% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondPage .formAndIframe .form .gonderButton {
+    margin-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .remove {
+    display: none;
+  }
+  .secondPage .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100% !important;
+  }
+  .secondPage .navbar img {
+    width: 90px !important;
+    height: auto !important;
+    margin-left: 20px;
+  }
+  .secondPage .menuIcon {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  .secondPage .navbarContainer {
+    height: 50px !important;
+  }
+  .secondPage .titleContainer3, .secondPage .titleContainer2, .secondPage .titleContainer7 {
+    text-align: center !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondPage .titleContainer7_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .secondPage .titleContainer7_2 p {
+    width: auto !important;
+  }
+  .secondPage .titleContainer7 p, .secondPage .titleContainer7_2 p {
+    margin-left: 0px !important;
+  }
+  .secondPage .titleContainer2 {
+    padding-top: 0px !important;
+    margin-top: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .secondPage .technologies .cardConatiner .card p {
+    font-size: 14px !important;
+  }
+  .secondPage .technologies .cardConatiner {
+    margin-bottom: 0px;
+  }
+  .secondPage .technologies .cardConatiner .card {
+    font-size: 14px !important;
+    height: 150px !important;
+  }
+  .secondPage .technologies .cardConatiner .card img {
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .remove {
+    display: none;
+  }
+  .secondPage .hamisinaBax {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondPage .hamisinaBax p {
+    margin-right: 0px !important;
+    float: left !important;
+  }
+  .secondPage .projectsDone .buttonContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .secondPage .projects {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+  .secondPage .projects .card {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .secondPage .prices .subTitleContainer {
+    margin-top: 10px !important;
+  }
+  .secondPage .prices .cardConatiner {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+  .secondPage .prices .cardConatiner img {
+    width: 13px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .preparingSite .containerOfContainers {
+    width: 100% !important;
+  }
+  .preparingSite .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -ms-flex-item-align: center !important;
+        align-self: center !important;
+  }
+  .preparingSite .container p {
+    font-size: 15px !important;
+    width: 250px !important;
+    margin: 0 !important;
+  }
+  .preparingSite .container img {
+    width: 70px !important;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .preparingSite .containerOfContainers {
+    width: 100% !important;
+  }
+  .preparingSite .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -ms-flex-item-align: center !important;
+        align-self: center !important;
+  }
+  .preparingSite .container p {
+    font-size: 15px !important;
+    width: 150px !important;
+    margin: 0 !important;
+  }
+  .preparingSite .container img {
+    width: 70px !important;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .remove {
+    display: none;
+  }
+  .secondPage .whatDo .cardConatiner {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .secondPage .whatDo .card img {
+    width: 70px;
+  }
+  .secondPage .technologies .cardConatiner {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .secondPage .prices .titleContainer {
+    padding-top: 50px;
+  }
+  .secondPage .prices .subTitleContainer {
+    margin-top: 10px !important;
+  }
+  .secondPage .prices .jedailogoandHr {
+    margin-bottom: 50px;
+    margin-top: 70px !important;
+  }
+  .secondPage .prices .jedailogoandHr img {
+    width: 70px !important;
+  }
+  .secondPage .prices .subTitleContainer {
+    width: 100%;
+  }
+  .secondPage .prices .subTitleContainer p {
+    width: 100%;
+    text-align: center;
+  }
+  .secondPage .prices .cardConatiner {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+    margin-top: 10px !important;
+  }
+  .secondPage .prices .cardConatiner .card {
+    width: 100% !important;
+    margin-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+  .secondPage .prices .cardConatiner .card .title {
+    font-size: 15px;
+  }
+  .secondPage .prices .cardConatiner .card .subTitle p {
+    font-size: 12px;
+  }
+  .secondPage .prices .cardConatiner .card .subTitle img {
+    width: 13px;
+  }
+  .secondPage .prices .cardConatiner .card1 {
+    height: 450px !important;
+  }
+  .secondPage .prices .cardConatiner .card2 {
+    height: 500px !important;
+  }
+  .secondPage .prices .cardConatiner .card3 {
+    height: 590px !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .remove {
+    display: none;
+  }
+  .secondPage .cardConatiner .card p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .secondPage .glide__track {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 555px) {
+  .secondPage .partniorsContainer .gridContainer2 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .secondPage .projectsDone .buttonContainer button {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .secondPage .partniorsContainer .gridContainer2 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .secondPage .glide__track {
+    width: 100%;
+    gap: 100px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .secondPage .slider .glide__track {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .komanda .imgContainer1 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .komanda .imgContainer1 div {
+    margin-top: 30px;
+  }
+  .komanda .imgContainer2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 10px !important;
+  }
+  .komanda .imgContainer2 div {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .secondPage .bizimleEmekdahsliq .titleContainer4_2 {
+    font-size: 20px;
+  }
+  .secondPage .bizimleEmekdahsliq .subAboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondPage .bizimleEmekdahsliq .subAboutContainer .about1_1, .secondPage .bizimleEmekdahsliq .subAboutContainer .about2, .secondPage .bizimleEmekdahsliq .subAboutContainer .about3 {
+    margin-left: 0px !important;
+  }
+  .secondPage .bizimleEmekdahsliq .subAboutContainer .about1_1 p, .secondPage .bizimleEmekdahsliq .subAboutContainer .about2 p, .secondPage .bizimleEmekdahsliq .subAboutContainer .about3 p {
+    font-size: 14px !important;
+  }
 }
 /*# sourceMappingURL=OneCssForWholeHtml.css.map */

@@ -5,6 +5,8 @@ body
     margin: 0;
     padding: 0;
     font-family: "Futurica";
+    min-width:100%;
+    overflow-x: hidden;
     p 
     {
         margin: 0;
@@ -12,6 +14,7 @@ body
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -26,12 +29,12 @@ html {
 // Home Page// Home Page// Home Page
 .HomePage 
 {
+    min-width: 100%;
     .topContainer //Top Conatiner (Navbar included)
     {
-        background: url("../images/overlayForNavbar.png") repeat;
-        background-size: 100% auto;
-        background-size:center ;
+        background: url("../images/overlayForNavbar.png") ;
         background-color: #225A93;
+        width: 100%;
         height: 1000px;
         display: flex;
         flex-direction: column;
@@ -2641,7 +2644,8 @@ html {
         flex-direction: column;
         align-items: center ;
         width: 100%;
-        height: 798px;
+        height: auto;
+        margin-bottom: 100px;
         background-color: #fff;
         .titleContainer
         {
@@ -2692,6 +2696,7 @@ html {
                     font-family: "GilroyMedium";
                     margin-top: 25px;
                     text-align: center;
+                    font-size: 14px;
                 }
                 .title 
                 {
@@ -2773,13 +2778,14 @@ html {
         flex-direction: column;
         align-items: center ;
         width: 100%;
-        height: 700px;
+        height: auto;
+        padding-bottom: 50px;
         background-color: #EEEE;
         .titleContainer3 //Title Container Technologies
         {
             display: flex;
             align-items: center;
-            padding-top: 133px;
+            padding-top: 53px;
             width: 85%;
             p 
             {
@@ -2804,8 +2810,8 @@ html {
             grid-template-columns: repeat(4,1fr);
             margin-top: 50px;
             width: 84%;
-
-
+            height: auto;
+            margin-bottom: 100px;
             .card 
             {
                 width: 80%;
@@ -3961,13 +3967,13 @@ html {
             display: flex;
             padding-top: 133px;
             width: 84%;
+            align-items: center;            
             p 
             {
                 font-size: 3rem;
                 font-family: "LemonMilkRegular";
                 color: #0E0E0E ;
                 opacity: 0.7;
-                width: 45%;
             }
             hr 
             {
@@ -4157,9 +4163,9 @@ html {
                 font-size: 24px;
                 font-family: "LemonMilkRegular";
                 color: white ;
-                width: 900px;
             }
             margin-top: 100px;
+            width: 80%;
         }
         .titleContainer4 //Title Container Bizimle emekdashliq
         {
@@ -4203,7 +4209,8 @@ html {
         {
             display: flex;
             flex-direction: column;
-            width: 80%;
+            width: 100%;
+            align-items: center;
             .jedailogoandHr
             {
                 display: flex;
@@ -4322,7 +4329,8 @@ html {
         align-items: center ;
         flex-direction: column;
         width: 100%;
-        height: 2700px;
+        height: auto;
+        padding-bottom: 50px;
         background: white;
         .verticalLine
         {
@@ -4543,6 +4551,8 @@ html {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        height: auto;
+        margin-bottom: 50px;
         background-color: #fff;
         iframe 
         {
@@ -4552,10 +4562,12 @@ html {
         .form
         {
             width: 55%;
-            height: 500px;
+            height: auto;
+            margin-bottom: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            
             .titleContainer7
             {
                 display: flex;
@@ -4566,7 +4578,6 @@ html {
                     font-size: 2rem;
                     font-family: "LemonMilkRegular";
                     color: black ;
-                    width: 60%;
                     opacity: 0.7;
                     margin: 0;
                     margin-top: 45px;
@@ -4578,9 +4589,8 @@ html {
                     background-color: black;
                     border: none;
                     opacity: 0.5;
-                    width: 40%;
+                    width: 30%;
                     margin-top: 45px;
-                    margin-right: 50px;
                 }
                 
             } //TitleContainer form 
@@ -4851,8 +4861,417 @@ html {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
+    .slider 
+    {   
+        .glide__track
+        {
+            width: 100%;
+        }
+    }
+    .remove 
+    {
+        display: none;
+    }
+}
 
+
+@media only screen and (max-width: 1200px) {
+    .secondPage
+    {
+        .formAndIframe
+        {   
+
+            iframe 
+            {
+                width: 100%;
+            }
+            .form 
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 674px) {
+    .secondPage
+    {
+        .formAndIframe
+        {
+            iframe 
+            {
+            }
+            .formContainer
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center !important;
+            }
+            .form 
+            {
+                align-items: center;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .textArea
+                {
+                    margin-top: 20px !important;
+                    margin-left: 0px !important;
+                    width: 78.5% !important;
+                }
+                input 
+                {
+                    width: 100% !important;
+                }
+                .inputs
+                {
+                    width: 85% !important;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .gonderButton
+                {
+                    margin-left: 0px !important;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    .remove 
+    {
+        display: none;
+    }
+    .secondPage
+    {
+        .navbar
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100% !important;
+            img 
+            {
+                width: 90px !important;
+                height: auto !important;
+                margin-left: 20px;
+            }
+        }
+        .menuIcon
+        {
+            transform: scale(0.5);
+        }
+        .navbarContainer
+        {
+            height: 50px !important;
+        }
+        .titleContainer3 , .titleContainer2 , .titleContainer7
+        {
+            text-align: center !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .titleContainer7_2
+        {
+            display: flex;
+            justify-content: center ;
+            p 
+            {
+                width: auto !important;
+            }
+        }
+        .titleContainer7 , .titleContainer7_2
+        {
+            p 
+            {
+                margin-left: 0px !important;
+            }
+        }
+        .titleContainer2
+        {
+            padding-top: 0px !important;
+            margin-top: 40px !important;
+        }
+
+    }
+    
+}
+
+@media only screen and (max-width: 890px) {
+    
+    .secondPage .technologies .cardConatiner .card p
+    {
+        font-size: 14px !important;
+    }    
+    .secondPage
+    {
+        .technologies
+        {
+            .cardConatiner
+            {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .secondPage .technologies .cardConatiner .card 
+    {
+        font-size: 14px !important;
+        height: 150px !important;
+    }  
+    .secondPage .technologies .cardConatiner .card img 
+    {
+        width:40px;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .remove 
+    {
+        display: none;
+    }
+    .secondPage
+    {
+        .hamisinaBax 
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p
+            {
+                margin-right: 0px !important;
+                float: left !important;
+            }
+        }
+        .projectsDone
+        {
+            .buttonContainer
+            {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+        }
+        .projects
+        {
+            grid-template-columns: 1fr !important;
+            width: 100% !important;
+            
+            .card 
+            {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+        .secondPage
+        {
+            .prices
+        {
+            .subTitleContainer
+            {
+                margin-top: 10px !important;
+            }
+            .cardConatiner
+            {
+                grid-template-columns: 1fr 1fr !important;
+                img 
+                {
+                    width: 13px;
+                }
+            }
+        }
+        }
+}
+
+@media only screen and (max-width: 1000px) {
+    .preparingSite
+    {
+        .containerOfContainers
+        {
+            width: 100% !important;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center !important;
+            align-self: center !important;
+            p 
+            {
+                font-size: 15px !important;
+                width: 250px !important;
+                margin: 0 !important;
+            }
+            img 
+            {
+                width: 70px !important;
+                margin: 0 !important;
+
+            }
+        }
+    }
+}
+@media only screen and (max-width: 372px) {
+    .preparingSite
+    {
+        .containerOfContainers
+        {
+            width: 100% !important;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center !important;
+            align-self: center !important;
+            p 
+            {
+                font-size: 15px !important;
+                width: 150px !important;
+                margin: 0 !important;
+            }
+            img 
+            {
+                width: 70px !important;
+                margin: 0 !important;
+
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .remove 
+    {
+        display: none;
+    }
+    .secondPage
+    {
+        .whatDo
+        {
+            .cardConatiner
+            {
+                grid-template-columns: repeat(2, 1fr) !important;
+                
+            }
+            .card 
+            {
+                img 
+                {
+                    width: 70px;
+                }
+            }
+        }
+        .technologies
+        {
+            .cardConatiner
+            {
+                grid-template-columns: repeat(2, 1fr) !important;
+    
+            }
+        }
+        .prices
+        {
+            .titleContainer
+            {
+                padding-top: 50px;
+            }
+            .subTitleContainer
+            {
+                margin-top: 10px !important;
+            }
+            .jedailogoandHr
+            {
+                margin-bottom: 50px;
+                margin-top: 70px !important;
+                img 
+                {
+                    width: 70px !important;
+                }
+            }
+            .subTitleContainer
+            {
+                width: 100%;
+                p 
+                {
+                    width: 100%;
+                    text-align:center;
+                }
+            }
+            .cardConatiner
+            {
+                grid-template-columns: 1fr !important;
+                align-content: center;
+                justify-items: center;
+                margin-top: 10px !important;
+                
+                .card
+                {
+                    width: 100% !important;
+                    margin-top: 10px !important;
+                    padding-bottom: 10px !important;
+                    .title 
+                    {
+                        font-size: 15px;
+                    }
+                    .subTitle 
+                    {
+                        p 
+                        {
+                            font-size: 12px;
+                        }
+                        img 
+                        {
+                            width: 13px;
+                        }
+                    }
+                }
+                .card1 
+                {
+                    height: 450px !important;
+                }
+                .card2
+                {
+                    height: 500px !important;
+                }
+                .card3
+                {
+                    height: 590px !important;
+                }
+            }
+        }
+        
+    }
+    
+}
+
+@media only screen and (max-width: 420px) {
+    .remove 
+    {
+        display: none;
+    }
+    .secondPage
+    {
+        .cardConatiner
+        {
+            .card 
+            {
+                p 
+                {
+                    font-size: 13px;
+                }
+            }            
+        }
+    }
+    
 }
 
 
@@ -4860,4 +5279,122 @@ html {
 
 
 
+@media only screen and (max-width: 555px) {
+    .secondPage
+    {
+        .glide__track
+        {
+            width: 75%;
+        }
+    }
+}
+@media only screen and (max-width: 555px) {
+    .secondPage .partniorsContainer .gridContainer2 
+    {
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    .secondPage .projectsDone .buttonContainer button
+    {
+        margin-left: 0 !important;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .secondPage .partniorsContainer .gridContainer2 
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 475px) {
+    .secondPage
+    {
+        .glide__track
+        {
+            width: 100%;
+            gap: 100px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .secondPage
+    {
+        
+        .slider 
+        {   
+            .glide__track
+            {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .komanda
+    {
+        .imgContainer1
+        {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            div 
+            {
+                margin-top: 30px;
+            }
+        }
+        .imgContainer2
+        {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px!important;
+            div 
+            {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    
+
+    .secondPage
+    {
+        .bizimleEmekdahsliq
+        {
+            .titleContainer4_2
+            {
+                font-size: 20px;
+            }
+            .subAboutContainer
+            {
+                flex-direction: column;
+                
+                .about1_1 , .about2 , .about3
+                {
+                    margin-left: 0px !important; 
+                    p 
+                    {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
 

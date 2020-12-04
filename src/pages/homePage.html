@@ -60,7 +60,7 @@
             </div>
         </div>
         <!-- What Do I do--> <div class="whatDo" id="whatDo"> 
-            <div class="titleContainer"><p>Bİz nə edİrİk ?</p> <hr></div>
+            <div class="titleContainer"><p>Bİz nə edİrİk ?</p> <hr class="remove"></div>
             <div class="cardConatiner"> <!-- Card Conatiner--> 
                 <div class="card">
                     <p class="title">VEB SAYTLARIN HAZIRLANMASI</p>
@@ -108,7 +108,7 @@
        
        
         <!--ProjectsConatiner --><div class="projectsDone"> 
-            <div class="titleContainer2"><p>GÖRDÜYÜMÜZ İŞLƏR</p> <hr></div>
+            <div class="titleContainer2"><p>GÖRDÜYÜMÜZ İŞLƏR</p> <hr class="remove"></div>
 
             <div class="buttonContainer"> 
                 <button>#Web Saytlar</button> 
@@ -212,7 +212,7 @@
 
         
         <!--Technologies Container--><div class="technologies">
-            <div class="titleContainer3"><p>TEXNOLOGİYA VƏ PLATFORMALAR</p> <hr></div>
+            <div class="titleContainer3"><p>TEXNOLOGİYA VƏ PLATFORMALAR</p> <hr class="remove"></div>
             <!--ItemConatiner--><div class="itemContainer">
                 <!--Item1--><div class="item"> 
                     <span class="titleItem">BACKEND<hr></span>
@@ -330,9 +330,9 @@
         </div> <!--Partniors-->
 
         <div class="slider"><!--Slider-->
-            <div class="titleContainer6"><p>BİZİ TÖVSİYYƏ EDİRLƏR</p> <hr></div>
+            <div class="titleContainer6"><p>BİZİ TÖVSİYYƏ EDİRLƏR</p> <hr class="remove"></div>
             <div class="glide glideEditSlider">
-                <div class="glide__track" data-glide-el="track">
+                <div class="glide__track" data-glide-el="track" style="width: 100% !important;display: flex;justify-content: center;">
                   <ul class="glide__slides ">
                     <li class="glide__slide glideSlideEditer "><img src="../assets/images/gravityMektub.png" alt="" ></li>
                     <li class="glide__slide glideSlideEditer"><img src="../assets/images/bmgMektub.png" alt="" ></li>
@@ -351,7 +351,7 @@
         <div class="formAndIframe"><!--Form-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.825218940375!2d49.88928311576867!3d40.390566165153565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306351ed002c7b%3A0xc993fbbfe87199e5!2sJedAi.az!5e0!3m2!1sen!2s!4v1606805870598!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <div class="form">
-                <div class="titleContainer7"><p>ƏMƏKDAŞLIĞA BAŞLAMAQ ÜÇÜN</p> <hr></div>
+                <div class="titleContainer7"><p>ƏMƏKDAŞLIĞA BAŞLAMAQ ÜÇÜN</p> <hr class="remove"></div>
                 <div class="titleContainer7_2"><p>BİZƏ MESAJ GÖNDƏRİN</p></div>
                 <div class="formContainer">
                     <form action="POST">
@@ -415,6 +415,13 @@
             breakpoints: {
     1400: {
       perView: 3,
+    },
+    1100: {
+      perView: 2,
+    },
+    700: {
+      perView: 1,
+      gap:0
     }
   }
         }).mount()
