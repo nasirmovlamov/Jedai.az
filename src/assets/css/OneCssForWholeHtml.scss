@@ -46,7 +46,7 @@ html {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 80px;
+            height:100px;
             position: sticky;
             position: fixed;
             z-index: 101;
@@ -77,6 +77,11 @@ html {
                 font-size: 18px;
                 word-spacing: 6px;
                 color: white;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    margin-left: 10px;
+                }
             }
             p
             {
@@ -167,7 +172,7 @@ html {
 
         .subTitle2
         {
-            margin-top: 100px;
+            margin-top: 180px;
             width: 100%;
             height: 239px;
             display: flex;
@@ -325,7 +330,8 @@ html {
         flex-direction: column;
         align-items: center ;
         width: 100%;
-        height: 798px;
+        height: auto;
+        padding-bottom: 100px;
         background-color: #E5E5E5;
         .titleContainer
         {
@@ -365,7 +371,7 @@ html {
             .card 
             {
                 width: 80%;
-                height: 368px;
+                height: 328px;
                 padding-left: 40px;
                 padding-top: 50px;
                 box-shadow: 9px 9px 10px rgba(0,0,0,0.1);
@@ -373,6 +379,10 @@ html {
                 p 
                 {
                     margin: 0;
+                }
+                img 
+                {
+                    width: 16px;
                 }
                 .title 
                 {
@@ -425,13 +435,14 @@ html {
                     border-radius: 4px;
                     transition: 1s ;
                     font-family: "GilroyRegular";
-                    
+                    cursor: pointer;
                     &:hover 
                     {
                         border:1px solid #1D84c4;
                         background-color: white;
                         color: #1D84C4;
                         transition: 1s;
+                        cursor: pointer;    
                     }
                     &:focus {
                         outline: none;
@@ -547,23 +558,31 @@ html {
             grid-gap: 1px;
             .card 
             {
+
                 width: 100%;
                 height: 390px;
                 display: flex;
+                cursor: pointer;
+                a
+                {
+                    width: 42.5%;
+                    height: 390px;
+                    position: absolute;
+                }
                 p 
                 {
                     margin-left: 40px;
                 }
                 &:nth-child(1)
                 {
-                    background: url('../images/FruitAgro.png')  bottom no-repeat;
+                    background: url('../images/01.jpg')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: #8fa320;
+                        background-color: #16b6de;
                         transition: 0.5s;
                         transition:  0.5s ease-in-out ;
                         opacity: 0;
@@ -678,14 +697,14 @@ html {
                 }
                 &:nth-child(2)
                 {
-                    background: url('../images/mnm.png')  bottom no-repeat;
+                    background: url('../images/02.png')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: #0d1014;
+                        background-color:#de3838;
                         transition: 0.5s;
                         transition:  0.5s ease-in-out  ;
                         opacity: 0;
@@ -799,14 +818,14 @@ html {
                 }
                 &:nth-child(3)
                 {
-                    background: url('../images/bmgBg.png')  bottom no-repeat;
+                    background: url('../images/03.jpg')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: #005c9b;
+                        background-color: #8fa320;
                         transition: 0.5s;
                         transition:  0.5s ease-in-out  ;
                         opacity: 0;
@@ -920,14 +939,14 @@ html {
                 }
                 &:nth-child(4)
                 {
-                    background: url('../images/Aqua.png') bottom  no-repeat;
+                    background: url('../images/04.jpg') bottom  no-repeat;
                     background-size: cover;
                     div 
                     {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: #04bfe8;
+                        background-color: #005d9a;
                         transition: 0.5s;
                         transition:  0.5s ease-in-out  ;
                         opacity: 0;
@@ -1042,14 +1061,14 @@ html {
                 }
                 &:nth-child(5)
                 {
-                    background: url('../images/xalcaBg.png')  bottom no-repeat;
+                    background: url('../images/05.png')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: #ff0335;
+                        background-color: #dd8000;
                         transition: 0.5s;
                         transition:  0.5s ease-in-out  ;
                         opacity: 0;
@@ -1163,14 +1182,14 @@ html {
                 }
                 &:nth-child(6)
                 {
-                    background: url('../images/ramservisBg.png')  bottom no-repeat;
+                    background: url('../images/06.jpg')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: black;
+                        background-color: #b40467;
                         transition: 0.5s;
                         transition:  0.5s ease-in-out  ;
                         opacity: 0;
@@ -1284,14 +1303,14 @@ html {
                 }
                 &:nth-child(8)
                 {
-                    background: url('../images/papaBg.png') bottom  no-repeat;
+                    background: url('../images/08.png') bottom  no-repeat;
                     background-size: cover;
                     div 
                     {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: #de3838;
+                        background-color: #ff0335   ;
                         transition: 0.5s;
                         transition:  0.5s ease-in-out  ;
                         opacity: 0;
@@ -1406,14 +1425,14 @@ html {
                 }
                 &:nth-child(7)
                 {
-                    background: url('../images/jicaAlumni.png') bottom  no-repeat;
+                    background: url('../images/07.jpg') bottom  no-repeat;
                     background-size: cover;
                     div 
                     {
                         align-self: flex-end;
                         width: 100%;
                         height: 0px;
-                        background-color: #fd490e;
+                        background-color: black;
                         transition: 0.5s;
                         transition:  0.5s ease-in-out  ;
                         opacity: 0;
@@ -1592,7 +1611,7 @@ html {
                 background-color: #464646;
                 border: none;
                 opacity: 0.5;
-                width: 100px;
+                width: 30%;
             }
         } //Title Container Technologies
 
@@ -1601,11 +1620,21 @@ html {
             display: flex;
             width: 85%;
             margin-top: 60px;
+            
             .item 
             {
                 width: 100%;
                 height: 280px;
                 display: flex;
+                &:hover 
+                {
+                    span 
+                    {
+                        color: black !important;
+                        transition: 1s;
+                    }
+                    transition: 1s;
+                }
                 .titleItem
                 {
                     writing-mode: vertical-rl;
@@ -1613,18 +1642,36 @@ html {
                     text-align: center;
                     height: 240px;
                     font-family: "LemonMilkRegular";
-                    color: #000000;
+                    color: gray;
                     font-size: 20px;
+                    transition: 1s;
+                    cursor: default;
                     hr 
                     {   
                         transform: rotate(180deg);
                         border: none;
                         height: 240px;
                         width: 1px;
-                        background: #464646;
+                        background: gray;
                         margin-right: 15px;
+                         transition: 1s;
+
                     }
                     
+                }
+                &:hover 
+                {
+                     .verticalLineTech {
+                         transition: 1s;
+                         background: black !important;
+                     }
+                     .titleItem
+                     {
+                         color: black !important;
+                         transition: 1s;
+
+                     }
+                     
                 }
                 .imgContainer
                 {
@@ -1635,6 +1682,7 @@ html {
                     
                     .imgAndText
                     {
+
                         display: flex;
                         align-items: center;
                         width: 220px;
@@ -1651,13 +1699,16 @@ html {
                         }
                         span 
                         {
+                            cursor: default;
                             width: 150px;
                             text-align: left;
                             font-size: 17px;
+                            color: gray;
                             font-family: "GilroyMedium";
                             margin-left: 15px;
                             position: absolute;
                             margin-left: 45px;
+                            transition: 1s;
                         }
                         
                     }
@@ -1774,7 +1825,6 @@ html {
                 font-size: 2rem;
                 font-family: "LemonMilkRegular";
                 color: white ;
-                width: 50%;
             }
             hr 
             {
@@ -1782,7 +1832,7 @@ html {
                 height: 1px;
                 background-color: white;
                 border: none;
-                width: 40%;
+                width: 10%;
                 opacity: 0.5;
             }
         } //Title Container Bizimle emekdashliq
@@ -1798,10 +1848,18 @@ html {
                     font-size: 1.55rem;
                     color: white;
                     margin-top: 50px;
+                        transition: 0.5s;
+                    cursor: default;
+                    &:hover  
+                    {
+                        color:black;
+                        transition: 0.5s;
+                    }
                 }
                 img 
                 {
                     margin-right: 15px;
+                    width: 17px;
                 }
             }
             .about3 
@@ -2158,7 +2216,7 @@ html {
         }
         .topFooter{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.5fr 0.5fr;
             width: 80%;
             margin-top: 90px;
             .links 
@@ -2174,7 +2232,7 @@ html {
             .imgsContainer
             {
                 justify-self: end;
-                margin-right: 5%;
+                margin-right: 13%;
                 img {
                     height: auto;
                     margin-left: 10px;
@@ -2199,6 +2257,7 @@ html {
             height: 0.5px;
             background-color: white;
             border: none;
+            opacity: 0.3;
             margin-top: 100px;
         }
 
@@ -2365,7 +2424,7 @@ html {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 80px;
+            height: 100px;
             position: sticky;
             position: fixed;
             z-index: 101;
@@ -2396,6 +2455,11 @@ html {
                 font-size: 18px;
                 word-spacing: 6px;
                 color: white;
+                a {
+                    margin-left: 10px;
+                    text-decoration: none;
+                    color: white;
+                }
             }
             p
             {
@@ -2486,7 +2550,7 @@ html {
 
         .subTitle2
         {
-            margin-top: 100px;
+            margin-top: 180px;
             width: 100%;
             height: 239px;
             display: flex;
@@ -2655,20 +2719,20 @@ html {
             width: 84.5%;
             p 
             {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-family: "LemonMilkRegular";
                 color: #0E0E0E ;
                 opacity: 0.7;
-                width: 55%;
             }
             hr 
             {
-                margin-left: 40px;
                 width: 35%;
                 height: 1px;
                 background-color: #464646;
                 border: none;
                 opacity: 0.5;
+                margin: 0;
+                margin-left: 30px;
             }
 
         }
@@ -2690,6 +2754,12 @@ html {
                 justify-content: center;
                 align-items: center;
                 height: 200px;
+                cursor: pointer;
+                a 
+                {
+                    width: 100%;
+                    height: 390px;
+                }
                 p 
                 {
                     margin: 0;
@@ -2789,7 +2859,7 @@ html {
             width: 85%;
             p 
             {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-family: "LemonMilkRegular";
                 color: #0E0E0E ;
                 opacity: 0.7;
@@ -2801,7 +2871,7 @@ html {
                 background-color: #464646;
                 border: none;
                 opacity: 0.5;
-                width: 100px;
+                width: 35%;
             }
         } //Title Container Technologies
         .cardConatiner
@@ -2811,7 +2881,6 @@ html {
             margin-top: 50px;
             width: 84%;
             height: auto;
-            margin-bottom: 100px;
             .card 
             {
                 width: 80%;
@@ -2941,13 +3010,20 @@ html {
                 width: 100%;
                 height: 390px;
                 display: flex;
+                cursor: pointer;
+
+                a {
+                    width: 50%;
+                    height: 390px;
+                    position: absolute;
+                }
                 p 
                 {
                     margin-left: 40px;
                 }
                 &:nth-child(1)
                 {
-                    background: url('../images/computers.png')  bottom no-repeat;
+                    background: url('../images/01.jpg')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
@@ -2958,7 +3034,6 @@ html {
                         transition: 0.5s;
                         transition:  0.5s ease-in-out ;
                         opacity: 0;
-
                         p 
                         {
                             
@@ -3069,7 +3144,7 @@ html {
                 }
                 &:nth-child(2)
                 {
-                    background: url('../images/computers.png')  bottom no-repeat;
+                    background: url('../images/02.png')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
@@ -3190,7 +3265,7 @@ html {
                 }
                 &:nth-child(3)
                 {
-                    background: url('../images/computers2.png')  bottom no-repeat;
+                    background: url('../images/03.jpg')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
@@ -3311,7 +3386,7 @@ html {
                 }
                 &:nth-child(4)
                 {
-                    background: url('../images/computers2.png') bottom  no-repeat;
+                    background: url('../images/04.jpg') bottom  no-repeat;
                     background-size: cover;
                     div 
                     {
@@ -3433,7 +3508,7 @@ html {
                 }
                 &:nth-child(5)
                 {
-                    background: url('../images/computers3.png')  bottom no-repeat;
+                    background: url('../images/05.png')  bottom no-repeat;
                     background-size: cover;
                     div 
                     {
@@ -3554,7 +3629,7 @@ html {
                 }
                 &:nth-child(6)
                 {
-                    background: url('../images/computers3.png')  bottom no-repeat;
+                    background: url('../images/06.jpg')  bottom no-repeat;
                     background-size: center;
                     div 
                     {
@@ -3675,7 +3750,7 @@ html {
                 }
                 &:nth-child(8)
                 {
-                    background: url('../images/papaBg.png') bottom  no-repeat;
+                    background: url('../images/07.jpg') bottom  no-repeat;
                     background-size: cover;
                     div 
                     {
@@ -3797,7 +3872,7 @@ html {
                 }
                 &:nth-child(7)
                 {
-                    background: url('../images/jicaAlumni.png') bottom  no-repeat;
+                    background: url('../images/08.png') bottom  no-repeat;
                     background-size: cover;
                     div 
                     {
@@ -4051,6 +4126,10 @@ html {
                 height: auto;
                 padding-bottom: 15px;
                 transition: 1s;
+                img 
+                {
+                    width: 16px;
+                }
                 &:hover 
                 {
                     transition: 1s;
@@ -4080,7 +4159,7 @@ html {
                 hr 
                 {
                     width: 90%;
-                    height: 2px;
+                    height: 1px;
                     background:  black;
                     border: none;
                     margin: 0;
@@ -4211,13 +4290,15 @@ html {
             flex-direction: column;
             width: 100%;
             align-items: center;
+            
+            
             .jedailogoandHr
             {
                 display: flex;
                 justify-content: space-between;
-                width: 100%;
+                width: 80%;
                 align-items: center;
-                align-self: flex-start;
+                align-self: center;
                 margin-top: 100px;
                 margin-bottom: 10px;
                 hr 
@@ -4226,7 +4307,7 @@ html {
                     border: none;
                     background-color:white;
                     margin: 0;
-                    width: 40%;
+                    width: 35%;
                 }
                 img 
                 {
@@ -4241,10 +4322,28 @@ html {
                     color: white;
                     margin-top: 50px;
                     font-family: "GilroyRegular";
+                    transition: 1s;
+                    cursor: default;
+                    &:hover {
+                        color: black;
+                        transition: 1s;
+                    }
                 }
                 img 
                 {
                     margin-right: 15px;
+                }
+            }
+            .about1 {
+                width: 80%;
+                p 
+                {
+                    transition: 1s;
+                    cursor: default;
+                    &:hover {
+                            color: black;
+                            transition: 1s;
+                    }
                 }
             }
             .about3 
@@ -4353,6 +4452,15 @@ html {
             width: 550px;
             align-items: center; 
             column-gap: 40px;           
+            &:hover 
+            {
+                .text 
+                {
+                    color: black !important;
+                    opacity: 1;
+                    transition: 1s;
+                }
+            }
         }
 
         img 
@@ -4377,6 +4485,9 @@ html {
             font-family: "GilroyMedium";
             font-size: 23px;
             margin-top: 10px;
+            opacity: 0.5;
+                    transition: 1s;
+
         }
         .titleContainer
         {
@@ -4386,7 +4497,7 @@ html {
             width: 80%;
             p 
             {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-family: "LemonMilkRegular";
                 color: black ;
                 width: 90%;
@@ -4520,10 +4631,16 @@ html {
                 font-size: 17px;
                 margin-top: 5px;
             }
+            img {
+                width: 199px;
+                height: auto;
+                border-radius: 50%;
+            }
             .imgContainer1
             {
                 display: flex;
                 column-gap: 100px;
+                
                 div 
                 {
                     display: flex;
@@ -4552,8 +4669,7 @@ html {
         flex-wrap: wrap;
         width: 100%;
         height: auto;
-        margin-bottom: 50px;
-        background-color: #fff;
+        background-color: #eeeeee;
         iframe 
         {
             width: 45%;
@@ -4567,7 +4683,6 @@ html {
             display: flex;
             flex-direction: column;
             align-items: center;
-            
             .titleContainer7
             {
                 display: flex;
@@ -4635,8 +4750,10 @@ html {
                             border: 2px solid rgba(0, 0, 0, 0.5);
                             transition: 1s;
                             font-family: "LemonMilkRegular";
-                            color: rgba(0, 0, 0, 0.7);
+                            color: rgba(0, 0, 0, 1);
                             font-size: 1rem;
+                             background-color: #eeeeee;
+
                             &::placeholder 
                             {
                                 font-family: "LemonMilkRegular";
@@ -4769,7 +4886,7 @@ html {
         }
         .topFooter{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.5fr 0.5fr;
             width: 80%;
             margin-top: 90px;
             .links 
@@ -4785,7 +4902,7 @@ html {
             .imgsContainer
             {
                 justify-self: end;
-                margin-right: 5%;
+                margin-right: 12%;
                 img {
                     height: auto;
                     margin-left: 10px;

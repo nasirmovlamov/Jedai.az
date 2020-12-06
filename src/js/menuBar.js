@@ -14,8 +14,10 @@ function animationMenu()
         
         if(window.scrollY < 100)
         {
-            document.getElementById('jedaiLogo').src = "../assets/images/Jedai-logo-blue.png"
-            document.getElementById('phoneNuber').setAttribute("style" , "color:#225a93")
+            document.getElementById('jedaiLogo').src = "./assets/images/Jedai-logo-blue.png"
+            document.getElementById('phoneNuber').setAttribute("style", "color:#225a93")
+            document.getElementById('phoneNuber2').setAttribute("style" , "color:#225a93")
+            
         }
         document.getElementById('navbarContainer').setAttribute("style" , "box-shadow:none;");
         document.getElementById('text1_1').setAttribute("style" , "opacity:1;transition:color 0.5s , opacity 0.5s 0.35s;pointer-events:all;");
@@ -53,9 +55,10 @@ function animationMenu()
 
        if(window.scrollY < 100)
         {
-            document.getElementById('jedaiLogo').src = "../assets/images/JedaiLogo.png"
+            document.getElementById('jedaiLogo').src = "./assets/images/JedaiLogo.png"
             document.getElementById('phoneNuber').setAttribute("style" , "color:white;")
-            document.getElementById('downIcon').setAttribute("style" , "background-color:white ")
+            document.getElementById('phoneNuber2').setAttribute("style" , "color:white;")
+           document.getElementById('downIcon').setAttribute("style", "background-color:white ")
             document.getElementById('topIcon').setAttribute("style" , "background-color:white ")    
         }
         if (window.scrollY > 100)
@@ -74,18 +77,22 @@ window.addEventListener('scroll' , function ()
 {
     
     if (window.scrollY > 100 && count === 0 ) {
-        document.getElementById('jedaiLogo').src = "../assets/images/Jedai-logo-blue.png"
+        document.getElementById('jedaiLogo').src = "./assets/images/Jedai-logo-blue.png"
         document.getElementById('navbarContainer').setAttribute("style" , "background-color:rgba(255,255,255,0.95); transition:0.5s;box-shadow:5px 5px 15px rgba(0,0,0,0.2);")
         document.getElementById('phoneNuber').setAttribute("style" , "color:#225a93")
+        document.getElementById('phoneNuber2').setAttribute("style" , "color:#225a93")
+        
         document.getElementById('downIcon').setAttribute("style" , "background-color:#225a93")
         document.getElementById('topIcon').setAttribute("style" , "background-color:#225a93")
     }
     else if (window.scrollY < 100 && count === 0)
     {
-        document.getElementById('jedaiLogo').src = "../assets/images/JedaiLogo.png"
+        document.getElementById('jedaiLogo').src = "./assets/images/JedaiLogo.png"
         document.getElementById('navbarContainer').setAttribute("style" , "background-color:none; transition:0.5s;")
         document.getElementById('phoneNuber').setAttribute("style" , "color:white")
-        document.getElementById('downIcon').setAttribute("style" , "background-color:white")
+        document.getElementById('phoneNuber2').setAttribute("style" , "color:white")
+        
+        document.getElementById('downIcon').setAttribute("style", "background-color:white")
         document.getElementById('topIcon').setAttribute("style" , "background-color:white")
     }
 })

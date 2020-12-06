@@ -52,7 +52,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80px;
+  height: 100px;
   position: -webkit-sticky;
   position: sticky;
   position: fixed;
@@ -92,6 +92,12 @@ html {
   font-size: 18px;
   word-spacing: 6px;
   color: white;
+}
+
+.HomePage .topContainer .navbar .phoneNumber a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 .HomePage .topContainer .navbar p {
@@ -176,7 +182,7 @@ html {
 }
 
 .HomePage .topContainer .subTitle2 {
-  margin-top: 100px;
+  margin-top: 180px;
   width: 100%;
   height: 239px;
   display: -webkit-box;
@@ -365,7 +371,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 798px;
+  height: auto;
+  padding-bottom: 100px;
   background-color: #E5E5E5;
 }
 
@@ -409,7 +416,7 @@ html {
 
 .HomePage .whatDo .cardConatiner .card {
   width: 80%;
-  height: 368px;
+  height: 328px;
   padding-left: 40px;
   padding-top: 50px;
   -webkit-box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.1);
@@ -419,6 +426,10 @@ html {
 
 .HomePage .whatDo .cardConatiner .card p {
   margin: 0;
+}
+
+.HomePage .whatDo .cardConatiner .card img {
+  width: 16px;
 }
 
 .HomePage .whatDo .cardConatiner .card .title {
@@ -468,6 +479,7 @@ html {
   -webkit-transition: 1s;
   transition: 1s;
   font-family: "GilroyRegular";
+  cursor: pointer;
 }
 
 .HomePage .whatDo .cardConatiner .card .cardButton:hover {
@@ -476,6 +488,7 @@ html {
   color: #1D84C4;
   -webkit-transition: 1s;
   transition: 1s;
+  cursor: pointer;
 }
 
 .HomePage .whatDo .cardConatiner .card .cardButton:focus {
@@ -603,6 +616,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+}
+
+.HomePage .projectsDone .projects .card a {
+  width: 42.5%;
+  height: 390px;
+  position: absolute;
 }
 
 .HomePage .projectsDone .projects .card p {
@@ -610,7 +630,7 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(1) {
-  background: url("../images/FruitAgro.png") bottom no-repeat;
+  background: url("../images/01.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -619,7 +639,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: #8fa320;
+  background-color: #16b6de;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -734,7 +754,7 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(2) {
-  background: url("../images/mnm.png") bottom no-repeat;
+  background: url("../images/02.png") bottom no-repeat;
   background-size: cover;
 }
 
@@ -743,7 +763,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: #0d1014;
+  background-color: #de3838;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -857,7 +877,7 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(3) {
-  background: url("../images/bmgBg.png") bottom no-repeat;
+  background: url("../images/03.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -866,7 +886,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: #005c9b;
+  background-color: #8fa320;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -980,7 +1000,7 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(4) {
-  background: url("../images/Aqua.png") bottom no-repeat;
+  background: url("../images/04.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -989,7 +1009,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: #04bfe8;
+  background-color: #005d9a;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -1103,7 +1123,7 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(5) {
-  background: url("../images/xalcaBg.png") bottom no-repeat;
+  background: url("../images/05.png") bottom no-repeat;
   background-size: cover;
 }
 
@@ -1112,7 +1132,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: #ff0335;
+  background-color: #dd8000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -1226,7 +1246,7 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(6) {
-  background: url("../images/ramservisBg.png") bottom no-repeat;
+  background: url("../images/06.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -1235,7 +1255,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: black;
+  background-color: #b40467;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -1349,7 +1369,7 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(8) {
-  background: url("../images/papaBg.png") bottom no-repeat;
+  background: url("../images/08.png") bottom no-repeat;
   background-size: cover;
 }
 
@@ -1358,7 +1378,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: #de3838;
+  background-color: #ff0335;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -1472,7 +1492,7 @@ html {
 }
 
 .HomePage .projectsDone .projects .card:nth-child(7) {
-  background: url("../images/jicaAlumni.png") bottom no-repeat;
+  background: url("../images/07.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -1481,7 +1501,7 @@ html {
       align-self: flex-end;
   width: 100%;
   height: 0px;
-  background-color: #fd490e;
+  background-color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
@@ -1663,7 +1683,7 @@ html {
   background-color: #464646;
   border: none;
   opacity: 0.5;
-  width: 100px;
+  width: 30%;
 }
 
 .HomePage .technologies .itemContainer {
@@ -1682,6 +1702,17 @@ html {
   display: flex;
 }
 
+.HomePage .technologies .itemContainer .item:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.HomePage .technologies .itemContainer .item:hover span {
+  color: black !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .HomePage .technologies .itemContainer .item .titleItem {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
@@ -1691,8 +1722,11 @@ html {
   text-align: center;
   height: 240px;
   font-family: "LemonMilkRegular";
-  color: #000000;
+  color: gray;
   font-size: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: default;
 }
 
 .HomePage .technologies .itemContainer .item .titleItem hr {
@@ -1701,8 +1735,22 @@ html {
   border: none;
   height: 240px;
   width: 1px;
-  background: #464646;
+  background: gray;
   margin-right: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.HomePage .technologies .itemContainer .item:hover .verticalLineTech {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: black !important;
+}
+
+.HomePage .technologies .itemContainer .item:hover .titleItem {
+  color: black !important;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .HomePage .technologies .itemContainer .item .imgContainer {
@@ -1737,13 +1785,17 @@ html {
 }
 
 .HomePage .technologies .itemContainer .item .imgContainer .imgAndText span {
+  cursor: default;
   width: 150px;
   text-align: left;
   font-size: 17px;
+  color: gray;
   font-family: "GilroyMedium";
   margin-left: 15px;
   position: absolute;
   margin-left: 45px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .HomePage .humansContainer {
@@ -1861,7 +1913,6 @@ html {
   font-size: 2rem;
   font-family: "LemonMilkRegular";
   color: white;
-  width: 50%;
 }
 
 .HomePage .bizimleEmekdahsliq .titleContainer4 hr {
@@ -1869,7 +1920,7 @@ html {
   height: 1px;
   background-color: white;
   border: none;
-  width: 40%;
+  width: 10%;
   opacity: 0.5;
 }
 
@@ -1884,10 +1935,20 @@ html {
   font-size: 1.55rem;
   color: white;
   margin-top: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: default;
+}
+
+.HomePage .bizimleEmekdahsliq .aboutContainer .about1 p:hover, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 p:hover, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 p:hover {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .HomePage .bizimleEmekdahsliq .aboutContainer .about1 img, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 img, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 img {
   margin-right: 15px;
+  width: 17px;
 }
 
 .HomePage .bizimleEmekdahsliq .aboutContainer .about3 {
@@ -2383,8 +2444,8 @@ html {
 .HomePage footer .topFooter {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1.5fr 0.5fr;
+      grid-template-columns: 1.5fr 0.5fr;
   width: 80%;
   margin-top: 90px;
 }
@@ -2401,7 +2462,7 @@ html {
 .HomePage footer .topFooter .imgsContainer {
   -ms-grid-column-align: end;
       justify-self: end;
-  margin-right: 5%;
+  margin-right: 13%;
 }
 
 .HomePage footer .topFooter .imgsContainer img {
@@ -2424,6 +2485,7 @@ html {
   height: 0.5px;
   background-color: white;
   border: none;
+  opacity: 0.3;
   margin-top: 100px;
 }
 
@@ -2547,7 +2609,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80px;
+  height: 100px;
   position: -webkit-sticky;
   position: sticky;
   position: fixed;
@@ -2586,6 +2648,12 @@ html {
 .secondPage .topContainer .navbar .phoneNumber {
   font-size: 18px;
   word-spacing: 6px;
+  color: white;
+}
+
+.secondPage .topContainer .navbar .phoneNumber a {
+  margin-left: 10px;
+  text-decoration: none;
   color: white;
 }
 
@@ -2671,7 +2739,7 @@ html {
 }
 
 .secondPage .topContainer .subTitle2 {
-  margin-top: 100px;
+  margin-top: 180px;
   width: 100%;
   height: 239px;
   display: -webkit-box;
@@ -2877,20 +2945,20 @@ html {
 }
 
 .secondPage .whatDo .titleContainer p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "LemonMilkRegular";
   color: #0E0E0E;
   opacity: 0.7;
-  width: 55%;
 }
 
 .secondPage .whatDo .titleContainer hr {
-  margin-left: 40px;
   width: 35%;
   height: 1px;
   background-color: #464646;
   border: none;
   opacity: 0.5;
+  margin: 0;
+  margin-left: 30px;
 }
 
 .secondPage .whatDo .cardConatiner {
@@ -2919,6 +2987,12 @@ html {
       -ms-flex-align: center;
           align-items: center;
   height: 200px;
+  cursor: pointer;
+}
+
+.secondPage .whatDo .cardConatiner .card a {
+  width: 100%;
+  height: 390px;
 }
 
 .secondPage .whatDo .cardConatiner .card p {
@@ -3022,7 +3096,7 @@ html {
 }
 
 .secondPage .technologies .titleContainer3 p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "LemonMilkRegular";
   color: #0E0E0E;
   opacity: 0.7;
@@ -3034,7 +3108,7 @@ html {
   background-color: #464646;
   border: none;
   opacity: 0.5;
-  width: 100px;
+  width: 35%;
 }
 
 .secondPage .technologies .cardConatiner {
@@ -3045,7 +3119,6 @@ html {
   margin-top: 50px;
   width: 84%;
   height: auto;
-  margin-bottom: 100px;
 }
 
 .secondPage .technologies .cardConatiner .card {
@@ -3188,6 +3261,13 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
+}
+
+.secondPage .projectsDone .projects .card a {
+  width: 50%;
+  height: 390px;
+  position: absolute;
 }
 
 .secondPage .projectsDone .projects .card p {
@@ -3195,7 +3275,7 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(1) {
-  background: url("../images/computers.png") bottom no-repeat;
+  background: url("../images/01.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -3319,7 +3399,7 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(2) {
-  background: url("../images/computers.png") bottom no-repeat;
+  background: url("../images/02.png") bottom no-repeat;
   background-size: cover;
 }
 
@@ -3442,7 +3522,7 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(3) {
-  background: url("../images/computers2.png") bottom no-repeat;
+  background: url("../images/03.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -3565,7 +3645,7 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(4) {
-  background: url("../images/computers2.png") bottom no-repeat;
+  background: url("../images/04.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -3688,7 +3768,7 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(5) {
-  background: url("../images/computers3.png") bottom no-repeat;
+  background: url("../images/05.png") bottom no-repeat;
   background-size: cover;
 }
 
@@ -3811,7 +3891,7 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(6) {
-  background: url("../images/computers3.png") bottom no-repeat;
+  background: url("../images/06.jpg") bottom no-repeat;
   background-size: center;
 }
 
@@ -3934,7 +4014,7 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(8) {
-  background: url("../images/papaBg.png") bottom no-repeat;
+  background: url("../images/07.jpg") bottom no-repeat;
   background-size: cover;
 }
 
@@ -4057,7 +4137,7 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(7) {
-  background: url("../images/jicaAlumni.png") bottom no-repeat;
+  background: url("../images/08.png") bottom no-repeat;
   background-size: cover;
 }
 
@@ -4329,6 +4409,10 @@ html {
   background-color: white;
 }
 
+.secondPage .prices .cardConatiner .card img {
+  width: 16px;
+}
+
 .secondPage .prices .cardConatiner .card:hover {
   -webkit-transition: 1s;
   transition: 1s;
@@ -4364,7 +4448,7 @@ html {
 
 .secondPage .prices .cardConatiner .card hr {
   width: 90%;
-  height: 2px;
+  height: 1px;
   background: black;
   border: none;
   margin: 0;
@@ -4522,12 +4606,12 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 80%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin-top: 100px;
   margin-bottom: 10px;
 }
@@ -4537,7 +4621,7 @@ html {
   border: none;
   background-color: white;
   margin: 0;
-  width: 40%;
+  width: 35%;
 }
 
 .secondPage .bizimleEmekdahsliq .aboutContainer .jedailogoandHr img {
@@ -4550,10 +4634,35 @@ html {
   color: white;
   margin-top: 50px;
   font-family: "GilroyRegular";
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: default;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .about1 p:hover, .secondPage .bizimleEmekdahsliq .aboutContainer .about2 p:hover, .secondPage .bizimleEmekdahsliq .aboutContainer .about3 p:hover, .secondPage .bizimleEmekdahsliq .aboutContainer .about1_1 p:hover {
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .secondPage .bizimleEmekdahsliq .aboutContainer .about1 img, .secondPage .bizimleEmekdahsliq .aboutContainer .about2 img, .secondPage .bizimleEmekdahsliq .aboutContainer .about3 img, .secondPage .bizimleEmekdahsliq .aboutContainer .about1_1 img {
   margin-right: 15px;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .about1 {
+  width: 80%;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .about1 p {
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: default;
+}
+
+.secondPage .bizimleEmekdahsliq .aboutContainer .about1 p:hover {
+  color: black;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .secondPage .bizimleEmekdahsliq .aboutContainer .about3 {
@@ -4698,6 +4807,13 @@ html {
           column-gap: 40px;
 }
 
+.secondPage .preparingSite .container:hover .text {
+  color: black !important;
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .secondPage .preparingSite img {
   height: auto;
 }
@@ -4716,6 +4832,9 @@ html {
   font-family: "GilroyMedium";
   font-size: 23px;
   margin-top: 10px;
+  opacity: 0.5;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .secondPage .preparingSite .titleContainer {
@@ -4730,7 +4849,7 @@ html {
 }
 
 .secondPage .preparingSite .titleContainer p {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "LemonMilkRegular";
   color: black;
   width: 90%;
@@ -4892,6 +5011,12 @@ html {
   margin-top: 5px;
 }
 
+.secondPage .komanda .imgs img {
+  width: 199px;
+  height: auto;
+  border-radius: 50%;
+}
+
 .secondPage .komanda .imgs .imgContainer1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4943,8 +5068,7 @@ html {
       flex-wrap: wrap;
   width: 100%;
   height: auto;
-  margin-bottom: 50px;
-  background-color: #fff;
+  background-color: #eeeeee;
 }
 
 .secondPage .formAndIframe iframe {
@@ -5051,8 +5175,9 @@ html {
   -webkit-transition: 1s;
   transition: 1s;
   font-family: "LemonMilkRegular";
-  color: rgba(0, 0, 0, 0.7);
+  color: black;
   font-size: 1rem;
+  background-color: #eeeeee;
 }
 
 .secondPage .formAndIframe .form .formContainer form .inputs input::-webkit-input-placeholder {
@@ -5270,8 +5395,8 @@ html {
 .secondPage footer .topFooter {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1.5fr 0.5fr;
+      grid-template-columns: 1.5fr 0.5fr;
   width: 80%;
   margin-top: 90px;
 }
@@ -5288,7 +5413,7 @@ html {
 .secondPage footer .topFooter .imgsContainer {
   -ms-grid-column-align: end;
       justify-self: end;
-  margin-right: 5%;
+  margin-right: 12%;
 }
 
 .secondPage footer .topFooter .imgsContainer img {
