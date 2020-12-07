@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/OneCssForWholeHtml.css">
     <link rel="stylesheet" href="./assets/css/glide.core.min.css">
     <link rel="stylesheet" href="./assets/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script>history.scrollRestoration = "manual"</script>
 </head>
 <body>
@@ -17,8 +18,8 @@
                 <nav class="navbar">
 
                     <div class="logoAndText">
-                        <img src="./assets/images/JedaiLogo.png" alt="" id="jedaiLogo">
-                        <p class="phoneNumber" ><a id="phoneNuber" href="tel:+994 50 983 66 99">+994 50 983 66 99</a> </p> <p class="phoneNumber" ><a id="phoneNuber2" href="tel:+994 50 983 66 99">+994 70 983 66 99</a> </p>
+                        <a href="/"><img src="./assets/images/JedaiLogo.png" alt="" id="jedaiLogo"></a>
+                        <p class="phoneNumber" ><a id="phoneNuber" href="tel:+994 50 983 66 99">+994 50 983 66 99</a> </p> <p class="phoneNumber" ><a id="phoneNuber2" href="tel:+994 70 983 66 99">+994 70 983 66 99</a> </p>
                     </div>
 
                     <button class="menuIcon" id="menuIcon" onclick="animationMenu()"><div class="topIcon" id="topIcon"></div> <div class="downIcon" id="downIcon"></div></button></a>
@@ -35,17 +36,13 @@
         <div class="menuOverlay" id="menuOverlay">
             
             <div class="overlayMainText" id="overlayMainText">
-                <div class="text1">
-                    <p id="text1_1">ana səhİfə</p>
-                    <p id="text1_2">haqqımızda</p>
-                    <p id="text1_3">partniyorlarmız       </p>
+                <div class="text1" style="text-align: center;">
+                    <p id="text1_1"><a href="" style="text-decoration:none;">ƏSAS SƏHİFƏ</a> </p>
+                    <p id="text1_2"><a href="/saytlarin-hazirlanmasi.html" style="text-decoration:none;">SAYTLARIN HAZIRLANMASI</a></p>
+                    <p id="text1_3"><a href="/contact.html" style="text-decoration:none;">ƏLAQƏ </a> </p>
                 </div>
 
-                <div class="text2">
-                    <p id="text1_1_1">Portfolİo  </p>
-                    <p id="text1_2_2">xİdmətlər</p>
-                    <p id="text1_3_3">əlaqə</p>
-                </div>
+                
             </div>
 
 
@@ -53,8 +50,9 @@
                 <div class="container" >
                     <p id="ftextOverlayP">© JedAi. Müəllif Hüquqları Qorunur. </p>
                     <div>
-                        <span id="ftextOverlaySpan1">+994  70  983  66  99</span>
-                        <span id="ftextOverlaySpan2">info@jedai.az</span>
+                        <span id="ftextOverlaySpan1"><a href="tel:+994709836699">+994  70  983  66  99</a></span>
+                        <span id="ftextOverlaySpan1_2"><a href="tel:+994509836699">+994  50  983  66  99</a></span>
+                        <span id="ftextOverlaySpan2"><a href="mailto:info@jedai.az"> info@jedai.az</a></span>
                     </div>
                 </div>
             </div>
@@ -62,7 +60,7 @@
         <!-- What Do I do--> <div class="whatDo" id="whatDo"> 
             <div class="titleContainer"><p>Bİz nə edİrİk ?</p> <hr class="remove"></div>
             <div class="cardConatiner"> <!-- Card Conatiner--> 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <p class="title">VEB SAYTLARIN HAZIRLANMASI</p>
                     <hr>
                     <div class="subTitle">
@@ -72,11 +70,11 @@
                         <p><img src="./assets/images/checkBox.svg" alt=""> <span>Landing Page</span></p>
                         <p><img src="./assets/images/checkBox.svg" alt=""> <span>Portal / B2B</span></p>
                     </div>
-                    <button class="cardButton">Daha Ətraflı</button>
+                    <a href="saytlarin-hazirlanmasi.html"><button class="cardButton">Daha Ətraflı</button></a>
                 </div>
                 
                 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <p  class="title">SAYTLARI İNKİŞAF ETDİRİRİK</p>
                     <hr>
                     <div class="subTitle">
@@ -90,7 +88,7 @@
                 </div>
 
 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <p class="title">SOSİAL MEDİA / SMM</p>
                     <hr>
                     <div class="subTitle">
@@ -123,96 +121,96 @@
 
             <!--Projects --><div class="projects">
                 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <a href="http://www.aquaproject.az/en/" target="__blank"></a>
                     <div>
-                        <p>Fruit Agro</p>
-                        <p>Məqsədimiz İnsanları Sağlam Qida ilə Təmin Etməkdir</p>
-                        <p><span>Lorem</span> <span> Lorem</span> <span>Lorem</span> <span>Lorem</span></p>
+                        <p>Aqua Project şirkəti üçün online mağaza hazırlanması</p>
+                        <p>www.aquashop.az</p>
+                        <p><span>Uİ/UX dizayn,</span> <span>Frontend proqramlaşdırma, </span> <span>Backend proqramlaşdırma, </span> <span>Online ödəniş sisteminin inteqrasiyası,</span> <span>Məhsulların yerləşdirilməsi</span></p>
                     </div><!--Overlay-->
                 </div> <!--CARD-->
                 
-                <div class="card">
-                    <a href="https://www.papajohns.az/az" target="__blank"></a>
+                <div class="card" data-aos="fade-up">
+                    <a href="https://www.bmg.az/az" target="__blank"></a>
                     <div>
-                        <p>MNM GROUP</p>
-                        <p>Məkanınızı Gözəl, Rahat və Funksional Edirik</p>
-                        <p><span>Lorem</span> <span> Lorem</span> <span>Lorem</span> <span>Lorem</span></p>
+                        <p>Building Material Group şirkəti üçün korporativ saytın hazırlanması</p>
+                        <p>www.bmg.az </p>
+                        <p><span>Uİ/UX dizayn,</span> <span>Frontend proqramlaşdırma, </span> <span>Backend proqramlaşdırma, </span> <span>Online ödəniş sisteminin inteqrasiyası,</span> <span>Məhsulların yerləşdirilməsi</span></p>
                         
                     </div><!--Overlay-->
 
                 </div> <!--CARD-->
 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <a href="https://fruitaqro.az/" target="__blank"></a>
                     <div>
-                        <p>Building Materials Group</p>
-                        <p>Əməkdaşlıq etdiyimiz və Distribyutor olduğumuz tədarükçü şirkətlərinin arasında dünyanın Quru İnşaat sahəsində üç ən iri və tanınmış istehsalçısı mövcuddur.</p>
-                        <p><span>Lorem</span> <span> Lorem</span> <span>Lorem</span> <span>Lorem</span></p>
+                        <p>Fruit Aqro şirkəri üçün korporativ saytın hazırlanması</p>
+                        <p>www.fruitaqro.az </p>
+                        <p><span>Uİ/UX dizayn,</span> <span>Frontend proqramlaşdırma, </span> <span>Backend proqramlaşdırma, </span> <span>Online ödəniş sisteminin inteqrasiyası,</span> <span>Məhsulların yerləşdirilməsi</span></p>
                         
                     </div><!--Overlay-->
 
                 </div><!--CARD-->
                 
-                <div class="card">
-                    <a href="https://bmg.az/en/" target="__blank"></a>
+                <div class="card" data-aos="fade-up">
+                    <a href="https://saxakids.az/en/" target="__blank"></a>
                     <div>
-                        <p>Aqua Project</p>
-                        <p>Design and construction of pools of any complexity, related services and equipment</p>
-                        <p><span>Lorem</span> <span> Lorem</span> <span>Lorem</span> <span>Lorem</span></p>
+                        <p>Saxa Kids uşaq geyimləri mağazaları şəbəkəsi üçün online mağaza hazırlanması</p>
+                        <p>www.saxakids.az</p>
+                        <p><span>Uİ/UX dizayn,</span> <span>Frontend proqramlaşdırma, </span> <span>Backend proqramlaşdırma, </span> <span>Online ödəniş sisteminin inteqrasiyası,</span> <span>Məhsulların yerləşdirilməsi</span></p>
                         
                     </div><!--Overlay-->
 
                 </div><!--CARD-->
 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <a href="https://gravity.az/" target="__blank"></a>
                     <div>
-                        <p>NEED A CARPET CLEANING?</p>
-                        <p>Quality is the  most important principle of our business</p>
-                        <p><span>Lorem</span> <span> Lorem</span> <span>Lorem</span> <span>Lorem</span></p>
+                        <p>GRAVITY tikinti şirkəti üçün korporativ sayt hazırlanması</p>
+                        <p>www.gravity.az</p>
+                        <p><span>Uİ/UX dizayn,</span> <span>Frontend proqramlaşdırma, </span> <span>Backend proqramlaşdırma, </span> <span>Online ödəniş sisteminin inteqrasiyası,</span> <span>Məhsulların yerləşdirilməsi</span></p>
                     </div><!--Overlay-->
 
                 </div><!--CARD-->
                 
-                <div class="card">
-                    <a href="https://saxakids.az/" target="__blank"></a>
+                <div class="card" data-aos="fade-up">
+                    <a href="https://safye.az/" target="__blank"></a>
                     <div>
-                        <p>Rent a Car in Baku Online</p>
-                        <p>The company “Ram Servis” – Rent a Car Baku is pleased to offer its services to the citizens and guests of our country.</p>
-                        <p><span>Lorem</span> <span> Lorem</span> <span>Lorem</span> <span>Lorem</span></p>
+                        <p>Safye Catering şirkətinin veb saytı üçün Re-dizayn</p>
+                        <p>www.safye.az </p>
+                        <p><span>Uİ/UX dizayn,</span> <span>Frontend proqramlaşdırma, </span> <span>Backend proqramlaşdırma, </span> <span>Online ödəniş sisteminin inteqrasiyası,</span> <span>Məhsulların yerləşdirilməsi</span></p>
                     </div> <!--Overlay-->
 
                 </div><!--CARD-->
 
-                <div class="card">
-                    <a href="https://www.safye.az/" target="__blank"></a>
+                <div class="card" data-aos="fade-up">
+                    <a href="https://www.babektrading.az/" target="__blank"></a>
                     <div>
-                        <p>Rent a Car in Baku Online</p>
-                        <p>The company “Ram Servis” – Rent a Car Baku is pleased to offer its services to the citizens and guests of our country.</p>
-                        <p><span>Lorem</span> <span> Lorem</span> <span>Lorem</span> <span>Lorem</span></p>
+                        <p>Babek Trading şirkəti üçün korporativ sayt hazırlanması</p>
+                        <p>www.babektrading.com</p>
+                        <p><span>Uİ/UX dizayn,</span> <span>Frontend proqramlaşdırma, </span> <span>Backend proqramlaşdırma, </span> <span>Online ödəniş sisteminin inteqrasiyası,</span> <span>Məhsulların yerləşdirilməsi</span></p>
                     </div> <!--Overlay-->
                 </div><!--CARD-->
 
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <a href="https://imparatorxali.az/en/" target="__blank"></a>
                     <div>
-                        <p>Rent a Car in Baku Online</p>
-                        <p>The company “Ram Servis” – Rent a Car Baku is pleased to offer its services to the citizens and guests of our country.</p>
-                        <p><span>Lorem</span> <span> Lorem</span> <span>Lorem</span> <span>Lorem</span></p>      
+                        <p>İmparator Xalı şirkəti üçün veb sayt hazırlanması</p>
+                        <p>www.imparatorxali.az</p>
+                        <p><span>Uİ/UX dizayn,</span> <span>Frontend proqramlaşdırma, </span> <span>Backend proqramlaşdırma, </span> <span>Online ödəniş sisteminin inteqrasiyası,</span> <span>Məhsulların yerləşdirilməsi</span></p>      
                     </div> <!--Overlay-->
                 </div><!--CARD-->
             <!--Projects--></div>  
 
-            <div class="hamisinaBax"><button><img src="./assets/images/arrowToRight.png" alt="" width="auto" height="auto"></button> <p>HAMISINA BAX</p> </div>
+            <div class="hamisinaBax" data-aos="fade-right"><button><img src="./assets/images/arrowToRight.png" alt="" width="auto" height="auto"></button> <p>HAMISINA BAX</p> </div>
         <!--ProjectsConatiner --></div> 
 
 
         
         <!--Technologies Container--><div class="technologies">
-            <div class="titleContainer3"><p>TEXNOLOGİYA VƏ PLATFORMALAR</p> <hr class="remove"></div>
+            <div class="titleContainer3" data-aos="fade-right"><p>TEXNOLOGİYA VƏ PLATFORMALAR</p> <hr class="remove"></div>
             <!--ItemConatiner--><div class="itemContainer">
-                <!--Item1--><div class="item"> 
+                <!--Item1--><div class="item" data-aos="fade-up"> 
                     <span class="titleItem">BACKEND<hr class="verticalLineTech"></span>
                     
                     <div class="imgContainer">
@@ -224,7 +222,7 @@
                 <!--Item1--></div>
 
 
-                <!--Item2--><div class="item">
+                <!--Item2--><div class="item" data-aos="fade-up">
                     <span class="titleItem">FRONTEND<hr class="verticalLineTech"></span>
                     <div class="imgContainer ">
                         <span class="imgAndText"><img src="./assets/images/vueJs.png" width="35"  height="auto" alt=""><span> VUE.JS</span></span>
@@ -235,7 +233,7 @@
                 <!--Item2--></div>
 
 
-                <!--Item3--><div class="item">
+                <!--Item3--><div class="item" data-aos="fade-up">
                     <span class="titleItem ">SEO VƏ KONTEKST<hr class="verticalLineTech"></span>
                     <div class="imgContainer conatiner3">
                         <span class="imgAndText"><img src="./assets/images/Semrush.png" width="50"   height="auto" alt="" style="margin-left: -10px;"><span>SEMRUSH</span></span>
@@ -246,7 +244,7 @@
                 <!--Item3--></div>
 
 
-                <!--Item4--><div class="item">
+                <!--Item4--><div class="item" data-aos="fade-up">
                     <span class="titleItem">SMM VƏ TARGET<hr class="verticalLineTech"></span>
                     <div class="imgContainer">
                         <span class="imgAndText"><img src="./assets/images/Facebook.png"  width="32" height="auto" alt=""><span> FACEBOOK</span></span>
@@ -260,7 +258,7 @@
             </div> <!--ItemConatiner-->
         <!--Technologies--></div>
 
-        <div class="humansContainer"> <!-- Humans Container-->
+        <div class="humansContainer" data-aos="fade-right"> <!-- Humans Container-->
             <div class="text">
                 <p>2018-ci ildə fəaliyyətə başlamışıq və hər günümüzdə inkişaf etmişik və edirik.</p> 
                 <p>Müasir rəqəmsal marketinq üsullarından və platformalarından istifadə edərək, müştərilərimizin online və offline satışlarını artırmağa yardımçı oluruq.</p> 
@@ -268,16 +266,15 @@
                 <p>Digər məqsədimiz isə, müştərilərimizin marketinq xərclərini optimallaşdıraraq, maksimum nəticə verməkdir.</p> 
             </div>
 
-            <div class="imgss">
-                <div ><img class="human1" src="./assets/images/fakhri-ahmadov-developer.jpg" alt="" width="199"></div> 
-                <div class="human2"><img  src="./assets/images/hilal-sultanov UI-UX design.jpg" alt="" width="199"></div>
-                <div class="human3"><img  src="./assets/images/rauf-mammadov-jedai-thegem-person-240.jpg" alt="" width="199"></div>
-                <div class="human4"><img   src="./assets/images/sabina-abdullayeva-graphic-designer.jpg" alt="" width="199" ></div>
-                <div class="human5"><img  src="./assets/images/meryem-memmedhesenzade-content-manager.jpg" alt="" width="199"></div>
+            <div class="komanda" data-aos="fade-left">
+                <div class="imgs">
+                    <div class="imgContainer1"> <div> <img src="./assets/images/rauf-mammadov-jedai-thegem-person-240.jpg" alt=""> <p class="title">RAUF MƏMMƏDOV</p> <p class="subTitle">Project Manager</p></div> <div><img src="./assets/images/fakhri-ahmadov-developer.jpg" alt=""> <p class="title">FƏXRİ ƏHMƏDOV</p> <p class="subTitle">Developer</p></div> <div><img src="./assets/images/hilal-sultanov UI-UX design.jpg" alt=""><p class="title">HİLAL SULTANOv</p> <p class="subTitle">UI/UX Dizayner</p></div>      </div>
+                    <div class="imgContainer2"> <div> <img src="./assets/images/meryem-memmedhesenzade-content-manager.jpg" alt="">  <p class="title">MƏRYƏM</p> <p class="title" style="margin-top: 0px;">MƏHƏMMƏDHƏSƏN</p>  <p class="subTitle">Content Manager</p></div> <div><img src="./assets/images/sabina-abdullayeva-graphic-designer.jpg" alt=""> <p class="title">SABİNA ABDULLAYEVA</p> <p class="subTitle">Qrafik Dizayner</p></div> <div><img src="./assets/images/Masks.png" alt=""> <p class="title">NASİR  MÖVLAMOV</p> <p class="subTitle">Frontend Developer</p></div></div>
+                </div>
             </div>
         </div> <!-- Humans Container-->
 
-        <div class="bizimleEmekdahsliq"><!-- Bizimle Emekdashliq-->
+        <div class="bizimleEmekdahsliq" data-aos="fade-right"><!-- Bizimle Emekdashliq-->
             <div class="titleContainer4"><p>BİZİMLƏ ƏMƏKDAŞLIQ ETMƏK  ÜÇÜN 9 SƏBƏB</p> <hr></div>
             
             <div class="aboutContainer"> 
@@ -305,31 +302,31 @@
             <div class="titleContainer5"><p>partnyorlarımız</p> <hr></div>
 
             <div class="gridContainer2">
-                <div><img src="./assets/images/xalca.png" alt=""></div>
-                <div><img src="./assets/images/sebra-logo-3.png" alt=""></div>
-                <div><img src="./assets/images/mnm-dizayn-2.png" alt=""></div>
-                <div><img src="./assets/images/CineCon-logo-1-1.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/xalca.png" alt="" ></div>
+                <div data-aos="fade-up"><img src="./assets/images/sebra-logo-3.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/mnm-dizayn-2.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/CineCon-logo-1-1.png" alt=""></div>
 
-                <div><img src="./assets/images/bmg.png" alt=""></div>
-                <div><img src="./assets/images/royal-garden-hotel-logo.png" alt=""></div>
-                <div><img src="./assets/images/pakEv.png" alt=""></div>
-                <div><img src="./assets/images/ramservis.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/bmg.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/royal-garden-hotel-logo.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/pakEv.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/ramservis.png" alt=""></div>
 
-                <div><img src="./assets/images/solution.png" alt=""></div>
-                <div><img src="./assets/images/Babek-Trading-logo-2.png" alt=""></div>
-                <div><img src="./assets/images/safyeLogo.png" alt=""></div>
-                <div><img src="./assets/images/cafe-21-logo.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/solution.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/Babek-Trading-logo-2.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/safyeLogo.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/cafe-21-logo.png" alt=""></div>
                 
-                <div><img src="./assets/images/88-1.png" alt=""></div>
-                <div><img src="./assets/images/pj 1.png" alt=""></div>
-                <div><img src="./assets/images/logo-fruit-aqro.png" alt=""></div>
-                <div><img src="./assets/images/gravityLogo.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/88-1.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/pj 1.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/logo-fruit-aqro.png" alt=""></div>
+                <div data-aos="fade-up"><img src="./assets/images/gravityLogo.png" alt=""></div>
             </div>
         </div> <!--Partniors-->
 
-        <div class="slider"><!--Slider-->
-            <div class="titleContainer6"><p>BİZİ TÖVSİYYƏ EDİRLƏR</p> <hr class="remove"></div>
-            <div class="glide glideEditSlider">
+        <div class="slider" ><!--Slider-->
+            <div class="titleContainer6" data-aos="fade-right"><p>BİZİ TÖVSİYYƏ EDİRLƏR</p> <hr class="remove"></div>
+            <div class="glide glideEditSlider" data-aos="fade-up">
                 <div class="glide__track" data-glide-el="track" >
                   <ul class="glide__slides ">
                     <li class="glide__slide glideSlideEditer "><img src="./assets/images/gravityMektub.png" alt="" ></li>
@@ -346,9 +343,9 @@
             </div>
         </div><!--Slider-->
 
-        <div class="formAndIframe"><!--Form-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.825218940375!2d49.88928311576867!3d40.390566165153565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306351ed002c7b%3A0xc993fbbfe87199e5!2sJedAi.az!5e0!3m2!1sen!2s!4v1606805870598!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <div class="form">
+        <div class="formAndIframe" ><!--Form-->
+            <iframe data-aos="fade-right" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.825218940375!2d49.88928311576867!3d40.390566165153565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40306351ed002c7b%3A0xc993fbbfe87199e5!2sJedAi.az!5e0!3m2!1sen!2s!4v1606805870598!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="form" data-aos="fade-left">
                 <div class="titleContainer7"><p>ƏMƏKDAŞLIĞA BAŞLAMAQ ÜÇÜN</p> <hr class="remove"></div>
                 <div class="titleContainer7_2"><p>BİZƏ MESAJ GÖNDƏRİN</p></div>
                 <div class="formContainer">
@@ -368,30 +365,28 @@
         
         <footer>
             <div class="topFooter">
-                <div class="links">
-                    <a href=""> Homepage </a> 
-                    <a href=""> Portfolio </a> 
-                    <a href=""> Services </a> 
-                    <a href=""> Partners </a> 
-                    <a href=""> Contacts </a>
+                <div class="links" data-aos="fade-right">
+                    <a href="http://jedai3.testjed.me/"> Əsas Səhifə </a> 
+                    <a href="http://jedai3.testjed.me/saytlarin-hazirlanmasi.html"> Saytlarin Hazirlanmasi </a> 
+                    <a href="http://jedai3.testjed.me/contact.html"> Əlaqə </a> 
                 </div>
 
-                <div class="imgsContainer">
+                <div class="imgsContainer" data-aos="fade-left">
                     <a href=""><img src="./assets/images/fb 1.png" alt="" width="32" ></a>
                     <a href=""><img src="./assets/images/instagram 1.png" alt="" width="46" style="margin-bottom: -7px;"></a>
                     <a href=""><img src="./assets//images/linkedin3 1.png" alt="" width="40" style="margin-bottom: -4px;"></a>
                 </div>
 
-                <div class="numbersContainer">
-                    <span><a href="tel:+994 50 983 66 99">+994 50 983 66 99</a></span>
-                    <span><a href="tel:+994 70 983 66 99">+994 70 983 66 99</a></span>
+                <div class="numbersContainer" data-aos="fade-right">
+                    <span><a href="tel:+994509836699">+994 50 983 66 99</a></span>
+                    <span><a href="tel:+994709836699">+994 70 983 66 99</a></span>
                     <span><a href="mailto:info@jedai.az">info@jedai.az</a></span>
                 </div>  
             </div>
 
             <hr>
 
-            <div class="deepFooter">
+            <div class="deepFooter" >
                 <p>© JedAi. Müəllif Hüquqları Qorunur.</p>
                 <img src="./assets/images/JedaiLogo.png" alt="">
             </div>
@@ -401,7 +396,30 @@
 
 
     </div> <!--Home PAGE-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+            
 
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 5, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
 
     <script src="./js/glide.min.js"></script>
     <script src="./js/menuBar.js"></script>
