@@ -7487,4 +7487,478 @@ html {
     font-size: 14px !important;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .HomePage .topContainer {
+    padding-bottom: 100px !important;
+    height: auto;
+  }
+  .HomePage .subNav {
+    width: 100% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 150px !important;
+  }
+  .HomePage .subNav .title {
+    font-size: 60px !important;
+    padding-left: 10px;
+  }
+  .HomePage .subNav .subTitle {
+    font-size: 20px !important;
+    width: 95% !important;
+  }
+  .HomePage .subTitle2 {
+    margin-top: 100px !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .HomePage .subTitle2 p {
+    margin-left: 10px !important;
+    font-size: 20px !important;
+  }
+  .HomePage .subTitle2 button {
+    margin-left: 15px !important;
+  }
+  .HomePage .navbarContainer {
+    height: 65px !important;
+  }
+  .HomePage .navbar {
+    width: 90% !important;
+    margin-top: 25px;
+  }
+  .HomePage .navbar img {
+    width: 100px !important;
+    height: auto !important;
+  }
+  .HomePage .navbar .phoneNumber {
+    display: none !important;
+  }
+  .HomePage .navbar .logoAndText {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .HomePage .navbar .menuIcon {
+    width: 50px !important;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-top: -15px !important;
+  }
+  .HomePage .whatDo .titleContainer {
+    padding-top: 100px;
+  }
+  .HomePage .whatDo .cardConatiner {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+  }
+  .HomePage .whatDo .cardConatiner .card {
+    width: 90% !important;
+    margin-top: 50px;
+    height: auto;
+    padding-bottom: 25px;
+  }
+  .HomePage .whatDo .cardConatiner .card:nth-child(1) {
+    margin-top: 0 !important;
+  }
+  .HomePage .whatDo .cardConatiner .card .title {
+    font-size: 15px;
+  }
+  .HomePage .whatDo .cardConatiner .card .subTitle p {
+    font-size: 17px;
+  }
+  .HomePage .whatDo .cardConatiner .card .subTitle img {
+    width: 20px;
+  }
+  .HomePage .whatDo .cardConatiner .card .cardButton {
+    margin-top: 20px;
+  }
+  .HomePage .projectsDone .buttonContainer {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: -10px !important;
+  }
+  .HomePage .projectsDone .buttonContainer button {
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+    margin-left: 10px !important;
+  }
+  .HomePage .projectsDone .projects {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    width: 100% !important;
+  }
+  .HomePage .projectsDone .projects .card {
+    width: 100% !important;
+    margin-top: 1px !important;
+  }
+  .HomePage .projectsDone .projects .card:nth-child(7) {
+    background-position: right !important;
+  }
+  .HomePage .projectsDone .projects .card a {
+    width: 100% !important;
+  }
+  .HomePage .projectsDone .projects .card div p:nth-child(1) {
+    font-size: 18px !important;
+  }
+  .HomePage .projectsDone .projects .card div p:nth-child(2) {
+    font-size: 15px !important;
+  }
+  .HomePage .projectsDone .projects .card div p:nth-child(3) span {
+    font-size: 15px !important;
+  }
+  .HomePage .projectsDone .hamisinaBax p {
+    margin-right: 0px !important;
+  }
+  .HomePage .technologies {
+    height: auto !important;
+    width: 100% !important;
+    padding-bottom: 50px;
+  }
+  .HomePage .technologies .item {
+    width: 65% !important;
+  }
+  .HomePage .technologies .titleContainer3 {
+    width: 100%;
+  }
+  .HomePage .technologies .titleContainer3 p {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+  }
+  .HomePage .technologies .itemContainer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 100% !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .HomePage .technologies .itemContainer .item .titleItem {
+    font-size: 20px;
+  }
+  .HomePage .humansContainer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto !important;
+  }
+  .HomePage .humansContainer .text {
+    width: 80% !important;
+    font-size: 23px !important;
+  }
+  .HomePage .humansContainer .komanda {
+    margin-top: 15px !important;
+  }
+  .HomePage .humansContainer .komanda .imgContainer1 div {
+    margin-top: 75px !important;
+  }
+  .HomePage .humansContainer .komanda .imgContainer2 div {
+    margin-top: 75px !important;
+  }
+  .HomePage .bizimleEmekdahsliq {
+    height: auto !important;
+    padding-bottom: 50px;
+  }
+  .HomePage .bizimleEmekdahsliq .titleContainer4 {
+    width: 90%;
+  }
+  .HomePage .bizimleEmekdahsliq .titleContainer4 hr {
+    display: none;
+  }
+  .HomePage .bizimleEmekdahsliq .titleContainer4 p {
+    width: 100% !important;
+    font-size: 20px !important;
+    text-align: center;
+  }
+  .HomePage .bizimleEmekdahsliq .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .HomePage .bizimleEmekdahsliq .aboutContainer .about2, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 {
+    margin-left: 0px !important;
+  }
+  .HomePage .bizimleEmekdahsliq .aboutContainer .about1 p, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 p, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 p {
+    font-size: 19.5px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .HomePage .bizimleEmekdahsliq .aboutContainer .about1 img, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 img, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 img {
+    width: 19px;
+    height: auto;
+  }
+  .HomePage .partniorsContainer .titleContainer5 p {
+    width: 100%;
+    text-align: center;
+  }
+  .HomePage .partniorsContainer .titleContainer5 hr {
+    display: none;
+  }
+  .HomePage .partniorsContainer .gridContainer2 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .HomePage .partniorsContainer .gridContainer2 div {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    height: 100px !important;
+    width: 100% !important;
+  }
+  .HomePage .slider .glide__track {
+    width: 100% !important;
+  }
+  .HomePage .slider .glide__track .glide__slide {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .HomePage .formAndIframe {
+    height: auto !important;
+  }
+  .HomePage .formAndIframe iframe {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .HomePage .formAndIframe .form {
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .HomePage .formAndIframe .form .formContainer {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .HomePage .formAndIframe .form .formContainer form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0 !important;
+  }
+  .HomePage .formAndIframe .form .formContainer form .inputs {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .HomePage .formAndIframe .form .formContainer form .inputs input {
+    width: 90% !important;
+    font-size: 15px !important;
+  }
+  .HomePage .formAndIframe .form .formContainer form textarea {
+    margin-top: 30px;
+    width: 85%;
+    margin-left: 0 !important;
+    font-size: 15px !important;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .HomePage .formAndIframe .form .formContainer form .gonderButton {
+    margin-left: 0 !important;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 40px;
+  }
+  .HomePage .formAndIframe .form .titleContainer7 {
+    width: 100%;
+  }
+  .HomePage .formAndIframe .form .titleContainer7 p {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .HomePage .formAndIframe .form .titleContainer7_2 {
+    width: 100%;
+  }
+  .HomePage .formAndIframe .form .titleContainer7_2 p {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  .HomePage footer {
+    height: auto !important;
+    padding-bottom: 50px;
+  }
+  .HomePage footer hr {
+    margin-top: 25px !important;
+  }
+  .HomePage footer .topFooter {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .HomePage footer .topFooter .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .HomePage footer .topFooter .links a {
+    margin-left: 0 !important;
+    font-size: 18px !important;
+  }
+  .HomePage footer .topFooter .imgsContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: 0px !important;
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .HomePage footer .topFooter .imgsContainer img {
+    margin-left: 0 !important;
+  }
+  .HomePage footer .topFooter .numbersContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 30px;
+  }
+  .HomePage footer .topFooter .numbersContainer a {
+    margin-left: 0 !important;
+    font-size: 15px !important;
+  }
+  .HomePage footer .deepFooter {
+    margin-top: 10px !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .HomePage footer .deepFooter p {
+    width: 100% !important;
+    font-size: 15px;
+    text-align: center;
+  }
+  .HomePage footer .deepFooter img {
+    width: 100px;
+    margin-top: 20px;
+    height: auto;
+  }
+  .HomePage .menuOverlay .fText {
+    width: 100%;
+  }
+  .HomePage .menuOverlay .fText .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 100%;
+  }
+  .HomePage .menuOverlay .fText .container div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .HomePage .menuOverlay .fText .container div span {
+    font-size: 19px !important;
+    border-right: none;
+    padding: 0;
+    margin-right: 0;
+    margin-top: 10px !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+  .HomePage .menuOverlay .fText p {
+    width: 100% !important;
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+  .HomePage .menuOverlay .overlayMainText .text1 p {
+    margin-top: 20px !important;
+  }
+  .HomePage .menuOverlay .overlayMainText .text1 a {
+    font-size: 21px;
+  }
+}
 /*# sourceMappingURL=OneCssForWholeHtml.css.map */
