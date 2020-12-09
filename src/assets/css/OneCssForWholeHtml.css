@@ -2142,13 +2142,15 @@ html {
 }
 
 .HomePage .komanda .imgs .imgContainer1 div:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .HomePage .komanda .imgs .imgContainer1 div:hover img {
+  -webkit-box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 100;
@@ -2156,12 +2158,10 @@ html {
 
 .HomePage .komanda .imgs .imgContainer1 div:hover .title {
   z-index: 100;
-  color: white;
 }
 
 .HomePage .komanda .imgs .imgContainer1 div:hover .subTitle {
   z-index: 100;
-  color: white;
 }
 
 .HomePage .komanda .imgs .imgContainer2 {
@@ -2192,15 +2192,15 @@ html {
 }
 
 .HomePage .komanda .imgs .imgContainer2 div:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .HomePage .komanda .imgs .imgContainer2 div:hover img {
-  -webkit-box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 100;
@@ -2208,12 +2208,10 @@ html {
 
 .HomePage .komanda .imgs .imgContainer2 div:hover .title {
   z-index: 100;
-  color: white;
 }
 
 .HomePage .komanda .imgs .imgContainer2 div:hover .subTitle {
   z-index: 100;
-  color: white;
 }
 
 .HomePage .bizimleEmekdahsliq {
@@ -5686,18 +5684,21 @@ html {
   -ms-flex-item-align: end;
       align-self: flex-end;
   width: 100%;
-  height: 0px;
+  height: 390px;
   background-color: #0c162b;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  opacity: 0;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(16) div img {
+  position: absolute;
+  margin-top: -270px;
+  margin-left: 40px;
 }
 
 .secondPage .projectsDone .projects .card:nth-child(16) div p:nth-child(1) {
-  opacity: 0;
-  pointer-events: none;
   margin-top: 170px;
   height: 0;
   font-size: 1.5rem;
@@ -5708,8 +5709,6 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(16) div p:nth-child(2) {
-  opacity: 0;
-  pointer-events: none;
   margin-top: 90px;
   height: 0;
   font-size: 1.3rem;
@@ -5725,8 +5724,6 @@ html {
 }
 
 .secondPage .projectsDone .projects .card:nth-child(16) div p:nth-child(3) span {
-  opacity: 0;
-  pointer-events: none;
   height: 0;
   margin-top: 40px;
   font-size: 1rem;
@@ -5736,79 +5733,59 @@ html {
   transition: 0.25s;
 }
 
-.secondPage .projectsDone .projects .card:nth-child(16):hover div {
-  height: 390px;
+.secondPage .projectsDone .projects .card:nth-child(16) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(16) div p {
+  margin-top: 30px !important;
+  margin-left: 0 !important;
+  font-size: 18px !important;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(16) div img {
+  margin: 0 !important;
+  position: initial !important;
+  margin-top: -140px !important;
+}
+
+.secondPage .projectsDone .projects .card:nth-child(16) div button {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: "LemonMilkRegular";
+  position: relative;
+  margin-top: 70px;
+  cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  opacity: 1;
 }
 
-.secondPage .projectsDone .projects .card:nth-child(16):hover div p:nth-child(1) {
-  opacity: 1;
-  margin-top: 160px;
-  -webkit-transition: 0.15s ease-out;
-  transition: 0.15s ease-out;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+.secondPage .projectsDone .projects .card:nth-child(16) div button:hover {
+  background-color: white;
+  color: #0c162b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.secondPage .projectsDone .projects .card:nth-child(16):hover div p:nth-child(2) {
-  opacity: 1;
-  margin-top: 80px;
-  -webkit-transition: 0.15s ease-out;
-  transition: 0.15s ease-out;
-  -webkit-transition-delay: 0.65s;
-          transition-delay: 0.65s;
-}
-
-.secondPage .projectsDone .projects .card:nth-child(16):hover div p:nth-child(3) {
-  margin-top: 70px;
-  pointer-events: all;
-}
-
-.secondPage .projectsDone .projects .card:nth-child(16):hover div p:nth-child(3) span:nth-child(1) {
-  opacity: 1;
-  padding-top: 40px;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
-  -webkit-transition-delay: 0.75s;
-          transition-delay: 0.75s;
-}
-
-.secondPage .projectsDone .projects .card:nth-child(16):hover div p:nth-child(3) span:nth-child(2) {
-  opacity: 1;
-  padding-top: 30px;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
-  -webkit-transition-delay: 0.95s;
-          transition-delay: 0.95s;
-}
-
-.secondPage .projectsDone .projects .card:nth-child(16):hover div p:nth-child(3) span:nth-child(3) {
-  opacity: 1;
-  padding-top: 30px;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
-  -webkit-transition-delay: 1.05s;
-          transition-delay: 1.05s;
-}
-
-.secondPage .projectsDone .projects .card:nth-child(16):hover div p:nth-child(3) span:nth-child(4) {
-  opacity: 1;
-  padding-top: 30px;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
-  -webkit-transition-delay: 1.25s;
-          transition-delay: 1.25s;
-}
-
-.secondPage .projectsDone .projects .card:nth-child(16):hover div p:nth-child(3) span:nth-child(5) {
-  opacity: 1;
-  padding-top: 30px;
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
-  -webkit-transition-delay: 1.35s;
-          transition-delay: 1.35s;
+.secondPage .projectsDone .projects .card:nth-child(16) div a {
+  width: 150px !important;
+  height: 70px;
 }
 
 .secondPage .projectsDone .hamisinaBax {
@@ -6326,8 +6303,8 @@ html {
 .secondPage .preparingSite .verticalLine {
   height: 195px;
   width: 2px;
-  background-color: #464646;
-  opacity: 0.5;
+  background-color: lightgray !important;
+  opacity: 0.4;
   margin-left: -3px;
 }
 
@@ -6595,28 +6572,22 @@ html {
 }
 
 .secondPage .komanda .imgs .imgContainer1 div:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .secondPage .komanda .imgs .imgContainer1 div:hover img {
-  -webkit-box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 100;
 }
 
-.secondPage .komanda .imgs .imgContainer1 div:hover .title {
-  z-index: 100;
-  color: white;
-}
-
 .secondPage .komanda .imgs .imgContainer1 div:hover .subTitle {
   z-index: 100;
-  color: white;
 }
 
 .secondPage .komanda .imgs .imgContainer2 {
@@ -6647,15 +6618,15 @@ html {
 }
 
 .secondPage .komanda .imgs .imgContainer2 div:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .secondPage .komanda .imgs .imgContainer2 div:hover img {
-  -webkit-box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 4000px 4000px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 40px 40px rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.5s;
   transition: 0.5s;
   z-index: 100;
@@ -6663,12 +6634,10 @@ html {
 
 .secondPage .komanda .imgs .imgContainer2 div:hover .title {
   z-index: 100;
-  color: white;
 }
 
 .secondPage .komanda .imgs .imgContainer2 div:hover .subTitle {
   z-index: 100;
-  color: white;
 }
 
 .secondPage .formAndIframe {
@@ -6782,7 +6751,7 @@ html {
   margin-top: 20px;
   padding-left: 30px;
   border-radius: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   -webkit-transition: 1s;
   transition: 1s;
   font-family: "LemonMilkRegular";
@@ -6793,22 +6762,22 @@ html {
 
 .secondPage .formAndIframe .form .formContainer form .inputs input::-webkit-input-placeholder {
   font-family: "LemonMilkRegular";
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .secondPage .formAndIframe .form .formContainer form .inputs input:-ms-input-placeholder {
   font-family: "LemonMilkRegular";
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .secondPage .formAndIframe .form .formContainer form .inputs input::-ms-input-placeholder {
   font-family: "LemonMilkRegular";
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .secondPage .formAndIframe .form .formContainer form .inputs input::placeholder {
   font-family: "LemonMilkRegular";
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .secondPage .formAndIframe .form .formContainer form .inputs input:focus {
@@ -6853,30 +6822,30 @@ html {
   resize: none;
   margin-left: 3%;
   width: 320px;
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   padding: 30px 30px;
   font-size: 1.2rem;
   font-family: "GilroyBold";
-  color: rgba(0, 0, 0, 0.7);
+  color: black;
   font-family: "GilroyRegular";
   background-color: #eeeeee;
 }
 
 .secondPage .formAndIframe .form .formContainer form textarea::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .secondPage .formAndIframe .form .formContainer form textarea:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .secondPage .formAndIframe .form .formContainer form textarea::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .secondPage .formAndIframe .form .formContainer form textarea::placeholder {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .secondPage .formAndIframe .form .formContainer form textarea:focus {
@@ -7494,7 +7463,7 @@ html {
     height: auto;
   }
   .HomePage .subNav {
-    width: 100% !important;
+    width: 95% !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -7515,7 +7484,7 @@ html {
     padding-left: 10px;
   }
   .HomePage .subNav .subTitle {
-    font-size: 20px !important;
+    font-size: 18px !important;
     width: 95% !important;
   }
   .HomePage .subTitle2 {
@@ -7525,11 +7494,11 @@ html {
             justify-content: start !important;
   }
   .HomePage .subTitle2 p {
-    margin-left: 10px !important;
-    font-size: 20px !important;
+    margin-left: 5% !important;
+    font-size: 18px !important;
   }
   .HomePage .subTitle2 button {
-    margin-left: 15px !important;
+    margin-left: 2.5% !important;
   }
   .HomePage .navbarContainer {
     height: 65px !important;
@@ -7607,12 +7576,63 @@ html {
         grid-template-columns: repeat(1, 1fr) !important;
     width: 100% !important;
   }
+  .HomePage .projectsDone .projects .card > * {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                                supported by Chrome, Edge, Opera and Firefox */
+    -webkit-tap-highlight-color: transparent;
+  }
+  .HomePage .projectsDone .projects a {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                                supported by Chrome, Edge, Opera and Firefox */
+    -webkit-tap-highlight-color: transparent;
+  }
   .HomePage .projectsDone .projects .card {
     width: 100% !important;
     margin-top: 1px !important;
   }
+  .HomePage .projectsDone .projects .card:nth-child(1) {
+    background-image: url("../images/01Mobile.jpg");
+  }
+  .HomePage .projectsDone .projects .card:nth-child(2) {
+    background-image: url("../images/02Mobile.jpg");
+  }
+  .HomePage .projectsDone .projects .card:nth-child(3) {
+    background-image: url("../images/03Mobile.jpg");
+  }
+  .HomePage .projectsDone .projects .card:nth-child(4) {
+    background-image: url("../images/04Mobile.jpg");
+  }
+  .HomePage .projectsDone .projects .card:nth-child(5) {
+    background-image: url("../images/05Mobile.jpg");
+  }
+  .HomePage .projectsDone .projects .card:nth-child(6) {
+    background-image: url("../images/06Mobile.jpg");
+  }
   .HomePage .projectsDone .projects .card:nth-child(7) {
-    background-position: right !important;
+    background-image: url("../images/07Mobile.jpg");
+  }
+  .HomePage .projectsDone .projects .card:nth-child(8) {
+    background-image: url("../images/08Mobile.jpg");
   }
   .HomePage .projectsDone .projects .card a {
     width: 100% !important;
@@ -7625,6 +7645,10 @@ html {
   }
   .HomePage .projectsDone .projects .card div p:nth-child(3) span {
     font-size: 15px !important;
+  }
+  .HomePage .projectsDone .hamisinaBax {
+    margin-top: 80px;
+    margin-bottom: 30px;
   }
   .HomePage .projectsDone .hamisinaBax p {
     margin-right: 0px !important;
@@ -7656,7 +7680,11 @@ html {
             align-items: center !important;
   }
   .HomePage .technologies .itemContainer .item .titleItem {
-    font-size: 20px;
+    font-size: 22px;
+  }
+  .HomePage .technologies .itemContainer .item .imgContainer {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   .HomePage .humansContainer {
     -webkit-box-orient: vertical !important;
@@ -7680,18 +7708,19 @@ html {
   }
   .HomePage .bizimleEmekdahsliq {
     height: auto !important;
-    padding-bottom: 50px;
+    padding-bottom: 100px !important;
+    margin-top: 20px !important;
   }
   .HomePage .bizimleEmekdahsliq .titleContainer4 {
-    width: 90%;
+    width: 100%;
   }
   .HomePage .bizimleEmekdahsliq .titleContainer4 hr {
     display: none;
   }
   .HomePage .bizimleEmekdahsliq .titleContainer4 p {
     width: 100% !important;
-    font-size: 20px !important;
-    text-align: center;
+    font-size: 24px !important;
+    text-align: center !important;
   }
   .HomePage .bizimleEmekdahsliq .aboutContainer {
     -webkit-box-orient: vertical;
@@ -7703,17 +7732,12 @@ html {
     margin-left: 0px !important;
   }
   .HomePage .bizimleEmekdahsliq .aboutContainer .about1 p, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 p, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 p {
-    font-size: 19.5px !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-size: 22px !important;
   }
   .HomePage .bizimleEmekdahsliq .aboutContainer .about1 img, .HomePage .bizimleEmekdahsliq .aboutContainer .about2 img, .HomePage .bizimleEmekdahsliq .aboutContainer .about3 img {
-    width: 19px;
+    width: 20px;
     height: auto;
+    margin-bottom: -2px;
   }
   .HomePage .partniorsContainer .titleContainer5 p {
     width: 100%;
@@ -7728,7 +7752,8 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 90%;
+    height: auto;
   }
   .HomePage .partniorsContainer .gridContainer2 div {
     display: -webkit-box !important;
@@ -7742,6 +7767,23 @@ html {
             justify-content: center !important;
     height: 100px !important;
     width: 100% !important;
+    margin-top: 30px;
+  }
+  .HomePage .partniorsContainer .gridContainer2 div:nth-child(1) {
+    margin-top: 0px !important;
+  }
+  .HomePage .partniorsContainer .gridContainer2 div img {
+    width: 120px !important;
+  }
+  .HomePage .slider {
+    margin-top: 70px !important;
+  }
+  .HomePage .slider .titleContainer6 {
+    width: 100%;
+  }
+  .HomePage .slider .titleContainer6 p {
+    width: 100%;
+    text-align: center;
   }
   .HomePage .slider .glide__track {
     width: 100% !important;
@@ -7755,6 +7797,14 @@ html {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .HomePage .slider .button1 img {
+    width: 30px !important;
+    height: auto;
+  }
+  .HomePage .slider .button2 img {
+    width: 30px !important;
+    height: auto;
+  }
   .HomePage .formAndIframe {
     height: auto !important;
   }
@@ -7763,6 +7813,7 @@ html {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin-top: 10px;
   }
   .HomePage .formAndIframe .form {
     width: 100%;
@@ -7795,6 +7846,7 @@ html {
         -ms-flex-order: 1;
             order: 1;
     width: 100%;
+    margin-top: 20px;
   }
   .HomePage .formAndIframe .form .formContainer form .inputs input {
     width: 90% !important;
@@ -7818,6 +7870,7 @@ html {
   }
   .HomePage .formAndIframe .form .titleContainer7 {
     width: 100%;
+    margin-top: 30px;
   }
   .HomePage .formAndIframe .form .titleContainer7 p {
     margin-left: 0 !important;
@@ -7909,6 +7962,7 @@ html {
     width: 100% !important;
     font-size: 15px;
     text-align: center;
+    margin-top: 20px;
   }
   .HomePage footer .deepFooter img {
     width: 100px;
@@ -7917,6 +7971,7 @@ html {
   }
   .HomePage .menuOverlay .fText {
     width: 100%;
+    margin-top: -50px;
   }
   .HomePage .menuOverlay .fText .container {
     display: -webkit-box;
@@ -7958,6 +8013,727 @@ html {
     margin-top: 20px !important;
   }
   .HomePage .menuOverlay .overlayMainText .text1 a {
+    font-size: 21px;
+  }
+  .secondPage .preparingSite .titleContainer {
+    width: 100%;
+  }
+  .secondPage .preparingSite .titleContainer p {
+    width: 100%;
+    text-align: center;
+    font-size: 25px !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .verticalLine {
+    margin-top: 20px !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondPage .preparingSite .containerOfContainers .container div {
+    margin-top: 15px !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container div .number {
+    font-size: 30px !important;
+    text-align: center;
+  }
+  .secondPage .preparingSite .containerOfContainers .container div .text {
+    font-size: 20px !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container img {
+    margin-top: 20px !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(1) {
+    margin-top: 50px !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(1) img {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(1) div {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(5) img {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(5) div {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(5) img {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(5) div {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(9) img {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(9) div {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(13) img {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  .secondPage .preparingSite .containerOfContainers .container:nth-child(13) div {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+  .secondPage .komanda .titleContainer4 {
+    width: 100% !important;
+  }
+  .secondPage .komanda .titleContainer4 p {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 25px;
+  }
+  .secondPage .komanda .imgContainer1 div {
+    margin-top: 90px !important;
+  }
+  .secondPage .komanda .imgContainer1 div:nth-child(1) {
+    margin-top: 20px !important;
+  }
+  .secondPage .komanda .imgContainer2 div {
+    margin-top: 90px !important;
+  }
+  .secondPage .prices .jedailogoandHr img {
+    width: 90px !important;
+  }
+  .secondPage .prices .jedailogoandHr hr {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .secondPage .prices .subTitleContainer {
+    width: 90%;
+    margin-top: 50px !important;
+  }
+  .secondPage .prices .subTitleContainer p {
+    font-size: 21px !important;
+  }
+  .secondPage .prices .cardConatiner {
+    width: 94% !important;
+  }
+  .secondPage .prices .cardConatiner .card {
+    height: auto !important;
+    padding-bottom: 30px !important;
+    margin-top: 50px !important;
+  }
+  .secondPage .prices .cardConatiner .card .title {
+    font-size: 25px !important;
+  }
+  .secondPage .prices .cardConatiner .card .subTitle {
+    margin-left: 5% !important;
+  }
+  .secondPage .prices .cardConatiner .card .subTitle p {
+    font-size: 21px !important;
+    line-height: 40px;
+  }
+  .secondPage .prices .cardConatiner .card .subTitle p span {
+    margin-left: 5px;
+  }
+  .secondPage .prices .cardConatiner .card .subTitle img {
+    width: 20px;
+  }
+  .secondPage .topContainer {
+    padding-bottom: 100px !important;
+    height: auto;
+  }
+  .secondPage .subNav {
+    width: 95% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 150px !important;
+  }
+  .secondPage .subNav .title {
+    font-size: 60px !important;
+    padding-left: 10px;
+  }
+  .secondPage .subNav .subTitle {
+    font-size: 20px !important;
+    width: 95% !important;
+  }
+  .secondPage .subTitle2 {
+    margin-top: 100px !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .secondPage .subTitle2 p {
+    margin-left: 5% !important;
+    font-size: 20px !important;
+  }
+  .secondPage .subTitle2 button {
+    margin-left: 2.5% !important;
+  }
+  .secondPage .navbarContainer {
+    height: 65px !important;
+  }
+  .secondPage .navbar {
+    width: 90% !important;
+  }
+  .secondPage .navbar img {
+    width: 100px !important;
+    height: auto !important;
+  }
+  .secondPage .navbar .phoneNumber {
+    display: none !important;
+  }
+  .secondPage .navbar .logoAndText {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .secondPage .navbar .menuIcon {
+    width: 50px !important;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-top: -15px !important;
+  }
+  .secondPage .whatDo {
+    margin-bottom: 400px;
+  }
+  .secondPage .whatDo .titleContainer {
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .secondPage .whatDo .titleContainer p {
+    width: 100%;
+  }
+  .secondPage .whatDo .cardConatiner {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center;
+  }
+  .secondPage .whatDo .cardConatiner .card {
+    width: 90% !important;
+    margin-top: 50px;
+    height: auto;
+    padding-bottom: 25px;
+  }
+  .secondPage .whatDo .cardConatiner .card:nth-child(1) {
+    margin-top: 0 !important;
+  }
+  .secondPage .whatDo .cardConatiner .card img {
+    width: 100px;
+  }
+  .secondPage .whatDo .cardConatiner .card p {
+    font-size: 20px;
+  }
+  .secondPage .projectsDone .titleContainer2 {
+    margin-top: 110px !important;
+  }
+  .secondPage .projectsDone .buttonContainer {
+    margin-top: 20px !important;
+    width: 90% !important;
+    display: block !important;
+    margin-left: -10px !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .secondPage .projectsDone .buttonContainer button {
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+  }
+  .secondPage .projectsDone .buttonContainer button:nth-child(2) {
+    margin-left: 20px !important;
+  }
+  .secondPage .projectsDone .buttonContainer button:nth-child(3) {
+    margin-top: 10px !important;
+  }
+  .secondPage .projectsDone .projects {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    width: 100% !important;
+  }
+  .secondPage .projectsDone .projects .card {
+    width: 100% !important;
+    margin-top: 1px !important;
+  }
+  .secondPage .projectsDone .projects .card:nth-child(1) {
+    background-image: url("../images/01Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(2) {
+    background-image: url("../images/02Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(3) {
+    background-image: url("../images/03Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(4) {
+    background-image: url("../images/04Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(5) {
+    background-image: url("../images/05Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(6) {
+    background-image: url("../images/06Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(7) {
+    background-image: url("../images/07Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(8) {
+    background-image: url("../images/08Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(9) {
+    background-image: url("../images/09Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(10) {
+    background-image: url("../images/10Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(11) {
+    background-image: url("../images/11Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(12) {
+    background-image: url("../images/12Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(13) {
+    background-image: url("../images/13Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(14) {
+    background-image: url("../images/14Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card:nth-child(15) {
+    background-image: url("../images/15Mobile.jpg");
+  }
+  .secondPage .projectsDone .projects .card a {
+    width: 100% !important;
+  }
+  .secondPage .projectsDone .projects .card div p:nth-child(1) {
+    font-size: 18px !important;
+  }
+  .secondPage .projectsDone .projects .card div p:nth-child(2) {
+    font-size: 15px !important;
+  }
+  .secondPage .projectsDone .projects .card div p:nth-child(3) span {
+    font-size: 15px !important;
+  }
+  .secondPage .projectsDone .hamisinaBax {
+    margin-top: 90px;
+    margin-bottom: 30px;
+  }
+  .secondPage .projectsDone .hamisinaBax p {
+    margin-right: 0px !important;
+  }
+  .secondPage .technologies {
+    height: auto !important;
+    width: 100% !important;
+    padding-bottom: 50px;
+  }
+  .secondPage .technologies .item {
+    width: 65% !important;
+  }
+  .secondPage .technologies .titleContainer3 {
+    width: 100%;
+  }
+  .secondPage .technologies .titleContainer3 p {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+  }
+  .secondPage .technologies .cardConatiner {
+    width: 95%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    justify-items: center !important;
+  }
+  .secondPage .technologies .cardConatiner .card {
+    width: 80% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .secondPage .technologies .cardConatiner .card img {
+    width: 35%;
+  }
+  .secondPage .technologies .cardConatiner .card p {
+    width: 65%;
+    font-size: 21px;
+  }
+  .secondPage .humansContainer {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto !important;
+  }
+  .secondPage .humansContainer .text {
+    width: 80% !important;
+    font-size: 23px !important;
+  }
+  .secondPage .humansContainer .komanda {
+    margin-top: 15px !important;
+  }
+  .secondPage .humansContainer .komanda .titleContainer4 {
+    width: 100% !important;
+  }
+  .secondPage .humansContainer .komanda .titleContainer4 p {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 25px !important;
+  }
+  .secondPage .humansContainer .komanda .imgContainer1 div {
+    margin-top: 75px !important;
+  }
+  .secondPage .humansContainer .komanda .imgContainer1 div:nth-child(1) {
+    margin-top: 30px !important;
+  }
+  .secondPage .humansContainer .komanda .imgContainer2 div {
+    margin-top: 75px !important;
+  }
+  .secondPage .bizimleEmekdahsliq {
+    height: auto !important;
+    padding-bottom: 100px !important;
+  }
+  .secondPage .bizimleEmekdahsliq .jedailogoandHr hr {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    height: 1px !important;
+    opacity: 0.5;
+  }
+  .secondPage .bizimleEmekdahsliq .jedailogoandHr img {
+    width: 90px !important;
+  }
+  .secondPage .bizimleEmekdahsliq .titleContainer4 {
+    width: 90%;
+  }
+  .secondPage .bizimleEmekdahsliq .titleContainer4 hr {
+    display: none;
+  }
+  .secondPage .bizimleEmekdahsliq .titleContainer4 p {
+    width: 100% !important;
+    font-size: 30px !important;
+    text-align: center;
+  }
+  .secondPage .bizimleEmekdahsliq .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .secondPage .bizimleEmekdahsliq .aboutContainer .about2_2, .secondPage .bizimleEmekdahsliq .aboutContainer .about3 {
+    margin-left: 0px !important;
+  }
+  .secondPage .bizimleEmekdahsliq .aboutContainer .about1_1 p, .secondPage .bizimleEmekdahsliq .aboutContainer .about2 p, .secondPage .bizimleEmekdahsliq .aboutContainer .about3 p {
+    font-size: 19.5px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondPage .bizimleEmekdahsliq .aboutContainer .about1_1 img, .secondPage .bizimleEmekdahsliq .aboutContainer .about2 img, .secondPage .bizimleEmekdahsliq .aboutContainer .about3 img {
+    width: 19px;
+    height: auto;
+  }
+  .secondPage .partniorsContainer .titleContainer5 p {
+    width: 100%;
+    text-align: center;
+  }
+  .secondPage .partniorsContainer .titleContainer5 hr {
+    display: none;
+  }
+  .secondPage .partniorsContainer .gridContainer2 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  .secondPage .partniorsContainer .gridContainer2 div {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    height: 100px !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+  }
+  .secondPage .partniorsContainer .gridContainer2 div img {
+    width: 135px !important;
+    height: auto !important;
+  }
+  .secondPage .slider .titleContainer6 {
+    width: 100%;
+  }
+  .secondPage .slider .titleContainer6 p {
+    width: 100%;
+    text-align: center;
+    font-size: 30px !important;
+  }
+  .secondPage .slider .glide__track {
+    width: 100% !important;
+  }
+  .secondPage .slider .glide__track .glide__slide {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .secondPage .slider .button1 img {
+    width: 30px !important;
+    height: auto;
+  }
+  .secondPage .slider .button2 img {
+    width: 30px !important;
+    height: auto;
+  }
+  .secondPage .formAndIframe {
+    height: auto !important;
+  }
+  .secondPage .formAndIframe iframe {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .secondPage .formAndIframe .form {
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 50px !important;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .secondPage .formAndIframe .form .formContainer {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .secondPage .formAndIframe .form .formContainer form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0 !important;
+    width: 90% !important;
+  }
+  .secondPage .formAndIframe .form .formContainer form .inputs {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100% !important;
+    margin-left: -5px !important;
+    margin-top: 25px !important;
+  }
+  .secondPage .formAndIframe .form .formContainer form .inputs input {
+    width: 90% !important;
+    font-size: 15px !important;
+  }
+  .secondPage .formAndIframe .form .formContainer form textarea {
+    margin-top: 30px;
+    width: 85% !important;
+    margin-left: 0 !important;
+    font-size: 15px !important;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .secondPage .formAndIframe .form .formContainer form .gonderButton {
+    margin-left: 0 !important;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 40px;
+  }
+  .secondPage .formAndIframe .form .titleContainer7 {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .secondPage .formAndIframe .form .titleContainer7 p {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  .secondPage .formAndIframe .form .titleContainer7_2 {
+    width: 100%;
+  }
+  .secondPage .formAndIframe .form .titleContainer7_2 p {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  .secondPage footer {
+    height: auto !important;
+    padding-bottom: 50px;
+  }
+  .secondPage footer hr {
+    margin-top: 25px !important;
+  }
+  .secondPage footer .topFooter {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .secondPage footer .topFooter .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .secondPage footer .topFooter .links a {
+    margin-left: 0 !important;
+    font-size: 18px !important;
+  }
+  .secondPage footer .topFooter .imgsContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: 0px !important;
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondPage footer .topFooter .imgsContainer img {
+    margin-left: 0 !important;
+  }
+  .secondPage footer .topFooter .numbersContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 30px;
+  }
+  .secondPage footer .topFooter .numbersContainer a {
+    margin-left: 0 !important;
+    font-size: 15px !important;
+  }
+  .secondPage footer .deepFooter {
+    margin-top: 20px !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondPage footer .deepFooter p {
+    width: 100% !important;
+    font-size: 15px;
+    text-align: center;
+  }
+  .secondPage footer .deepFooter img {
+    width: 100px;
+    margin-top: 20px;
+    height: auto;
+  }
+  .secondPage .menuOverlay .fText {
+    width: 100%;
+    margin-top: -50px;
+  }
+  .secondPage .menuOverlay .fText .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 100%;
+  }
+  .secondPage .menuOverlay .fText .container div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondPage .menuOverlay .fText .container div span {
+    font-size: 19px !important;
+    border-right: none;
+    padding: 0;
+    margin-right: 0;
+    margin-top: 10px !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+  .secondPage .menuOverlay .fText p {
+    width: 100% !important;
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+  .secondPage .menuOverlay .overlayMainText .text1 p {
+    margin-top: 20px !important;
+  }
+  .secondPage .menuOverlay .overlayMainText .text1 a {
     font-size: 21px;
   }
 }
