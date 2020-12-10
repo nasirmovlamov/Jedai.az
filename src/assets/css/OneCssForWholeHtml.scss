@@ -182,13 +182,18 @@ html {
             background: url("../images/overlayForNavbar.png") repeat;
             p 
             {
-                width: 79% ;
+                width: 85% ;
                 margin: 0;
                 font-size: 1.5rem;
                 color: white;
                 font-family: "GilroySemiBold";
                 line-height: 25px;
-
+                display: flex;
+                align-items: center;
+                span 
+                {
+                    width: 70%;
+                }
             }
             a 
             {
@@ -1161,6 +1166,13 @@ html {
                                             transition: 0.25s ease-out;
                                             transition-delay: 1.35s;
                                         }
+                                        &:nth-child(6)
+                                        {
+                                            opacity: 1;
+                                            padding-top: 30px;
+                                            transition: 0.25s ease-out;
+                                            transition-delay: 1.45s;
+                                        }
                                         
                                     }
                                 }
@@ -1417,6 +1429,13 @@ html {
                                             transition: 0.25s ease-out;
                                             transition-delay: 1.35s;
                                         }
+                                        &:nth-child(6)
+                                        {
+                                            opacity: 1;
+                                            padding-top: 30px;
+                                            transition: 0.25s ease-out;
+                                            transition-delay: 1.55s;
+                                        }
                                         
                                     }
                                 }
@@ -1548,6 +1567,13 @@ html {
                                             padding-top: 30px;
                                             transition: 0.25s ease-out;
                                             transition-delay: 1.35s;
+                                        }
+                                        &:nth-child(6)
+                                        {
+                                            opacity: 1;
+                                            padding-top: 30px;
+                                            transition: 0.25s ease-out;
+                                            transition-delay: 1.55s;
                                         }
                                         
                                     }
@@ -1870,7 +1896,8 @@ html {
         align-items: center ;
         justify-content: center;
         width: 100%;
-        height: 600px;
+        height: auto;
+        padding-bottom: 0px;
         background-color: white;
         .text
         {
@@ -1976,7 +2003,7 @@ html {
         align-items: center ;
         width: 45%;
         padding-bottom: 100px;
-        margin-top: 150px;
+        margin-top: 100px;
         margin-left: 3%;
         .imgs 
         {
@@ -2031,7 +2058,13 @@ html {
                     transition: 1s;
                     img 
                     {
-                        box-shadow: 0 0 40px 40px rgba(0,0 , 0, 0.2);
+                        box-shadow:
+                        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                        0 12.5px 10px rgba(0, 0, 0, 0.06),
+                        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                        0 100px 80px rgba(0, 0, 0, 0.12);
 
                         transition: 0.5s;
                         z-index: 100;
@@ -2070,7 +2103,13 @@ html {
                     transition: 1s;
                     img 
                     {
-                        box-shadow: 0 0 40px 40px rgba(0,0 , 0, 0.2);
+                        box-shadow:
+                        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                        0 12.5px 10px rgba(0, 0, 0, 0.06),
+                        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+                        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+                        0 100px 80px rgba(0, 0, 0, 0.12);
                         transition: 0.5s;
                         z-index: 100;
 
@@ -2095,19 +2134,20 @@ html {
         align-items: center ;
         flex-direction: column;
         width: 100%;
-        height: 600px;
+        height: auto;
+        padding-bottom: 100px;
         background: linear-gradient(84.1deg, #3D7AB8 11.55%, #225A93 91.67%);
-        margin-top: 100px;
+        margin-top: 50px;
         .titleContainer4 //Title Container Bizimle emekdashliq
         {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 100px;
+            margin-top: 130px;
             width: 85%;
             p 
             {
-                font-size: 2rem;
+                font-size: 2.5rem;
                 font-family: "LemonMilkRegular";
                 color: white ;
             }
@@ -2130,7 +2170,7 @@ html {
             {
                 p 
                 {
-                    font-size: 1.55rem;
+                    font-size: 1.75rem;
                     color: white;
                     margin-top: 50px;
                         transition: 0.5s;
@@ -2192,7 +2232,8 @@ html {
         .gridContainer2
         {
             width: 80%;
-            height: 700px;
+            height: auto;
+            padding-bottom: 0px;
             margin-top: 50px;
             display: grid;
             grid-template-columns: repeat(4,1fr);
@@ -2228,7 +2269,7 @@ html {
         flex-direction: column;
         width: 100%;
         height: 700px;
-        margin-top: 150px;
+        margin-top: 50px;
         background-color: #EEEE;
         .titleContainer6
         {
@@ -2256,7 +2297,7 @@ html {
         } //TitleContainer Slider 
         .glideEditSlider
         {
-            width: 80% !important;
+            width: 75% !important;
             margin-top: 50px;
             display: flex !important;
             justify-content: center !important;
@@ -2269,12 +2310,22 @@ html {
             margin-left: -10%;
             border: none !important;
             box-shadow: none !important;
+            img 
+            {
+                width: 25px;
+                height: auto;
+            }
         }
         .button2 
         {
-            margin-right: -10%;
+            margin-right: -4.5%;
             border: none !important;
             box-shadow: none !important;
+            img 
+            {
+                width: 25px;
+                height: auto;
+            }
         }
     } //Slider
     
@@ -2566,6 +2617,54 @@ html {
         
     }//Foooter
 
+    .buttonContWPAnd
+    {
+        top: 80vh;
+        left: 92vw;
+        position: fixed;
+        width: 100px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        margin-top: 30px;
+    }
+    .buttonForWP
+    {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: none;
+        border: none;
+        margin-top: 10px;
+        transition: 1s;
+        cursor: pointer;
+        &:focus 
+        {
+            outline: none;
+        }
+    }
+    .buttonForScroll
+    {
+        padding: 0;
+        position: relative;
+        z-index: 124592056136785;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #1D84C4;
+        border: none;
+        transition: 0.5s;
+        display: none;
+        &:focus 
+        {
+            outline: none;
+            margin-top: 0px;
+            transition: 0.5s;
+        }
+    }
 }// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page
 
 @media screen and (max-width:1860px)
@@ -2691,6 +2790,56 @@ html {
 // Second Page// Second Page// Second Page
 .secondPage 
 {
+    .buttonContWPAnd
+    {
+        top: 80vh;
+        left: 92vw;
+        position: fixed;
+        width: 100px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        margin-top: 30px;
+    }
+    .buttonForWP
+    {
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: none;
+        border: none;
+        margin-top: 10px;
+        transition: 1s;
+        cursor: pointer;
+        &:focus 
+        {
+            outline: none;
+            
+        }
+    }
+    .buttonForScroll
+    {
+        padding: 0;
+        position: relative;
+        z-index: 124592056136785;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #1D84C4;
+        border: none;
+        transition: 0.5s;
+        display: none;
+        border: 2px solid  transparent;
+        &:focus 
+        {
+            outline: none;
+            transition: 0.5s;
+            
+        }
+    }
     .topContainer //Top Conatiner (Navbar included)
     {
         background: url("../images/overlayForNavbar.png") repeat;
@@ -3124,86 +3273,17 @@ html {
                 align-items: center;
                 height: 200px;
                 cursor: pointer;
-                a 
-                {
-                    width: 100%;
-                    height: 390px;
-                }
+                
                 p 
                 {
                     margin: 0;
                     font-family: "GilroyMedium";
                     margin-top: 25px;
                     text-align: center;
-                    font-size: 14px;
+                    font-size: 20px;
                 }
-                .title 
-                {
-                    font-family: "LemonMilkMedium";
-                    font-size: 1.2rem;
-                    font-style: normal;
-                    opacity: 0.7;
-                }
-                hr 
-                {
-                    width: 147px;
-                    height: 1px;
-                    background:  #1D84C4;
-                    border: none;
-                    margin: 0;
-                    margin: 5px 0 20px 0;
-                    opacity: 0.3;
-                }
-                .subTitle
-                {
-                    p 
-                    {
-                        margin: 0;
-                        margin-top: 30px;
-                        font-size: 15px;
-                        &:nth-child(1)
-                        {
-                            margin-top: 0;
-                        }
-                        span 
-                        {
-                            font-family: "GilroyMedium";
-                            color: #000000;
-                            opacity: 0.7;
-                        }
-                    }
-                }
-
-                .cardButton
-                {
-                    background-color: #fff;
-                    float: right;
-                    margin-right: 7%;
-                    margin-top: 15px;
-                    width: 100px;
-                    height: 30px;
-                    background-color: #1D84C4;
-                    color: white;
-                    border: none;
-                    border-radius: 4px;
-                    transition: 1s ;
-                    font-family: "GilroyRegular";
-                    
-                    &:hover 
-                    {
-                        border:1px solid #1D84c4;
-                        background-color: white;
-                        color: #1D84C4;
-                        transition: 1s;
-                    }
-                    &:focus {
-                        outline: none;
-                        background-color: #1D84C4;
-                        color: white;
-                        border: none;
-                    }
-                }//Card Button
-
+                
+                
 
             }  //Card
         } // Card Conatiner
@@ -3218,7 +3298,7 @@ html {
         align-items: center ;
         width: 100%;
         height: auto;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
         background-color: #EEEE;
         .titleContainer3 //Title Container Technologies
         {
@@ -3313,7 +3393,7 @@ html {
         {
             width: 85%;
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
 
             button 
             {
@@ -3896,6 +3976,13 @@ html {
                                             transition: 0.25s ease-out;
                                             transition-delay: 1.35s;
                                         }
+                                        &:nth-child(6)
+                                        {
+                                            opacity: 1;
+                                            padding-top: 30px;
+                                            transition: 0.25s ease-out;
+                                            transition-delay: 1.55s;
+                                        }
                                         
                                     }
                                 }
@@ -4152,7 +4239,13 @@ html {
                                             transition: 0.25s ease-out;
                                             transition-delay: 1.35s;
                                         }
-                                        
+                                        &:nth-child(6)
+                                        {
+                                            opacity: 1;
+                                            padding-top: 30px;
+                                            transition: 0.25s ease-out;
+                                            transition-delay: 1.55s;
+                                        }
                                     }
                                 }
                                 
@@ -4280,6 +4373,13 @@ html {
                                             padding-top: 30px;
                                             transition: 0.25s ease-out;
                                             transition-delay: 1.35s;
+                                        }
+                                        &:nth-child(6)
+                                        {
+                                            opacity: 1;
+                                            padding-top: 30px;
+                                            transition: 0.25s ease-out;
+                                            transition-delay: 1.55s;
                                         }
                                         
                                     }
@@ -6456,7 +6556,31 @@ html {
         
     }//Foooter
 
-}// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page// Home Page
+}// second page second pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond page
+//second pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond page
+//second pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond page
+//second pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond pagesecond page
+
+
+
+
+.elaqePage
+{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -7018,16 +7142,82 @@ html {
 }
 
 
-// HomePage Mobile
-// HomePage Mobile
-// HomePage Mobile
-// HomePage Mobile
-// HomePage Mobile
-// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
+// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile// HomePage Mobile
 @media only screen and (max-width: 700px) {
     
     .HomePage 
     {
+        .buttonContWPAnd
+        {
+            top: 45vh;
+            margin-left: -5vh;
+            position: fixed;
+            width: 10vh;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            z-index: 200;
+        }
+        .buttonForWP
+        {
+            padding: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: none;
+            border: none;
+            margin-top: 40px;
+            transition: 1s;
+            cursor: pointer;
+            &:focus 
+            {
+                outline: none;
+                
+            }
+            img 
+            {
+                width: 60px;
+            }
+        }
+        .buttonForScroll
+        {
+            padding: 0;
+            position: relative;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #1D84C4;
+            border: none;
+            transition: 0.5s;
+            display: none;
+            border: 2px solid  transparent;
+            &:focus 
+            {
+                outline: none;
+                transition: 0.5s;
+                
+            }
+            img 
+            {
+                width: 30px;
+            }
+        }
         .topContainer
         {
             padding-bottom: 100px !important;
@@ -7060,7 +7250,11 @@ html {
             {
                 margin-left: 5% !important;
                 font-size: 18px !important; 
-            }
+                span 
+                {
+                    width: 95% !important;
+                }
+                }
             button 
             {
                 margin-left: 2.5% !important;
@@ -7680,6 +7874,62 @@ html {
     //////////Saytlarin hazirlanmasi
     .secondPage 
     {
+        .buttonContWPAnd
+        {
+            top: 45vh;
+            margin-left: -5vh;
+            position: fixed;
+            width: 10vh;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            z-index: 200;
+        }
+        .buttonForWP
+        {
+            padding: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: none;
+            border: none;
+            margin-top: 40px;
+            transition: 1s;
+            cursor: pointer;
+            &:focus 
+            {
+                outline: none;
+                
+            }
+            img 
+            {
+                width: 60px;
+            }
+        }
+        .buttonForScroll
+        {
+            padding: 0;
+            position: relative;
+            cursor: pointer;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #1D84C4;
+            border: none;
+            transition: 0.5s;
+            display: none;
+            border: 2px solid  transparent;
+            &:focus 
+            {
+                outline: none;
+                transition: 0.5s;
+                
+            }
+            img 
+            {
+                width: 30px;
+            }
+        }
         .preparingSite
         {
             .titleContainer 

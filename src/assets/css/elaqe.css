@@ -1,0 +1,855 @@
+@import url("./Fonts.css");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Futurica";
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+body p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.elaqePage {
+  min-width: 100%;
+}
+
+.elaqePage .topContainer {
+  background: url("../images/overlayForNavbar.png");
+  background-color: #225A93;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.elaqePage .topContainer .navbarContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  background-color: none;
+}
+
+.elaqePage .topContainer .navbar {
+  background-size: cover;
+  width: 85%;
+  height: 45px;
+}
+
+.elaqePage .topContainer .navbar .logoAndText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  float: left;
+  background-color: none;
+}
+
+.elaqePage .topContainer .navbar img {
+  width: 193px;
+  height: 36px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.elaqePage .topContainer .navbar .phoneNumber {
+  font-size: 18px;
+  word-spacing: 6px;
+  color: white;
+}
+
+.elaqePage .topContainer .navbar .phoneNumber a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.elaqePage .topContainer .navbar p {
+  margin-left: 100px;
+  color: white;
+  font-family: "LemonMilkRegular";
+}
+
+.elaqePage .topContainer .navbar .menuIcon {
+  width: 100px;
+  height: 45px;
+  float: right;
+  margin-top: -10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.elaqePage .topContainer .navbar .menuIcon:hover .downIcon {
+  width: 50px;
+}
+
+.elaqePage .topContainer .navbar .menuIcon:focus {
+  outline: none;
+}
+
+.elaqePage .topContainer .navbar .menuIcon .topIcon {
+  width: 50px;
+  height: 6px;
+  background-color: white;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.elaqePage .topContainer .navbar .menuIcon .downIcon {
+  width: 35px;
+  height: 6px;
+  margin-top: 15px;
+  background-color: white;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.elaqePage .topContainer .subNav {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 198px;
+}
+
+.elaqePage .topContainer .subNav .title {
+  font-size: 5.5rem;
+  font-family: "GilroySemibold";
+  color: white;
+  word-spacing: 30px;
+}
+
+.elaqePage .topContainer .subNav .subTitle {
+  margin-top: 29px;
+  padding-left: 6.5px;
+  font-size: 1.5rem;
+  line-height: 43px;
+  color: white;
+  width: 70%;
+  font-family: "GilroySemibold";
+  line-height: 25px;
+}
+
+.elaqePage .topContainer hr {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border: none;
+  top: 530px;
+  background-image: url("../images/overlayForNavbar.png") repeat;
+}
+
+.elaqePage .topContainer .subTitle2 {
+  margin-top: 50px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 239px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/overlayForNavbar.png") repeat;
+}
+
+.elaqePage .topContainer .subTitle2 p {
+  width: 85%;
+  margin: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "GilroySemiBold";
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 55px;
+  margin-top: 10px;
+}
+
+.elaqePage .topContainer .subTitle2 p a {
+  text-decoration: none;
+  color: white;
+}
+
+.elaqePage .menuOverlay {
+  width: 99.99%;
+  height: 0vh;
+  position: absolute;
+  top: 0.01px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+}
+
+.elaqePage .menuOverlay .fText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.elaqePage .menuOverlay .fText .container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.elaqePage .menuOverlay .fText p {
+  font-size: 25px;
+  color: #464141;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.elaqePage .menuOverlay .fText span {
+  font-size: 25px;
+  color: #464141;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(1) {
+  margin-right: 35px;
+  padding-right: 35px;
+  border-right: 1px solid #464141;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(1) a {
+  text-decoration: none;
+  color: black;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(1) a {
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+  color: black;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(1):hover a {
+  color: #ff0335;
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(2) {
+  margin-right: 35px;
+  padding-right: 35px;
+  border-right: 1px solid #464141;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(2) a {
+  text-decoration: none;
+  color: black;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(2) a {
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+  color: black;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(2):hover a {
+  color: #ff0335;
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(3) {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(3) a {
+  text-decoration: none;
+  color: black;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(3) a {
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+  color: black;
+}
+
+.elaqePage .menuOverlay .fText span:nth-child(3):hover a {
+  color: #ff0335;
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+}
+
+.elaqePage .menuOverlay .overlayMainText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+  width: 100%;
+  pointer-events: none;
+}
+
+.elaqePage .menuOverlay .overlayMainText .text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.elaqePage .menuOverlay .overlayMainText .text1 p {
+  font-size: 50px;
+  font-family: "LemonMilkRegular";
+  margin-top: 100px;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+  pointer-events: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.elaqePage .menuOverlay .overlayMainText .text1 p a {
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+  color: black;
+}
+
+.elaqePage .menuOverlay .overlayMainText .text1 p:hover a {
+  color: #ff0335;
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+}
+
+.elaqePage .menuOverlay .overlayMainText .text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10%;
+}
+
+.elaqePage .menuOverlay .overlayMainText .text2 p {
+  font-size: 50px;
+  font-family: "LemonMilkRegular";
+  margin-top: 100px;
+  -webkit-transition: 0.5s color;
+  transition: 0.5s color;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.elaqePage .menuOverlay .overlayMainText .text2 p:hover {
+  -webkit-transition: 0.5s color !important;
+  transition: 0.5s color !important;
+  color: #ff0335;
+}
+
+.elaqePage .topIconFocus {
+  -webkit-transform: rotate(45deg) translateY(5.5px) translateX(5px);
+          transform: rotate(45deg) translateY(5.5px) translateX(5px);
+  width: 40px !important;
+  background-color: BLACK !important;
+  -webkit-transition: 0.01s;
+  transition: 0.01s;
+}
+
+.elaqePage .downIconFocus {
+  -webkit-transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
+          transform: rotate(-45deg) translateY(-10.5px) translateX(10px);
+  width: 40px !important;
+  background-color: BLACK !important;
+  -webkit-transition: 0.01s;
+  transition: 0.01s;
+}
+
+.elaqePage .buttonContWPAnd {
+  top: 80vh;
+  left: 92vw;
+  position: fixed;
+  width: 100px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.elaqePage .buttonForWP {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: none;
+  border: none;
+  margin-top: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.elaqePage .buttonForWP:focus {
+  outline: none;
+}
+
+.elaqePage .buttonForScroll {
+  padding: 0;
+  position: relative;
+  z-index: 124592056136785;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1D84C4;
+  border: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+}
+
+.elaqePage .buttonForScroll:focus {
+  outline: none;
+  margin-top: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.elaqePage iframe {
+  width: 100%;
+}
+
+.elaqePage footer {
+  width: 100%;
+  height: 400px;
+  background-color: #225A93;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -5px;
+}
+
+.elaqePage footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.elaqePage footer p {
+  margin: 0;
+  color: white;
+}
+
+.elaqePage footer .topFooter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.5fr 0.5fr;
+      grid-template-columns: 1.5fr 0.5fr;
+  width: 90%;
+  margin-top: 90px;
+}
+
+.elaqePage footer .topFooter .links {
+  font-size: "LemonMilkRegular";
+  font-size: 1.6rem;
+}
+
+.elaqePage footer .topFooter .links a {
+  margin-left: 6%;
+}
+
+.elaqePage footer .topFooter .imgsContainer {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 13%;
+}
+
+.elaqePage footer .topFooter .imgsContainer img {
+  height: auto;
+  margin-left: 10px;
+}
+
+.elaqePage footer .topFooter .numbersContainer {
+  font-size: "GilroyRegular";
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.elaqePage footer .topFooter .numbersContainer a {
+  margin-left: 5.5%;
+}
+
+.elaqePage footer hr {
+  width: 100%;
+  height: 0.5px;
+  background-color: white;
+  border: none;
+  opacity: 0.3;
+  margin-top: 100px;
+}
+
+.elaqePage footer .deepFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  margin-top: 40px;
+}
+
+.elaqePage footer .deepFooter p {
+  font-family: "GilroyRegular";
+  font-size: 22px;
+  font-style: normal;
+  color: #E5E5E5;
+}
+
+.elaqePage footer .deepFooter img {
+  float: right;
+}
+
+@media only screen and (max-width: 700px) {
+  .elaqePage .buttonContWPAnd {
+    top: 45vh;
+    margin-left: -5vh;
+    position: fixed;
+    width: 10vh;
+    height: 30vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    z-index: 200;
+  }
+  .elaqePage .buttonForWP {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: none;
+    border: none;
+    margin-top: 40px;
+    -webkit-transition: 1s;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .elaqePage .buttonForWP:focus {
+    outline: none;
+  }
+  .elaqePage .buttonForWP img {
+    width: 60px;
+  }
+  .elaqePage .buttonForScroll {
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #1D84C4;
+    border: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: none;
+    border: 2px solid  transparent;
+  }
+  .elaqePage .buttonForScroll:focus {
+    outline: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .elaqePage .buttonForScroll img {
+    width: 30px;
+  }
+  .elaqePage .topContainer {
+    padding-bottom: 100px !important;
+    height: auto;
+  }
+  .elaqePage .subNav {
+    width: 95% !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 150px !important;
+  }
+  .elaqePage .subNav .title {
+    font-size: 60px !important;
+    padding-left: 10px;
+  }
+  .elaqePage .subNav .subTitle {
+    font-size: 18px !important;
+    width: 95% !important;
+  }
+  .elaqePage .subTitle2 {
+    margin-top: 100px !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+    height: auto !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .elaqePage .subTitle2 p {
+    margin-left: 5% !important;
+    font-size: 18px !important;
+  }
+  .elaqePage .subTitle2 p span {
+    width: 95% !important;
+  }
+  .elaqePage .subTitle2 button {
+    margin-left: 2.5% !important;
+  }
+  .elaqePage .navbarContainer {
+    height: 65px !important;
+  }
+  .elaqePage .navbar {
+    width: 90% !important;
+    margin-top: 25px;
+  }
+  .elaqePage .navbar img {
+    width: 100px !important;
+    height: auto !important;
+  }
+  .elaqePage .navbar .phoneNumber {
+    display: none !important;
+  }
+  .elaqePage .navbar .logoAndText {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .elaqePage .navbar .menuIcon {
+    width: 50px !important;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    margin-top: -15px !important;
+  }
+  .elaqePage footer {
+    height: auto !important;
+    padding-bottom: 50px;
+  }
+  .elaqePage footer hr {
+    margin-top: 25px !important;
+  }
+  .elaqePage footer .topFooter {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .elaqePage footer .topFooter .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .elaqePage footer .topFooter .links a {
+    margin-left: 0 !important;
+    font-size: 18px !important;
+  }
+  .elaqePage footer .topFooter .imgsContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-right: 0px !important;
+    margin-top: 30px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .elaqePage footer .topFooter .imgsContainer img {
+    margin-left: 0 !important;
+  }
+  .elaqePage footer .topFooter .numbersContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 30px;
+  }
+  .elaqePage footer .topFooter .numbersContainer a {
+    margin-left: 0 !important;
+    font-size: 15px !important;
+  }
+  .elaqePage footer .deepFooter {
+    margin-top: 10px !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .elaqePage footer .deepFooter p {
+    width: 100% !important;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .elaqePage footer .deepFooter img {
+    width: 100px;
+    margin-top: 20px;
+    height: auto;
+  }
+  .elaqePage .menuOverlay .fText {
+    width: 100%;
+    margin-top: -50px;
+  }
+  .elaqePage .menuOverlay .fText .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    width: 100%;
+  }
+  .elaqePage .menuOverlay .fText .container div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .elaqePage .menuOverlay .fText .container div span {
+    font-size: 19px !important;
+    border-right: none;
+    padding: 0;
+    margin-right: 0;
+    margin-top: 10px !important;
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+  .elaqePage .menuOverlay .fText p {
+    width: 100% !important;
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+  .elaqePage .menuOverlay .overlayMainText .text1 p {
+    margin-top: 20px !important;
+  }
+  .elaqePage .menuOverlay .overlayMainText .text1 a {
+    font-size: 21px;
+  }
+}
+/*# sourceMappingURL=elaqe.css.map */
