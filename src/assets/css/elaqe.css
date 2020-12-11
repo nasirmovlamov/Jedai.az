@@ -435,7 +435,7 @@ html {
 }
 
 .elaqePage .buttonContWPAnd {
-  top: 80vh;
+  top: 75vh;
   left: 92vw;
   position: fixed;
   width: 100px;
@@ -447,7 +447,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 1;
+  z-index: 200;
   margin-top: 30px;
 }
 

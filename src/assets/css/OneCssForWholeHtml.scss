@@ -157,7 +157,8 @@ html {
                 color: white;
                 width: 70%;
                 font-family: "GilroySemibold";
-                line-height: 25px;
+                line-height: 35px;
+
             }
         } //Subnav
 
@@ -190,6 +191,7 @@ html {
                 line-height: 25px;
                 display: flex;
                 align-items: center;
+                line-height: 35px;
                 span 
                 {
                     width: 70%;
@@ -197,13 +199,17 @@ html {
             }
             a 
             {
-                width: 5%;
+                width: 30%;
+                display: flex;
+                cursor: default;
+                justify-content: center;
             }
             button 
             {
                 border: none;
                 background-color: rgba(0,0,0,0);
                 margin-left: 40px;
+                cursor: pointer;
                 &:focus 
                 {
                     outline: none;
@@ -1901,7 +1907,7 @@ html {
         background-color: white;
         .text
         {
-            width: 40%;
+            width: 45%;
             font-size: 28px;
             margin-top: 100px;
             opacity: 0.5;
@@ -2000,17 +2006,15 @@ html {
     {
         display: flex;
         flex-direction: column;
-        align-items: center ;
+        align-items: flex-end;
         width: 45%;
         padding-bottom: 100px;
         margin-top: 100px;
-        margin-left: 3%;
         .imgs 
         {
             margin-top: 50px;
-            width: 80%;
+            width:90%;
             display: flex;
-            align-items: center;
             flex-direction: column;
             p 
             {
@@ -2021,7 +2025,6 @@ html {
                 font-family: "LemonMilkRegular";
                 font-size: 20px;
                 margin-top: 10px;
-                
             }
             .subTitle 
             {
@@ -2040,10 +2043,12 @@ html {
             {
                 display: flex;
                 column-gap: 10%;
-                
+                align-items: center;
+                justify-content: center;
                 div 
                 {
                     display: flex;
+                    flex-wrap: wrap;
                     flex-direction: column;
                     align-items: center;
                     width: 199px;
@@ -2086,6 +2091,9 @@ html {
                 display: flex;
                 column-gap: 10%;
                 margin-top: 50px;
+                align-items: center;
+                justify-content: center;
+
                 div 
                 {
                     display: flex;
@@ -2619,14 +2627,14 @@ html {
 
     .buttonContWPAnd
     {
-        top: 80vh;
+        top: 75vh;
         left: 92vw;
         position: fixed;
         width: 100px;
         height: 200px;
         display: flex;
         flex-direction: column;
-        z-index: 1;
+        z-index: 200;
         margin-top: 30px;
     }
     .buttonForWP
@@ -2649,7 +2657,6 @@ html {
     {
         padding: 0;
         position: relative;
-        z-index: 124592056136785;
         cursor: pointer;
         width: 50px;
         height: 50px;
@@ -2792,14 +2799,14 @@ html {
 {
     .buttonContWPAnd
     {
-        top: 80vh;
+        top: 75vh;
         left: 92vw;
         position: fixed;
         width: 100px;
         height: 200px;
         display: flex;
         flex-direction: column;
-        z-index: 1;
+        z-index: 200;
         margin-top: 30px;
     }
     .buttonForWP
@@ -2967,7 +2974,7 @@ html {
                 color: white;
                 width: 70%;
                 font-family: "GilroySemibold";
-                line-height: 25px;
+                line-height: 35px;
             }
         } //Subnav
 
@@ -2992,31 +2999,39 @@ html {
             background: url("../images/overlayForNavbar.png") repeat;
             p 
             {
-                width: 79% ;
+                width: 85% ;
                 margin: 0;
                 font-size: 1.5rem;
                 color: white;
                 font-family: "GilroySemiBold";
                 line-height: 25px;
-
+                display: flex;
+                align-items: center;
+                line-height: 37px;
+                span 
+                {
+                    width: 70%;
+                }
             }
             a 
             {
-                width: 5%;
+                width: 30%;
+                display: flex;
+                cursor: default;
+                justify-content: center;
             }
             button 
             {
                 border: none;
                 background-color: rgba(0,0,0,0);
-                margin-left: 60px;
-
+                margin-left: 40px;
+                cursor: pointer;
                 &:focus 
                 {
                     outline: none;
                 }
             }
         }
-
         
 
 
@@ -5990,6 +6005,10 @@ html {
             background-color: lightgray !important;
             opacity: 0.4;
             margin-left: -3px;
+            &:nth-child(3)
+            {
+                margin-top:10px;
+            }
         }
         
         .containerOfContainers
@@ -6004,7 +6023,11 @@ html {
             display: flex;
             width: 550px;
             align-items: center; 
-            column-gap: 40px;           
+            column-gap: 40px;    
+            &:nth-child(3)
+            {
+                margin-top:10px !important; 
+            }       
             &:hover 
             {
                 .text 
@@ -7181,7 +7204,7 @@ html {
             border-radius: 50%;
             background-color: none;
             border: none;
-            margin-top: 40px;
+            margin-top: 90px;
             transition: 1s;
             cursor: pointer;
             &:focus 
@@ -7197,7 +7220,7 @@ html {
         .buttonForScroll
         {
             padding: 0;
-            position: relative;
+            position: fixed;
             cursor: pointer;
             width: 60px;
             height: 60px;
@@ -7909,7 +7932,7 @@ html {
         .buttonForScroll
         {
             padding: 0;
-            position: relative;
+            position: fixed;
             cursor: pointer;
             width: 60px;
             height: 60px;
@@ -8795,4 +8818,67 @@ html {
 
 
     }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1300px) {
+    .humansContainer
+    {
+        .komanda
+        {
+            .text 
+            {
+                p 
+                {
+                    font-size: 15px !important;
+                }
+            }
+            .imgContainer1 {
+                img 
+                {
+                    width: 150px;
+                }
+                p 
+                {
+                    font-size: 15px !important;
+                }
+            }
+            .imgContainer2 {
+                img 
+                {
+                    width: 150px;
+                }
+                p 
+                {
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+    }
+
+
+    .container
+    {
+        p 
+        {
+            font-size:16px !important;
+        }
+        div 
+        {
+            span 
+            {
+                font-size:16px !important;
+            }
+        }
+    }
+
 }

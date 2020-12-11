@@ -170,7 +170,7 @@ html {
   color: white;
   width: 70%;
   font-family: "GilroySemibold";
-  line-height: 25px;
+  line-height: 35px;
 }
 
 .HomePage .topContainer hr {
@@ -211,6 +211,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 35px;
 }
 
 .HomePage .topContainer .subTitle2 p span {
@@ -218,13 +219,21 @@ html {
 }
 
 .HomePage .topContainer .subTitle2 a {
-  width: 5%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: default;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .HomePage .topContainer .subTitle2 button {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   margin-left: 40px;
+  cursor: pointer;
 }
 
 .HomePage .topContainer .subTitle2 button:focus {
@@ -2021,7 +2030,7 @@ html {
 }
 
 .HomePage .humansContainer .text {
-  width: 40%;
+  width: 45%;
   font-size: 28px;
   margin-top: 100px;
   opacity: 0.5;
@@ -2104,24 +2113,20 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 45%;
   padding-bottom: 100px;
   margin-top: 100px;
-  margin-left: 3%;
 }
 
 .HomePage .komanda .imgs {
   margin-top: 50px;
-  width: 80%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2159,12 +2164,20 @@ html {
   display: flex;
   -webkit-column-gap: 10%;
           column-gap: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .HomePage .komanda .imgs .imgContainer1 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2209,6 +2222,12 @@ html {
   -webkit-column-gap: 10%;
           column-gap: 10%;
   margin-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .HomePage .komanda .imgs .imgContainer2 div {
@@ -2899,7 +2918,7 @@ html {
 }
 
 .HomePage .buttonContWPAnd {
-  top: 80vh;
+  top: 75vh;
   left: 92vw;
   position: fixed;
   width: 100px;
@@ -2911,7 +2930,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 1;
+  z-index: 200;
   margin-top: 30px;
 }
 
@@ -2935,7 +2954,6 @@ html {
 .HomePage .buttonForScroll {
   padding: 0;
   position: relative;
-  z-index: 124592056136785;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -3018,7 +3036,7 @@ html {
 }
 
 .secondPage .buttonContWPAnd {
-  top: 80vh;
+  top: 75vh;
   left: 92vw;
   position: fixed;
   width: 100px;
@@ -3030,7 +3048,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 1;
+  z-index: 200;
   margin-top: 30px;
 }
 
@@ -3223,7 +3241,7 @@ html {
   color: white;
   width: 70%;
   font-family: "GilroySemibold";
-  line-height: 25px;
+  line-height: 35px;
 }
 
 .secondPage .topContainer hr {
@@ -3252,22 +3270,41 @@ html {
 }
 
 .secondPage .topContainer .subTitle2 p {
-  width: 79%;
+  width: 85%;
   margin: 0;
   font-size: 1.5rem;
   color: white;
   font-family: "GilroySemiBold";
   line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 37px;
+}
+
+.secondPage .topContainer .subTitle2 p span {
+  width: 70%;
 }
 
 .secondPage .topContainer .subTitle2 a {
-  width: 5%;
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: default;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .secondPage .topContainer .subTitle2 button {
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  margin-left: 60px;
+  margin-left: 40px;
+  cursor: pointer;
 }
 
 .secondPage .topContainer .subTitle2 button:focus {
@@ -6428,6 +6465,10 @@ html {
   margin-left: -3px;
 }
 
+.secondPage .preparingSite .verticalLine:nth-child(3) {
+  margin-top: 10px;
+}
+
 .secondPage .preparingSite .containerOfContainers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6452,6 +6493,10 @@ html {
           align-items: center;
   -webkit-column-gap: 40px;
           column-gap: 40px;
+}
+
+.secondPage .preparingSite .container:nth-child(3) {
+  margin-top: 10px !important;
 }
 
 .secondPage .preparingSite .container:hover .text {
@@ -7600,7 +7645,7 @@ html {
     border-radius: 50%;
     background-color: none;
     border: none;
-    margin-top: 40px;
+    margin-top: 90px;
     -webkit-transition: 1s;
     transition: 1s;
     cursor: pointer;
@@ -7613,7 +7658,7 @@ html {
   }
   .HomePage .buttonForScroll {
     padding: 0;
-    position: relative;
+    position: fixed;
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -8228,7 +8273,7 @@ html {
   }
   .secondPage .buttonForScroll {
     padding: 0;
-    position: relative;
+    position: fixed;
     cursor: pointer;
     width: 60px;
     height: 60px;
@@ -8968,6 +9013,30 @@ html {
   }
   .secondPage .menuOverlay .overlayMainText .text1 a {
     font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .humansContainer .komanda .text p {
+    font-size: 15px !important;
+  }
+  .humansContainer .komanda .imgContainer1 img {
+    width: 150px;
+  }
+  .humansContainer .komanda .imgContainer1 p {
+    font-size: 15px !important;
+  }
+  .humansContainer .komanda .imgContainer2 img {
+    width: 150px;
+  }
+  .humansContainer .komanda .imgContainer2 p {
+    font-size: 15px !important;
+  }
+  .container p {
+    font-size: 16px !important;
+  }
+  .container div span {
+    font-size: 16px !important;
   }
 }
 /*# sourceMappingURL=OneCssForWholeHtml.css.map */
